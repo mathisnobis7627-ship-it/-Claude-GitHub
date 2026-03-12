@@ -15,4 +15,10 @@ router.get('/:code/geography', (req, res, next) => countriesController.getGeogra
 // GET /countries/:code/history - Get history data for a country
 router.get('/:code/history', (req, res, next) => countriesController.getHistory(req, res, next));
 
+// GET /countries/:code/events - Get major historical events for a country
+router.get('/:code/events', (req, res, next) => countriesController.getEvents(req, res, next));
+
+// GET /countries/:code/quizzes - Get quizzes associated with a country
+router.get('/:code/quizzes', (req, res, next) => countriesController.getQuizzes(req, res, next));
+
 export default router;

@@ -32,6 +32,11 @@ export interface Country extends Timestamps {
   longitude: number | null;
   borders: string[];
   timezones: string[];
+  government_type: string | null;
+  political_summary: string | null;
+  gdp_usd: number | null;
+  hdi: number | null;
+  metadata: Record<string, unknown>;
 }
 
 export interface CountryGeography {
@@ -56,6 +61,19 @@ export interface CountryHistory {
   year_start: number | null;
   year_end: number | null;
   sort_order: number;
+}
+
+export interface CountryEvent {
+  id: string;
+  country_id: string;
+  event_id: string;
+  relevance: string | null;
+}
+
+export interface CountryQuiz {
+  id: string;
+  country_id: string;
+  quiz_id: string;
 }
 
 // --- Persons (002) ---

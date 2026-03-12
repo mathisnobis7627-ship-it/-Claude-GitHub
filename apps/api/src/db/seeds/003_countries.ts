@@ -1,6 +1,9 @@
 import type { Knex } from 'knex';
 
 export async function seed(knex: Knex): Promise<void> {
+  // Clear junction tables first (if they exist from migration 010)
+  try { await knex('country_quizzes').del(); } catch (_) { /* table may not exist yet */ }
+  try { await knex('country_events').del(); } catch (_) { /* table may not exist yet */ }
   await knex('country_history').del();
   await knex('country_geography').del();
   await knex('countries').del();
@@ -25,6 +28,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 2.2137,
         borders: JSON.stringify(['BEL', 'LUX', 'DEU', 'CHE', 'ITA', 'ESP', 'AND', 'MCO']),
         timezones: JSON.stringify(['Europe/Paris']),
+        government_type: 'République semi-présidentielle',
+        political_summary: 'La France est une république semi-présidentielle fondée par la Constitution de 1958 (Ve République). Le président de la République, élu au suffrage universel pour 5 ans, nomme le Premier ministre. Le Parlement bicaméral comprend l\'Assemblée nationale (577 députés) et le Sénat (348 sénateurs). Membre fondateur de l\'Union européenne, du Conseil de sécurité de l\'ONU (siège permanent) et du G7.',
+        gdp_usd: 2780000000000,
+        hdi: 0.903,
       },
       {
         name: 'Allemagne',
@@ -44,6 +51,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 10.4515,
         borders: JSON.stringify(['AUT', 'BEL', 'CZE', 'DNK', 'FRA', 'LUX', 'NLD', 'POL', 'CHE']),
         timezones: JSON.stringify(['Europe/Berlin']),
+        government_type: 'République fédérale parlementaire',
+        political_summary: 'L\'Allemagne est une république fédérale parlementaire composée de 16 Länder. Le chancelier fédéral, chef du gouvernement, est élu par le Bundestag. Le président fédéral a un rôle essentiellement cérémoniel. Membre fondateur de l\'UE, moteur économique de l\'Europe, membre du G7 et de l\'OTAN.',
+        gdp_usd: 4070000000000,
+        hdi: 0.942,
       },
       {
         name: 'Italie',
@@ -63,6 +74,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 12.5674,
         borders: JSON.stringify(['AUT', 'FRA', 'SMR', 'SVN', 'CHE', 'VAT']),
         timezones: JSON.stringify(['Europe/Rome']),
+        government_type: 'République parlementaire',
+        political_summary: 'L\'Italie est une république parlementaire. Le président de la République est élu par le Parlement pour 7 ans. Le président du Conseil des ministres dirige le gouvernement. Le Parlement bicaméral comprend la Chambre des députés et le Sénat. Membre fondateur de l\'UE, du G7 et de l\'OTAN.',
+        gdp_usd: 2010000000000,
+        hdi: 0.895,
       },
       {
         name: 'Royaume-Uni',
@@ -82,6 +97,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: -3.4360,
         borders: JSON.stringify(['IRL']),
         timezones: JSON.stringify(['Europe/London']),
+        government_type: 'Monarchie constitutionnelle parlementaire',
+        political_summary: 'Le Royaume-Uni est une monarchie constitutionnelle parlementaire. Le monarque est chef de l\'État, le Premier ministre dirige le gouvernement. Le Parlement de Westminster comprend la Chambre des communes (650 députés élus) et la Chambre des Lords. Depuis le Brexit (2020), le pays n\'est plus membre de l\'UE. Membre permanent du Conseil de sécurité de l\'ONU, du G7 et de l\'OTAN.',
+        gdp_usd: 3070000000000,
+        hdi: 0.929,
       },
       {
         name: 'Espagne',
@@ -101,6 +120,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: -3.7492,
         borders: JSON.stringify(['AND', 'FRA', 'GIB', 'PRT', 'MAR']),
         timezones: JSON.stringify(['Europe/Madrid']),
+        government_type: 'Monarchie constitutionnelle parlementaire',
+        political_summary: 'L\'Espagne est une monarchie constitutionnelle parlementaire depuis la Constitution de 1978. Le roi est chef de l\'État, le président du gouvernement dirige l\'exécutif. Les Cortes Generales comprennent le Congrès des députés et le Sénat. Le pays est organisé en 17 communautés autonomes. Membre de l\'UE et de l\'OTAN.',
+        gdp_usd: 1390000000000,
+        hdi: 0.905,
       },
       {
         name: 'États-Unis',
@@ -120,6 +143,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: -95.7129,
         borders: JSON.stringify(['CAN', 'MEX']),
         timezones: JSON.stringify(['America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles']),
+        government_type: 'République fédérale présidentielle',
+        political_summary: 'Les États-Unis sont une république fédérale présidentielle composée de 50 États. Le président, élu pour 4 ans, est chef de l\'État et du gouvernement. Le Congrès bicaméral comprend le Sénat (100 sénateurs) et la Chambre des représentants (435 membres). Membre permanent du Conseil de sécurité de l\'ONU, du G7 et de l\'OTAN. Première puissance économique et militaire mondiale.',
+        gdp_usd: 25460000000000,
+        hdi: 0.921,
       },
       {
         name: 'Japon',
@@ -139,6 +166,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 138.2529,
         borders: JSON.stringify([]),
         timezones: JSON.stringify(['Asia/Tokyo']),
+        government_type: 'Monarchie constitutionnelle parlementaire',
+        political_summary: 'Le Japon est une monarchie constitutionnelle parlementaire. L\'empereur est le symbole de l\'État, le Premier ministre dirige le gouvernement. La Diète nationale comprend la Chambre des représentants et la Chambre des conseillers. Troisième puissance économique mondiale, membre du G7. La Constitution de 1947 renonce à la guerre.',
+        gdp_usd: 4230000000000,
+        hdi: 0.925,
       },
       {
         name: 'Égypte',
@@ -158,6 +189,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 30.8025,
         borders: JSON.stringify(['ISR', 'LBY', 'PSE', 'SDN']),
         timezones: JSON.stringify(['Africa/Cairo']),
+        government_type: 'République présidentielle',
+        political_summary: 'L\'Égypte est une république présidentielle. Le président est élu au suffrage universel pour un mandat de 6 ans. Le Parlement monocaméral (Chambre des représentants) compte 596 sièges. Pays le plus peuplé du monde arabe, l\'Égypte joue un rôle central dans la géopolitique du Moyen-Orient et de l\'Afrique du Nord.',
+        gdp_usd: 476700000000,
+        hdi: 0.731,
       },
       {
         name: 'Grèce',
@@ -177,6 +212,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 21.8243,
         borders: JSON.stringify(['ALB', 'BGR', 'TUR', 'MKD']),
         timezones: JSON.stringify(['Europe/Athens']),
+        government_type: 'République parlementaire',
+        political_summary: 'La Grèce est une république parlementaire. Le président de la République a un rôle essentiellement cérémoniel. Le Premier ministre dirige le gouvernement. Le Parlement monocaméral (Vouli) compte 300 députés. Berceau de la démocratie, la Grèce est membre de l\'UE depuis 1981 et de l\'OTAN.',
+        gdp_usd: 219100000000,
+        hdi: 0.887,
       },
       {
         name: 'Chine',
@@ -196,6 +235,10 @@ export async function seed(knex: Knex): Promise<void> {
         longitude: 104.1954,
         borders: JSON.stringify(['AFG', 'BTN', 'MMR', 'IND', 'KAZ', 'PRK', 'KGZ', 'LAO', 'MNG', 'NPL', 'PAK', 'RUS', 'TJK', 'VNM']),
         timezones: JSON.stringify(['Asia/Shanghai']),
+        government_type: 'République socialiste à parti unique',
+        political_summary: 'La Chine est une république socialiste dirigée par le Parti communiste chinois (PCC). Le président de la République est aussi secrétaire général du PCC. L\'Assemblée nationale populaire est l\'organe législatif suprême. Deuxième puissance économique mondiale, membre permanent du Conseil de sécurité de l\'ONU. Le système politique repose sur la centralisation du pouvoir par le PCC.',
+        gdp_usd: 17960000000000,
+        hdi: 0.768,
       },
     ])
     .returning('*');
@@ -317,6 +360,270 @@ export async function seed(knex: Knex): Promise<void> {
       year_start: 1799,
       year_end: null,
       sort_order: 7,
+    },
+  ]);
+
+  const italie = countries.find((c: any) => c.code_iso2 === 'IT');
+  const royaumeUni = countries.find((c: any) => c.code_iso2 === 'GB');
+  const espagne = countries.find((c: any) => c.code_iso2 === 'ES');
+  const usa = countries.find((c: any) => c.code_iso2 === 'US');
+  const japon = countries.find((c: any) => c.code_iso2 === 'JP');
+  const chine = countries.find((c: any) => c.code_iso2 === 'CN');
+
+  // History for Germany
+  await knex('country_history').insert([
+    {
+      country_id: allemagne.id,
+      period: 'Germanie antique',
+      title: 'Les peuples germaniques',
+      content: 'Les tribus germaniques occupent l\'Europe centrale. La victoire d\'Arminius sur les Romains à la bataille de Teutobourg (9 ap. J.-C.) stoppe l\'expansion romaine au-delà du Rhin.',
+      year_start: -500,
+      year_end: 843,
+      sort_order: 1,
+    },
+    {
+      country_id: allemagne.id,
+      period: 'Saint-Empire',
+      title: 'Le Saint-Empire romain germanique',
+      content: 'Otton Ier est couronné empereur en 962. Le Saint-Empire domine l\'Europe centrale pendant des siècles. La Réforme de Luther (1517) divise l\'Allemagne entre catholiques et protestants. La guerre de Trente Ans (1618-1648) dévaste le pays.',
+      year_start: 843,
+      year_end: 1806,
+      sort_order: 2,
+    },
+    {
+      country_id: allemagne.id,
+      period: 'Unification',
+      title: 'L\'unification allemande',
+      content: 'Bismarck unifie l\'Allemagne sous la Prusse. L\'Empire allemand est proclamé à Versailles en 1871. L\'Allemagne devient une puissance industrielle majeure.',
+      year_start: 1806,
+      year_end: 1918,
+      sort_order: 3,
+    },
+    {
+      country_id: allemagne.id,
+      period: 'Époque contemporaine',
+      title: 'L\'Allemagne contemporaine',
+      content: 'La République de Weimar (1918-1933) cède au nazisme. Après la Seconde Guerre mondiale, l\'Allemagne est divisée en RFA et RDA. La chute du mur de Berlin (1989) mène à la réunification (1990). L\'Allemagne réunifiée est aujourd\'hui le moteur économique de l\'Europe.',
+      year_start: 1918,
+      year_end: null,
+      sort_order: 4,
+    },
+  ]);
+
+  // History for Italy
+  await knex('country_history').insert([
+    {
+      country_id: italie.id,
+      period: 'Antiquité',
+      title: 'Rome antique',
+      content: 'Rome est fondée en 753 av. J.-C. selon la tradition. La République romaine puis l\'Empire romain dominent la Méditerranée pendant des siècles. L\'Empire romain d\'Occident chute en 476.',
+      year_start: -753,
+      year_end: 476,
+      sort_order: 1,
+    },
+    {
+      country_id: italie.id,
+      period: 'Moyen Âge et Renaissance',
+      title: 'Les cités-États et la Renaissance',
+      content: 'L\'Italie médiévale est morcelée en cités-États (Florence, Venise, Gênes, Milan). La Renaissance (XIVe-XVIe siècle) fait de l\'Italie le centre culturel et artistique de l\'Europe avec Léonard de Vinci, Michel-Ange et Raphaël.',
+      year_start: 476,
+      year_end: 1796,
+      sort_order: 2,
+    },
+    {
+      country_id: italie.id,
+      period: 'Unification et époque contemporaine',
+      title: 'Le Risorgimento et l\'Italie moderne',
+      content: 'Le mouvement du Risorgimento mène à l\'unification italienne (1861) sous la maison de Savoie. Garibaldi et Cavour en sont les figures clés. Après le fascisme de Mussolini et la Seconde Guerre mondiale, l\'Italie devient une république en 1946.',
+      year_start: 1796,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for United Kingdom
+  await knex('country_history').insert([
+    {
+      country_id: royaumeUni.id,
+      period: 'Antiquité et Moyen Âge',
+      title: 'De la Bretagne romaine aux royaumes médiévaux',
+      content: 'La Bretagne est conquise par les Romains en 43 ap. J.-C. Après leur départ, les Anglo-Saxons s\'installent. Guillaume le Conquérant envahit l\'Angleterre en 1066. La Magna Carta (1215) pose les bases du parlementarisme.',
+      year_start: 43,
+      year_end: 1485,
+      sort_order: 1,
+    },
+    {
+      country_id: royaumeUni.id,
+      period: 'Époque moderne',
+      title: 'L\'ère Tudor et l\'Empire britannique',
+      content: 'Henri VIII rompt avec Rome (1534). L\'ère élisabéthaine voit le début de l\'expansion coloniale. La Révolution anglaise (1642-1651) et la Glorieuse Révolution (1688) établissent la monarchie parlementaire. L\'Empire britannique devient le plus vaste de l\'histoire.',
+      year_start: 1485,
+      year_end: 1901,
+      sort_order: 2,
+    },
+    {
+      country_id: royaumeUni.id,
+      period: 'Époque contemporaine',
+      title: 'Le Royaume-Uni contemporain',
+      content: 'Le Royaume-Uni joue un rôle central dans les deux guerres mondiales. La décolonisation après 1945 met fin à l\'Empire. Le pays rejoint la CEE en 1973 puis quitte l\'UE en 2020 (Brexit). Il reste une puissance diplomatique et financière mondiale.',
+      year_start: 1901,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for Spain
+  await knex('country_history').insert([
+    {
+      country_id: espagne.id,
+      period: 'Antiquité et Moyen Âge',
+      title: 'De l\'Hispanie romaine à la Reconquista',
+      content: 'L\'Hispanie est une province romaine majeure. Les Wisigoths puis les Maures (711) dominent la péninsule. La Reconquista chrétienne s\'achève avec la prise de Grenade en 1492, année de la découverte de l\'Amérique par Christophe Colomb.',
+      year_start: -218,
+      year_end: 1492,
+      sort_order: 1,
+    },
+    {
+      country_id: espagne.id,
+      period: 'Siècle d\'Or',
+      title: 'L\'Empire espagnol et le Siècle d\'Or',
+      content: 'L\'Espagne bâtit un immense empire colonial en Amérique. Le Siècle d\'Or (XVIe-XVIIe siècle) est une période de rayonnement culturel avec Cervantes, Velázquez et El Greco. Le déclin s\'amorce après la défaite de l\'Invincible Armada (1588).',
+      year_start: 1492,
+      year_end: 1808,
+      sort_order: 2,
+    },
+    {
+      country_id: espagne.id,
+      period: 'Époque contemporaine',
+      title: 'L\'Espagne contemporaine',
+      content: 'Guerre d\'indépendance contre Napoléon, perte des colonies au XIXe siècle. La guerre civile (1936-1939) mène à la dictature de Franco. Après sa mort (1975), la transition démocratique s\'opère. L\'Espagne rejoint l\'UE en 1986.',
+      year_start: 1808,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for United States
+  await knex('country_history').insert([
+    {
+      country_id: usa.id,
+      period: 'Colonisation',
+      title: 'L\'Amérique coloniale',
+      content: 'Les premiers colons européens s\'installent à Jamestown (1607) et Plymouth (1620). Treize colonies britanniques se développent le long de la côte atlantique. Les tensions fiscales avec la Grande-Bretagne mènent à la révolte.',
+      year_start: 1607,
+      year_end: 1776,
+      sort_order: 1,
+    },
+    {
+      country_id: usa.id,
+      period: 'Indépendance et expansion',
+      title: 'La naissance des États-Unis',
+      content: 'La Déclaration d\'indépendance est signée le 4 juillet 1776. La Constitution (1787) établit une république fédérale. Le pays s\'étend vers l\'ouest (Manifest Destiny). La guerre de Sécession (1861-1865) aboutit à l\'abolition de l\'esclavage.',
+      year_start: 1776,
+      year_end: 1898,
+      sort_order: 2,
+    },
+    {
+      country_id: usa.id,
+      period: 'Puissance mondiale',
+      title: 'Les États-Unis, superpuissance',
+      content: 'Les États-Unis émergent comme puissance mondiale après 1918. Après la Seconde Guerre mondiale, ils deviennent une superpuissance face à l\'URSS (Guerre froide). Depuis 1991, ils restent la première puissance économique et militaire mondiale.',
+      year_start: 1898,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for Japan
+  await knex('country_history').insert([
+    {
+      country_id: japon.id,
+      period: 'Japon ancien',
+      title: 'Le Japon ancien et féodal',
+      content: 'La civilisation japonaise se développe dès la période Jōmon. Le premier État japonais se forme au IVe siècle. L\'ère des samouraïs et des shoguns domine du XIIe au XIXe siècle. Le Japon reste largement isolé du monde extérieur pendant la période Edo (1603-1868).',
+      year_start: -300,
+      year_end: 1868,
+      sort_order: 1,
+    },
+    {
+      country_id: japon.id,
+      period: 'Ère Meiji et expansion',
+      title: 'La modernisation et l\'expansion',
+      content: 'La restauration Meiji (1868) transforme le Japon en puissance industrielle moderne. Victoires militaires contre la Chine (1895) et la Russie (1905). L\'expansion impérialiste en Asie mène à la Seconde Guerre mondiale et à la défaite de 1945.',
+      year_start: 1868,
+      year_end: 1945,
+      sort_order: 2,
+    },
+    {
+      country_id: japon.id,
+      period: 'Japon contemporain',
+      title: 'Le miracle économique japonais',
+      content: 'Après la défaite de 1945, le Japon se reconstruit sous l\'occupation américaine. Le « miracle économique » en fait la deuxième puissance mondiale dans les années 1980. Malgré des décennies de stagnation, le Japon reste une puissance technologique et culturelle majeure.',
+      year_start: 1945,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for Greece
+  await knex('country_history').insert([
+    {
+      country_id: grece.id,
+      period: 'Grèce antique',
+      title: 'Le berceau de la civilisation occidentale',
+      content: 'La Grèce antique invente la démocratie, la philosophie et le théâtre. Les cités-États (Athènes, Sparte) s\'affrontent et résistent aux Perses (Marathon, Thermopyles, Salamine). Alexandre le Grand conquiert un immense empire jusqu\'en Inde.',
+      year_start: -800,
+      year_end: -146,
+      sort_order: 1,
+    },
+    {
+      country_id: grece.id,
+      period: 'Domination étrangère',
+      title: 'De Rome à l\'Empire ottoman',
+      content: 'La Grèce est conquise par Rome (146 av. J.-C.), puis fait partie de l\'Empire byzantin. Constantinople tombe en 1453 et la Grèce passe sous domination ottomane pendant près de quatre siècles.',
+      year_start: -146,
+      year_end: 1821,
+      sort_order: 2,
+    },
+    {
+      country_id: grece.id,
+      period: 'Grèce moderne',
+      title: 'L\'indépendance et la Grèce moderne',
+      content: 'La guerre d\'indépendance (1821-1829) libère la Grèce de l\'Empire ottoman. Le pays s\'agrandit au XIXe et XXe siècles. Après la dictature des colonels (1967-1974), la Grèce rejoint la CEE en 1981 et adopte l\'euro en 2001.',
+      year_start: 1821,
+      year_end: null,
+      sort_order: 3,
+    },
+  ]);
+
+  // History for China
+  await knex('country_history').insert([
+    {
+      country_id: chine.id,
+      period: 'Chine impériale',
+      title: 'Les dynasties chinoises',
+      content: 'La Chine est l\'une des plus anciennes civilisations continues. Les dynasties Shang, Zhou, Qin (Grande Muraille), Han (Route de la soie), Tang et Song développent des inventions majeures : papier, imprimerie, boussole, poudre à canon.',
+      year_start: -1600,
+      year_end: 1644,
+      sort_order: 1,
+    },
+    {
+      country_id: chine.id,
+      period: 'Déclin et révolutions',
+      title: 'La fin de l\'Empire et les révolutions',
+      content: 'La dynastie Qing (1644-1912) voit le déclin face aux puissances occidentales (guerres de l\'opium). La république est proclamée en 1912 par Sun Yat-sen. La guerre civile oppose nationalistes et communistes. Mao Zedong proclame la République populaire en 1949.',
+      year_start: 1644,
+      year_end: 1949,
+      sort_order: 2,
+    },
+    {
+      country_id: chine.id,
+      period: 'Chine contemporaine',
+      title: 'La Chine contemporaine',
+      content: 'Sous Mao, la Chine connaît le Grand Bond en avant et la Révolution culturelle. Deng Xiaoping lance les réformes économiques en 1978. La Chine devient la deuxième puissance économique mondiale et un acteur géopolitique incontournable.',
+      year_start: 1949,
+      year_end: null,
+      sort_order: 3,
     },
   ]);
 

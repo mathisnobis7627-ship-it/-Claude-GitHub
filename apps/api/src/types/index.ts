@@ -31,68 +31,103 @@ export interface ApiResponse<T = unknown> {
 // ── Country ─────────────────────────────────────────────────────────────────
 
 export interface Country {
-  id: number;
-  code: string; // ISO 3166-1 alpha-2
+  id: string;
   name: string;
-  official_name: string;
-  continent: string;
-  region: string;
-  capital: string;
+  official_name: string | null;
+  code_iso2: string;
+  code_iso3: string;
+  capital: string | null;
+  region: string | null;
+  subregion: string | null;
+  continent: string | null;
   population: number;
-  area_km2: number;
-  flag_url: string;
+  area_km2: number | null;
+  languages: Record<string, string>;
+  currencies: Record<string, { name: string; symbol: string }>;
+  flag_url: string | null;
+  coat_of_arms_url: string | null;
+  map_url: string | null;
+  latitude: number | null;
+  longitude: number | null;
+  borders: string[];
+  timezones: string[];
+  government_type: string | null;
+  political_summary: string | null;
+  gdp_usd: number | null;
+  hdi: number | null;
+  metadata: Record<string, unknown>;
   created_at: Date;
   updated_at: Date;
 }
 
 export interface CountryGeography {
-  id: number;
-  country_id: number;
-  climate: string;
-  terrain: string;
+  id: string;
+  country_id: string;
+  climate: string | null;
+  terrain: string | null;
   natural_resources: string[];
-  major_rivers: string[];
-  major_mountains: string[];
-  borders: string[];
-  coastline_km: number;
-  highest_point: string;
-  lowest_point: string;
+  land_use: Record<string, number>;
+  elevation_highest: string | null;
+  elevation_lowest: string | null;
+  coastline_km: number | null;
+  description_text: string | null;
 }
 
 export interface CountryHistory {
-  id: number;
-  country_id: number;
+  id: string;
+  country_id: string;
   period: string;
   title: string;
-  description: string;
-  start_year: number;
-  end_year: number | null;
-  key_events: string[];
+  content: string | null;
+  year_start: number | null;
+  year_end: number | null;
+  sort_order: number;
+}
+
+export interface CountryEvent {
+  id: string;
+  country_id: string;
+  event_id: string;
+  relevance: string | null;
+}
+
+export interface CountryQuiz {
+  id: string;
+  country_id: string;
+  quiz_id: string;
 }
 
 // ── Person ──────────────────────────────────────────────────────────────────
 
 export type PersonCategory =
-  | 'philosophers'
-  | 'scientists'
-  | 'artists'
-  | 'writers'
-  | 'musicians'
-  | 'leaders'
-  | 'explorers';
+  | 'philosopher'
+  | 'scientist'
+  | 'artist'
+  | 'writer'
+  | 'musician'
+  | 'politician'
+  | 'explorer'
+  | 'inventor';
 
 export interface Person {
-  id: number;
+  id: string;
   slug: string;
   first_name: string;
   last_name: string;
-  birth_date: string;
+  full_name: string;
+  birth_date: string | null;
   death_date: string | null;
-  nationality: string;
+  birth_place: string | null;
+  death_place: string | null;
+  nationality: string | null;
   category: PersonCategory;
-  biography: string;
-  portrait_url: string;
+  subcategory: string | null;
+  portrait_url: string | null;
+  summary: string | null;
+  biography_text: string | null;
   notable_works: string[];
+  quotes: string[];
+  era: string | null;
   created_at: Date;
   updated_at: Date;
 }
@@ -103,131 +138,195 @@ export type ArticleCategory =
   | 'geography'
   | 'history'
   | 'geology'
-  | 'wars'
-  | 'civilizations'
   | 'science'
-  | 'culture';
+  | 'culture'
+  | 'war'
+  | 'politics';
+
+export type DifficultyLevel = 'debutant' | 'intermediaire' | 'avance';
 
 export interface Article {
-  id: number;
+  id: string;
   slug: string;
   title: string;
-  excerpt: string;
-  content: string;
+  subtitle: string | null;
+  content: string | null;
+  summary: string | null;
   category: ArticleCategory;
+  subcategory: string | null;
+  cover_image_url: string | null;
+  author: string | null;
+  reading_time_minutes: number | null;
+  difficulty_level: DifficultyLevel;
   tags: string[];
-  author: string;
-  cover_image_url: string;
-  reading_time_minutes: number;
+  metadata: Record<string, unknown>;
   published: boolean;
-  published_at: Date | null;
   created_at: Date;
   updated_at: Date;
 }
 
+export interface ArticleSection {
+  id: string;
+  article_id: string;
+  title: string;
+  content: string | null;
+  sort_order: number;
+  image_url: string | null;
+}
+
 // ── Timeline ────────────────────────────────────────────────────────────────
 
-export interface TimelineEvent {
-  id: number;
+export type HistoricalEra =
+  | 'prehistoire'
+  | 'antiquite'
+  | 'moyen_age'
+  | 'renaissance'
+  | 'temps_modernes'
+  | 'epoque_contemporaine';
+
+export interface HistoricalPeriod {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  year_start: number | null;
+  year_end: number | null;
+  era: HistoricalEra;
+  color_hex: string | null;
+}
+
+export interface HistoricalEvent {
+  id: string;
+  period_id: string;
   title: string;
-  description: string;
-  date: string;
-  year: number;
-  era: 'BCE' | 'CE';
-  category: string;
-  location: string;
-  significance: string;
-  related_persons: number[];
-  related_countries: string[];
+  slug: string;
+  description: string | null;
+  detailed_content: string | null;
+  date_display: string | null;
+  year: number | null;
+  month: number | null;
+  day: number | null;
+  location: string | null;
+  latitude: number | null;
+  longitude: number | null;
+  importance: number;
+  category: string | null;
   image_url: string | null;
   created_at: Date;
   updated_at: Date;
 }
 
-export interface TimelinePeriod {
-  id: number;
+export interface War {
+  id: string;
   name: string;
-  description: string;
-  start_year: number;
-  end_year: number;
-  era: 'BCE' | 'CE';
-  color: string;
-  key_characteristics: string[];
+  slug: string;
+  description: string | null;
+  detailed_content: string | null;
+  year_start: number | null;
+  year_end: number | null;
+  location: string | null;
+  belligerents: Record<string, string[]>;
+  casualties_estimate: string | null;
+  outcome: string | null;
+  consequences: string | null;
+  related_event_ids: string[];
 }
 
 // ── Curriculum (French School) ──────────────────────────────────────────────
 
-export type CurriculumLevel =
-  | 'cp'
-  | 'ce1'
-  | 'ce2'
-  | 'cm1'
-  | 'cm2'
-  | '6eme'
-  | '5eme'
-  | '4eme'
-  | '3eme'
-  | '2nde'
-  | '1ere'
-  | 'terminale';
+export type SchoolCycle = 'cycle3' | 'cycle4' | 'lycee';
 
-export type CurriculumSubject =
-  | 'histoire'
-  | 'geographie'
-  | 'sciences'
-  | 'emc';
+export interface SchoolLevel {
+  id: string;
+  name: string;
+  slug: string;
+  cycle: SchoolCycle;
+  sort_order: number;
+}
+
+export interface Subject {
+  id: string;
+  name: string;
+  slug: string;
+  icon: string | null;
+}
 
 export interface CurriculumChapter {
-  id: number;
-  level: CurriculumLevel;
-  subject: CurriculumSubject;
-  chapter_number: number;
+  id: string;
+  level_id: string;
+  subject_id: string;
   title: string;
-  description: string;
+  slug: string;
+  description: string | null;
   objectives: string[];
   key_concepts: string[];
-  resources: string[];
-  created_at: Date;
-  updated_at: Date;
+  sort_order: number;
+}
+
+export interface CurriculumLesson {
+  id: string;
+  chapter_id: string;
+  title: string;
+  content: string | null;
+  summary: string | null;
+  key_dates: { date: string; event: string }[];
+  key_figures: string[];
+  vocabulary: { term: string; definition: string }[];
+  sort_order: number;
 }
 
 // ── Quiz ────────────────────────────────────────────────────────────────────
 
+export type QuestionType = 'qcm' | 'vrai_faux' | 'texte_libre' | 'association';
+
 export interface Quiz {
-  id: number;
+  id: string;
   title: string;
-  description: string;
-  category: string;
-  difficulty: 'easy' | 'medium' | 'hard';
-  time_limit_seconds: number;
-  questions: QuizQuestion[];
+  slug: string;
+  description: string | null;
+  category: string | null;
+  subcategory: string | null;
+  difficulty_level: DifficultyLevel;
+  level_id: string | null;
+  time_limit_seconds: number | null;
+  question_count: number;
+  cover_image_url: string | null;
   created_at: Date;
   updated_at: Date;
 }
 
 export interface QuizQuestion {
-  id: number;
-  quiz_id: number;
-  question: string;
-  options: string[];
-  correct_answer: number;
-  explanation: string;
+  id: string;
+  quiz_id: string;
+  question_text: string;
+  question_type: QuestionType;
+  image_url: string | null;
+  explanation: string | null;
+  sort_order: number;
   points: number;
 }
 
+export interface QuizOption {
+  id: string;
+  question_id: string;
+  option_text: string;
+  is_correct: boolean;
+  sort_order: number;
+}
+
 export interface QuizSubmission {
-  quiz_id: number;
-  answers: { question_id: number; selected_option: number }[];
+  quiz_id: string;
+  answers: { question_id: string; selected_option: number }[];
 }
 
 export interface QuizResult {
-  quiz_id: number;
+  quiz_id: string;
   total_questions: number;
   correct_answers: number;
   score: number;
   percentage: number;
   details: {
-    question_id: number;
+    question_id: string;
     correct: boolean;
     correct_answer: number;
     selected_option: number;
@@ -237,11 +336,11 @@ export interface QuizResult {
 
 // ── Search ──────────────────────────────────────────────────────────────────
 
-export type SearchType = 'countries' | 'persons' | 'articles' | 'events' | 'all';
+export type SearchEntityType = 'country' | 'person' | 'article' | 'event' | 'lesson' | 'quiz' | 'video';
 
 export interface SearchQuery {
   q: string;
-  type?: SearchType;
+  type?: SearchEntityType | 'all';
   category?: string;
   page?: number;
   limit?: number;
@@ -249,7 +348,7 @@ export interface SearchQuery {
 
 export interface SearchResult {
   type: string;
-  id: number;
+  id: string;
   title: string;
   excerpt: string;
   slug?: string;
@@ -260,17 +359,30 @@ export interface SearchResult {
 // ── Video ───────────────────────────────────────────────────────────────────
 
 export interface Video {
-  id: number;
+  id: string;
   title: string;
-  description: string;
-  url: string;
-  thumbnail_url: string;
-  duration_seconds: number;
-  topic: string;
+  slug: string;
+  description: string | null;
+  youtube_id: string;
+  duration_seconds: number | null;
+  thumbnail_url: string | null;
+  category: string | null;
+  subcategory: string | null;
+  difficulty_level: DifficultyLevel;
+  level_id: string | null;
   tags: string[];
-  source: string;
+  transcript: string | null;
   created_at: Date;
   updated_at: Date;
+}
+
+export interface VideoChapter {
+  id: string;
+  video_id: string;
+  title: string;
+  start_seconds: number;
+  end_seconds: number | null;
+  sort_order: number;
 }
 
 // ── Error ───────────────────────────────────────────────────────────────────

@@ -32,7 +32,7 @@ export class CountriesService {
 
   async getByCode(code: string): Promise<Country> {
     const country = await db('countries')
-      .where({ code: code.toUpperCase() })
+      .where({ code_iso2: code.toUpperCase() })
       .first();
 
     if (!country) {
@@ -61,9 +61,33 @@ export class CountriesService {
 
     const history = await db('country_history')
       .where({ country_id: country.id })
-      .orderBy('start_year', 'asc');
+      .orderBy('year_start', 'asc');
 
     return history;
+  }
+
+  async getEvents(code: string): Promise<any[]> {
+    const country = await this.getByCode(code);
+
+    const events = await db('country_events')
+      .join('historical_events', 'country_events.event_id', 'historical_events.id')
+      .where('country_events.country_id', country.id)
+      .select('historical_events.*', 'country_events.relevance')
+      .orderBy('historical_events.year', 'asc');
+
+    return events;
+  }
+
+  async getQuizzes(code: string): Promise<any[]> {
+    const country = await this.getByCode(code);
+
+    const quizzes = await db('country_quizzes')
+      .join('quizzes', 'country_quizzes.quiz_id', 'quizzes.id')
+      .where('country_quizzes.country_id', country.id)
+      .select('quizzes.*')
+      .orderBy('quizzes.title', 'asc');
+
+    return quizzes;
   }
 }
 

@@ -4,15 +4,20 @@ export async function seed(knex: Knex): Promise<void> {
   await knex('search_index').del();
 
   // Index countries
-  const countries = await knex('countries').select('id', 'name', 'capital', 'region', 'continent');
-  const countryEntries = countries.map((c: any) => ({
-    entity_type: 'country',
-    entity_id: c.id,
-    title: c.name,
-    content_preview: `${c.name} — Capitale : ${c.capital}. Région : ${c.region}. Continent : ${c.continent}.`,
-    category: 'geographie',
-    tags: JSON.stringify([c.region, c.continent]),
-  }));
+  const countries = await knex('countries').select('id', 'name', 'capital', 'region', 'continent', 'political_summary', 'government_type');
+  const countryEntries = countries.map((c: any) => {
+    let preview = `${c.name} — Capitale : ${c.capital}. Région : ${c.region}. Continent : ${c.continent}.`;
+    if (c.government_type) preview += ` Régime : ${c.government_type}.`;
+    if (c.political_summary) preview += ` ${c.political_summary}`;
+    return {
+      entity_type: 'country',
+      entity_id: c.id,
+      title: c.name,
+      content_preview: preview,
+      category: 'geographie',
+      tags: JSON.stringify([c.region, c.continent]),
+    };
+  });
 
   // Index persons
   const persons = await knex('persons').select('id', 'full_name', 'category', 'summary', 'nationality');

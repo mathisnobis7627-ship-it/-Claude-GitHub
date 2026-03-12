@@ -50,6 +50,27 @@ export class CountriesController {
       next(error);
     }
   }
+  async getEvents(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { code } = req.params;
+      const events = await countriesService.getEvents(code);
+
+      res.json({ success: true, data: events });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  async getQuizzes(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { code } = req.params;
+      const quizzes = await countriesService.getQuizzes(code);
+
+      res.json({ success: true, data: quizzes });
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 export const countriesController = new CountriesController();
