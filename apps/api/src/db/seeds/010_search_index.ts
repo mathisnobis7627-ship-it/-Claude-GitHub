@@ -20,15 +20,19 @@ export async function seed(knex: Knex): Promise<void> {
   });
 
   // Index persons
-  const persons = await knex('persons').select('id', 'full_name', 'category', 'summary', 'nationality');
-  const personEntries = persons.map((p: any) => ({
-    entity_type: 'person',
-    entity_id: p.id,
-    title: p.full_name,
-    content_preview: p.summary,
-    category: p.category,
-    tags: JSON.stringify([p.nationality, p.category]),
-  }));
+  const persons = await knex('persons').select('id', 'full_name', 'category', 'subcategory', 'summary', 'nationality', 'historical_importance');
+  const personEntries = persons.map((p: any) => {
+    let preview = p.summary || '';
+    if (p.historical_importance) preview += ` ${p.historical_importance}`;
+    return {
+      entity_type: 'person',
+      entity_id: p.id,
+      title: p.full_name,
+      content_preview: preview,
+      category: p.category,
+      tags: JSON.stringify([p.nationality, p.category, p.subcategory].filter(Boolean)),
+    };
+  });
 
   // Index articles
   const articles = await knex('articles').select('id', 'title', 'summary', 'category', 'tags').where('published', true);

@@ -107,6 +107,8 @@ export interface Person extends Timestamps {
   notable_works: NotableWork[];
   quotes: Quote[];
   era: string | null;
+  historical_importance: string | null;
+  anecdote: string | null;
 }
 
 export interface NotableWork {

@@ -128,6 +128,8 @@ export interface Person {
   notable_works: string[];
   quotes: string[];
   era: string | null;
+  historical_importance: string | null;
+  anecdote: string | null;
   created_at: Date;
   updated_at: Date;
 }
