@@ -1,0 +1,26 @@
+{
+  "name": "atlas-edtech",
+  "version": "1.0.0",
+  "description": "Plateforme éducative interactive - Géographie, Histoire, Géologie, Personnalités",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:migrate": "npm run --workspace=apps/api db:migrate",
+    "db:seed": "npm run --workspace=apps/api db:seed"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
