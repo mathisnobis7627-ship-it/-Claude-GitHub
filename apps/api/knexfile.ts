@@ -6,11 +6,11 @@ dotenv.config();
 const commonConfig: Partial<Knex.Config> = {
   client: 'pg',
   migrations: {
-    directory: './src/migrations',
+    directory: './src/db/migrations',
     extension: 'ts',
   },
   seeds: {
-    directory: './src/seeds',
+    directory: './src/db/seeds',
     extension: 'ts',
   },
   pool: {
