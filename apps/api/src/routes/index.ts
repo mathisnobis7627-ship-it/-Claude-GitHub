@@ -7,6 +7,7 @@ import curriculumRouter from './curriculum';
 import quizzesRouter from './quizzes';
 import searchRouter from './search';
 import videosRouter from './videos';
+import progressionRouter from './progression';
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use('/curriculum', curriculumRouter);
 router.use('/quizzes', quizzesRouter);
 router.use('/search', searchRouter);
 router.use('/videos', videosRouter);
+router.use('/progression', progressionRouter);
 
 export default router;

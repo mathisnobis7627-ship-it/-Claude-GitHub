@@ -9,6 +9,9 @@ const router = Router();
 // GET /quizzes - List all quizzes with pagination and filters
 router.get('/', (req, res, next) => quizzesController.getAll(req, res, next));
 
+// GET /quizzes/chapter/:chapterId - Get quizzes for a specific chapter
+router.get('/chapter/:chapterId', (req, res, next) => quizzesController.getByChapter(req, res, next));
+
 // GET /quizzes/:id - Get quiz by ID (includes questions without correct answers)
 router.get('/:id', (req, res, next) => quizzesController.getById(req, res, next));
 

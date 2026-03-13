@@ -291,7 +291,7 @@ export interface VocabularyEntry {
 
 // --- Quizzes (006) ---
 
-export type QuestionType = 'qcm' | 'vrai_faux' | 'texte_libre' | 'association';
+export type QuestionType = 'qcm' | 'vrai_faux' | 'texte_libre' | 'association' | 'carte_a_completer' | 'chronologie';
 
 export interface Quiz extends Timestamps {
   id: string;
@@ -302,9 +302,36 @@ export interface Quiz extends Timestamps {
   subcategory: string | null;
   difficulty_level: DifficultyLevel;
   level_id: string | null;
+  chapter_id: string | null;
   time_limit_seconds: number | null;
   question_count: number;
   cover_image_url: string | null;
+}
+
+export interface MapZone {
+  zone_id: string;
+  label: string;
+  x: number;
+  y: number;
+  correct_answer: string;
+}
+
+export interface MapData {
+  image_url: string;
+  zones: MapZone[];
+  instruction: string;
+}
+
+export interface ChronologyEvent {
+  event_id: string;
+  label: string;
+  date: string;
+  correct_position: number;
+}
+
+export interface ChronologyData {
+  instruction: string;
+  events: ChronologyEvent[];
 }
 
 export interface QuizQuestion {
@@ -312,8 +339,12 @@ export interface QuizQuestion {
   quiz_id: string;
   question_text: string;
   question_type: QuestionType;
+  difficulty_level: DifficultyLevel;
+  chapter_id: string | null;
   image_url: string | null;
   explanation: string | null;
+  map_data: MapData | null;
+  chronology_data: ChronologyData | null;
   sort_order: number;
   points: number;
 }
@@ -351,6 +382,57 @@ export interface VideoChapter {
   start_seconds: number;
   end_seconds: number | null;
   sort_order: number;
+}
+
+// --- Users & Progression ---
+
+export interface User extends Timestamps {
+  id: string;
+  username: string;
+  display_name: string;
+  email: string | null;
+  avatar_url: string | null;
+  level_id: string | null;
+}
+
+export interface UserQuizAttempt extends Timestamps {
+  id: string;
+  user_id: string;
+  quiz_id: string;
+  score: number;
+  max_score: number;
+  percentage: number;
+  correct_answers: number;
+  total_questions: number;
+  time_spent_seconds: number | null;
+  completed_at: string;
+}
+
+export interface UserChapterProgress extends Timestamps {
+  id: string;
+  user_id: string;
+  chapter_id: string;
+  best_score_easy: number;
+  best_score_medium: number;
+  best_score_hard: number;
+  attempts_easy: number;
+  attempts_medium: number;
+  attempts_hard: number;
+  mastery_percentage: number;
+  last_attempt_at: string | null;
+}
+
+export interface UserLevelStats extends Timestamps {
+  id: string;
+  user_id: string;
+  level_id: string;
+  total_quizzes_completed: number;
+  total_questions_answered: number;
+  total_correct_answers: number;
+  average_score: number;
+  current_streak: number;
+  best_streak: number;
+  overall_mastery: number;
 }
 
 // --- Search Index (008) ---
