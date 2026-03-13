@@ -1,8345 +1,441 @@
 export const quizzes6eme = [
+  // ============================================================
+  // CHAPTER 1: Les debuts de l'humanite
+  // ============================================================
   {
-    "chapterSlug": "6e-hist-debuts-humanite",
-    "title": "Les débuts de l'humanité - Facile",
-    "slug": "quiz-6e-hist-debuts-humanite-facile",
-    "description": "Quiz facile sur \"Les débuts de l'humanité\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
+    chapterSlug: '6e-hist-debuts-humanite',
+    title: 'Les debuts de l\'humanite - Facile',
+    slug: 'quiz-6e-hist-debuts-humanite-facile',
+    description: 'Quiz de niveau debutant sur les debuts de l\'humanite et la Prehistoire.',
+    category: 'histoire',
+    difficulty_level: 'debutant',
+    levelSlug: '6eme',
+    questions: [
       {
-        "question_text": "Comment appelle-t-on Paléolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Paléolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Sur quel continent les premiers humains sont-ils apparus ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les plus anciens fossiles d\'hominides ont ete retrouves en Afrique, notamment en Ethiopie et au Tchad.',
+        points: 1,
+        options: [
+          { text: 'Europe', is_correct: false },
+          { text: 'Afrique', is_correct: true },
+          { text: 'Asie', is_correct: false },
+          { text: 'Amerique', is_correct: false },
+        ],
       },
       {
-        "question_text": "Quel terme désigne Homo sapiens ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Homo sapiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Comment appelle-t-on la periode la plus ancienne de l\'histoire humaine ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La Prehistoire est la periode qui precede l\'invention de l\'ecriture, vers 3300 avant J.-C.',
+        points: 1,
+        options: [
+          { text: 'L\'Antiquite', is_correct: false },
+          { text: 'Le Moyen Age', is_correct: false },
+          { text: 'La Prehistoire', is_correct: true },
+          { text: 'La Renaissance', is_correct: false },
+        ],
       },
       {
-        "question_text": "Lequel de ces éléments est associé à outils en pierre ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "outils en pierre est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": true
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel est le nom donne aux premiers outils en pierre taillee ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les galets amenages, aussi appeles choppers, sont les premiers outils fabriques par les hominides il y a environ 2,5 millions d\'annees.',
+        points: 1,
+        options: [
+          { text: 'Des bifaces', is_correct: false },
+          { text: 'Des galets amenages', is_correct: true },
+          { text: 'Des haches polies', is_correct: false },
+          { text: 'Des fleches', is_correct: false },
+        ],
       },
       {
-        "question_text": "Lequel de ces éléments est associé à art pariétal ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "art pariétal est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": true
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel etait le mode de vie des premiers humains ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les premiers humains etaient des nomades qui se deplacaient pour suivre le gibier et trouver de la nourriture.',
+        points: 1,
+        options: [
+          { text: 'Sedentaires', is_correct: false },
+          { text: 'Nomades', is_correct: true },
+          { text: 'Urbains', is_correct: false },
+          { text: 'Agriculteurs', is_correct: false },
+        ],
       },
       {
-        "question_text": "Quel terme désigne Lascaux ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Lascaux est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Lascaux",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Comment les premiers humains se nourrissaient-ils ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les premiers humains pratiquaient la chasse, la peche et la cueillette pour se nourrir.',
+        points: 1,
+        options: [
+          { text: 'Par l\'agriculture', is_correct: false },
+          { text: 'Par l\'elevage', is_correct: false },
+          { text: 'Par la chasse, la peche et la cueillette', is_correct: true },
+          { text: 'Par le commerce', is_correct: false },
+        ],
       },
       {
-        "question_text": "Lequel de ces éléments est associé à nomadisme ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "nomadisme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "nomadisme",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Le feu a ete maitrise par les humains durant la Prehistoire.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'La maitrise du feu date d\'environ 400 000 ans avant notre ere.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
       },
       {
-        "question_text": "Le concept de Lucy joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. Lucy est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
+        question_text: 'L\'Homo sapiens est apparu en Amerique.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'L\'Homo sapiens est apparu en Afrique il y a environ 300 000 ans, puis a migre vers les autres continents.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
       },
       {
-        "question_text": "biface est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. biface est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quelle celebre grotte francaise contient des peintures prehistoriques ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La grotte de Lascaux, en Dordogne, contient des peintures datant d\'environ 17 000 ans.',
+        points: 1,
+        options: [
+          { text: 'La grotte de Lascaux', is_correct: true },
+          { text: 'La grotte du Mas-d\'Azil', is_correct: false },
+          { text: 'La grotte de Rouffignac', is_correct: false },
+          { text: 'La grotte de Niaux', is_correct: false },
+        ],
       },
       {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : chasse-cueillette, Lascaux, Paléolithique, nomadisme.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Les débuts de l'humanité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Les débuts de l'humanité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 28,
-              "y": 37,
-              "correct_answer": "chasse-cueillette"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 67,
-              "y": 21,
-              "correct_answer": "Lascaux"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 34,
-              "y": 66,
-              "correct_answer": "Paléolithique"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 63,
-              "y": 68,
-              "correct_answer": "nomadisme"
-            }
-          ]
-        }
+        question_text: 'Identifiez sur la carte le continent ou sont apparus les premiers humains.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'debutant',
+        explanation: 'L\'Afrique est le berceau de l\'humanite. Les plus anciens fossiles d\'hominides y ont ete retrouves.',
+        points: 1,
+        map_data: {
+          image_url: '/maps/monde-continents.png',
+          instruction: 'Cliquez sur le continent ou sont apparus les premiers humains.',
+          zones: [
+            { zone_id: 'z1', label: 'Berceau de l\'humanite', x: 55, y: 55, correct_answer: 'Afrique' },
+          ],
+        },
+        options: [],
       },
       {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Les débuts de l'humanité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt3",
-              "label": "outils en pierre",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "Homo sapiens",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "Paléolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "art pariétal",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "Lascaux",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
+        question_text: 'Classez ces etapes de l\'evolution humaine dans l\'ordre chronologique.',
+        question_type: 'chronologie',
+        difficulty_level: 'debutant',
+        explanation: 'L\'evolution humaine s\'etend sur plusieurs millions d\'annees, depuis les premiers hominides jusqu\'a l\'Homo sapiens.',
+        points: 1,
+        chronology_data: {
+          instruction: 'Placez ces evenements dans l\'ordre chronologique, du plus ancien au plus recent.',
+          events: [
+            { event_id: 'e1', label: 'Apparition des premiers hominides', date: '-7 millions d\'annees', correct_position: 1 },
+            { event_id: 'e2', label: 'Premiers outils en pierre', date: '-2,5 millions d\'annees', correct_position: 2 },
+            { event_id: 'e3', label: 'Maitrise du feu', date: '-400 000 ans', correct_position: 3 },
+            { event_id: 'e4', label: 'Apparition de l\'Homo sapiens', date: '-300 000 ans', correct_position: 4 },
+          ],
+        },
+        options: [],
+      },
+    ],
   },
   {
-    "chapterSlug": "6e-hist-debuts-humanite",
-    "title": "Les débuts de l'humanité - Intermédiaire",
-    "slug": "quiz-6e-hist-debuts-humanite-intermediaire",
-    "description": "Quiz intermédiaire sur \"Les débuts de l'humanité\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
+    chapterSlug: '6e-hist-debuts-humanite',
+    title: 'Les debuts de l\'humanite - Intermediaire',
+    slug: 'quiz-6e-hist-debuts-humanite-intermediaire',
+    description: 'Quiz de niveau intermediaire sur les debuts de l\'humanite et la Prehistoire.',
+    category: 'histoire',
+    difficulty_level: 'intermediaire',
+    levelSlug: '6eme',
+    questions: [
       {
-        "question_text": "En quoi Paléolithique a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Paléolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel hominide est considere comme l\'un des plus anciens ancetres de l\'homme, decouvert au Tchad ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Toumai (Sahelanthropus tchadensis), decouvert au Tchad en 2001, date d\'environ 7 millions d\'annees.',
+        points: 2,
+        options: [
+          { text: 'Lucy', is_correct: false },
+          { text: 'Toumai', is_correct: true },
+          { text: 'Cro-Magnon', is_correct: false },
+          { text: 'Neandertal', is_correct: false },
+        ],
       },
       {
-        "question_text": "Pourquoi Homo sapiens est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Homo sapiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": true
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quelle est la principale difference entre le Paleolithique ancien et le Paleolithique superieur en termes d\'outils ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Au Paleolithique superieur, les outils deviennent plus diversifies et plus elabores, avec l\'apparition de lames, de burins et d\'outils en os.',
+        points: 2,
+        options: [
+          { text: 'Les outils du Paleolithique superieur sont en metal', is_correct: false },
+          { text: 'Les outils du Paleolithique superieur sont plus diversifies et elabores', is_correct: true },
+          { text: 'Il n\'y a aucune difference', is_correct: false },
+          { text: 'Les outils du Paleolithique ancien sont plus perfectionnes', is_correct: false },
+        ],
       },
       {
-        "question_text": "Quel est le lien entre outils en pierre et Paléolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "outils en pierre est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": true
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'L\'Homo sapiens et l\'Homme de Neandertal ont coexiste en Europe pendant plusieurs milliers d\'annees.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les deux especes ont coexiste en Europe entre environ 45 000 et 30 000 ans avant notre ere, et se sont meme metisses.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
       },
       {
-        "question_text": "Pourquoi art pariétal est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "art pariétal est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          }
-        ]
+        question_text: 'A quoi servait l\'art parietal (peintures dans les grottes) selon les historiens ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Plusieurs hypotheses existent : rituels magiques, pratiques religieuses, transmission de savoirs. La fonction exacte reste debattue.',
+        points: 2,
+        options: [
+          { text: 'Uniquement a decorer les habitations', is_correct: false },
+          { text: 'A des fins probablement rituelles ou symboliques', is_correct: true },
+          { text: 'A enseigner la lecture', is_correct: false },
+          { text: 'A effrayer les animaux', is_correct: false },
+        ],
       },
       {
-        "question_text": "Pourquoi Lascaux est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Lascaux est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "Lascaux",
-            "is_correct": true
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Qu\'est-ce que le biface ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le biface est un outil en pierre taillee sur les deux faces, utilise par Homo erectus et Homo sapiens pour couper, racler et creuser.',
+        points: 2,
+        options: [
+          { text: 'Un outil en pierre taillee sur les deux faces', is_correct: true },
+          { text: 'Un type de poterie', is_correct: false },
+          { text: 'Une arme en metal', is_correct: false },
+          { text: 'Un instrument de musique', is_correct: false },
+        ],
       },
       {
-        "question_text": "Quel est le lien entre nomadisme et Paléolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "nomadisme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "nomadisme",
-            "is_correct": true
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Lucy est un fossile d\'Homo sapiens.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'Lucy est un Australopithecus afarensis, decouvert en Ethiopie en 1974, datant d\'environ 3,2 millions d\'annees.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
       },
       {
-        "question_text": "Le concept de Lucy joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. Lucy est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel avantage la maitrise du feu a-t-elle apporte aux premiers humains ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le feu a permis de se chauffer, de cuire les aliments, de se proteger des predateurs et d\'eclairer les grottes.',
+        points: 2,
+        options: [
+          { text: 'Uniquement se chauffer', is_correct: false },
+          { text: 'Se chauffer, cuire les aliments, se proteger et s\'eclairer', is_correct: true },
+          { text: 'Uniquement cuire les aliments', is_correct: false },
+          { text: 'Fabriquer des outils en metal', is_correct: false },
+        ],
       },
       {
-        "question_text": "Le concept de biface joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. biface est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel phenomene a favorise les migrations humaines hors d\'Afrique ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les variations climatiques (glaciations) ont modifie les paysages et les ressources, poussant les humains a migrer.',
+        points: 2,
+        options: [
+          { text: 'Les guerres entre tribus', is_correct: false },
+          { text: 'Les variations climatiques et les glaciations', is_correct: true },
+          { text: 'L\'invention de l\'ecriture', is_correct: false },
+          { text: 'Le commerce maritime', is_correct: false },
+        ],
       },
       {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Homo sapiens, Lascaux, chasse-cueillette, outils en pierre.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Les débuts de l'humanité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Les débuts de l'humanité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 22,
-              "y": 38,
-              "correct_answer": "Homo sapiens"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 65,
-              "y": 30,
-              "correct_answer": "Lascaux"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 39,
-              "y": 79,
-              "correct_answer": "chasse-cueillette"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 67,
-              "y": 67,
-              "correct_answer": "outils en pierre"
-            }
-          ]
-        }
+        question_text: 'Placez sur la carte les regions ou l\'on a retrouve d\'importants fossiles d\'hominides.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'Afrique de l\'Est (Ethiopie, Kenya, Tanzanie) et l\'Afrique du Nord (Tchad, Maroc) sont des sites majeurs de decouvertes de fossiles.',
+        points: 2,
+        map_data: {
+          image_url: '/maps/afrique-sites-prehistoriques.png',
+          instruction: 'Identifiez les regions ou ont ete retrouves d\'importants fossiles d\'hominides.',
+          zones: [
+            { zone_id: 'z1', label: 'Decouverte de Lucy', x: 70, y: 40, correct_answer: 'Ethiopie' },
+            { zone_id: 'z2', label: 'Decouverte de Toumai', x: 40, y: 30, correct_answer: 'Tchad' },
+          ],
+        },
+        options: [],
       },
       {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Les débuts de l'humanité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "Homo sapiens",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "Paléolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "Lascaux",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt4",
-              "label": "art pariétal",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt3",
-              "label": "outils en pierre",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
+        question_text: 'Classez ces especes d\'hominides dans l\'ordre chronologique de leur apparition.',
+        question_type: 'chronologie',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'evolution humaine passe par plusieurs especes successives, meme si certaines ont coexiste.',
+        points: 2,
+        chronology_data: {
+          instruction: 'Classez ces especes de la plus ancienne a la plus recente.',
+          events: [
+            { event_id: 'e1', label: 'Australopitheque', date: '-4 millions d\'annees', correct_position: 1 },
+            { event_id: 'e2', label: 'Homo habilis', date: '-2,5 millions d\'annees', correct_position: 2 },
+            { event_id: 'e3', label: 'Homo erectus', date: '-1,8 million d\'annees', correct_position: 3 },
+            { event_id: 'e4', label: 'Homme de Neandertal', date: '-400 000 ans', correct_position: 4 },
+            { event_id: 'e5', label: 'Homo sapiens', date: '-300 000 ans', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
   },
   {
-    "chapterSlug": "6e-hist-debuts-humanite",
-    "title": "Les débuts de l'humanité - Difficile",
-    "slug": "quiz-6e-hist-debuts-humanite-avance",
-    "description": "Quiz difficile sur \"Les débuts de l'humanité\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
+    chapterSlug: '6e-hist-debuts-humanite',
+    title: 'Les debuts de l\'humanite - Avance',
+    slug: 'quiz-6e-hist-debuts-humanite-avance',
+    description: 'Quiz de niveau avance sur les debuts de l\'humanite et la Prehistoire.',
+    category: 'histoire',
+    difficulty_level: 'avance',
+    levelSlug: '6eme',
+    questions: [
       {
-        "question_text": "Quelle est la portée de Paléolithique sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Paléolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": true
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Pourquoi l\'Afrique de l\'Est est-elle souvent qualifiee de "berceau de l\'humanite" alors que des decouvertes importantes ont aussi ete faites ailleurs en Afrique ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La Rift Valley en Afrique de l\'Est offre des conditions geologiques exceptionnelles pour la conservation des fossiles, ce qui explique la concentration de decouvertes, mais l\'humanite a pu naitre dans d\'autres regions d\'Afrique.',
+        points: 3,
+        options: [
+          { text: 'Parce que les premiers humains ne vivaient qu\'en Afrique de l\'Est', is_correct: false },
+          { text: 'Parce que les conditions geologiques de la Rift Valley favorisent la conservation des fossiles', is_correct: true },
+          { text: 'Parce que les autres sites n\'ont jamais ete fouilles', is_correct: false },
+          { text: 'Parce que l\'Afrique de l\'Est a le climat le plus ancien', is_correct: false },
+        ],
       },
       {
-        "question_text": "Comparez Homo sapiens et Paléolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Homo sapiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": true
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          }
-        ]
+        question_text: 'En quoi la station debout (bipedie) a-t-elle ete un avantage decisif pour les hominides ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La bipedie a libere les mains pour fabriquer et utiliser des outils, permis de voir plus loin dans la savane et reduit l\'exposition au soleil.',
+        points: 3,
+        options: [
+          { text: 'Elle a uniquement permis de courir plus vite', is_correct: false },
+          { text: 'Elle a libere les mains, ameliore la vision et reduit l\'exposition au soleil', is_correct: true },
+          { text: 'Elle n\'a apporte aucun avantage particulier', is_correct: false },
+          { text: 'Elle a permis de nager plus facilement', is_correct: false },
+        ],
       },
       {
-        "question_text": "Comparez outils en pierre et Paléolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "outils en pierre est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "outils en pierre",
-            "is_correct": true
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quel role la fabrication d\'outils a-t-elle joue dans le developpement du cerveau humain ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La fabrication d\'outils necessite planification et coordination, ce qui a stimule le developpement cognitif et cerebral des hominides.',
+        points: 3,
+        options: [
+          { text: 'Aucun lien n\'existe entre outils et cerveau', is_correct: false },
+          { text: 'Les outils ont remplace le besoin d\'un gros cerveau', is_correct: false },
+          { text: 'La fabrication d\'outils a stimule le developpement cognitif', is_correct: true },
+          { text: 'Le cerveau a grossi uniquement grace a l\'alimentation carnee', is_correct: false },
+        ],
       },
       {
-        "question_text": "Analysez le rôle de art pariétal dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "art pariétal est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "art pariétal",
-            "is_correct": true
-          }
-        ]
+        question_text: 'Les peintures de la grotte Chauvet sont plus anciennes que celles de Lascaux.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La grotte Chauvet (Ardeche) date d\'environ 36 000 ans, tandis que Lascaux (Dordogne) date d\'environ 17 000 ans.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
       },
       {
-        "question_text": "Comparez Lascaux et Paléolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Lascaux est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "Lascaux",
-            "is_correct": true
-          },
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          }
-        ]
+        question_text: 'L\'Homme de Neandertal etait intellectuellement inferieur a l\'Homo sapiens selon les recherches recentes.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'Les recherches montrent que Neandertal avait des capacites cognitives complexes : il enterrait ses morts, fabriquait des outils elabores et utilisait des pigments.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
       },
       {
-        "question_text": "Comparez nomadisme et Paléolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "nomadisme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Paléolithique",
-            "is_correct": false
-          },
-          {
-            "text": "outils en pierre",
-            "is_correct": false
-          },
-          {
-            "text": "nomadisme",
-            "is_correct": true
-          },
-          {
-            "text": "Homo sapiens",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Comment les historiens expliquent-ils la disparition de l\'Homme de Neandertal ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Plusieurs facteurs sont evoques : competition avec Homo sapiens, changements climatiques, faible diversite genetique. La cause exacte fait toujours debat.',
+        points: 3,
+        options: [
+          { text: 'Il a ete extermine par Homo sapiens', is_correct: false },
+          { text: 'Un ensemble de facteurs : competition, climat, genetique', is_correct: true },
+          { text: 'Il a evolue pour devenir Homo sapiens', is_correct: false },
+          { text: 'Une epidemie unique l\'a decime', is_correct: false },
+        ],
       },
       {
-        "question_text": "Lucy est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. Lucy est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
+        question_text: 'Quelle decouverte archeologique suggere que les Neandertaliens avaient des pratiques funeraires ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Des sepultures neandertalliennes ont ete trouvees, notamment a La Chapelle-aux-Saints et Shanidar, avec des corps deposes intentionnellement.',
+        points: 3,
+        options: [
+          { text: 'Des temples en pierre', is_correct: false },
+          { text: 'Des sepultures avec des corps deposes intentionnellement', is_correct: true },
+          { text: 'Des textes religieux graves', is_correct: false },
+          { text: 'Des statues de divinites', is_correct: false },
+        ],
       },
       {
-        "question_text": "biface est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. biface est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
+        question_text: 'Pourquoi les scenes de chasse sont-elles rares dans l\'art parietal du Paleolithique superieur ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'L\'art parietal represente surtout des animaux isoles. Les scenes narratives de chasse sont rares, ce qui suggere une fonction symbolique ou rituelle plutot qu\'un simple recit du quotidien.',
+        points: 3,
+        options: [
+          { text: 'Parce que les humains ne chassaient pas', is_correct: false },
+          { text: 'Parce que l\'art avait probablement une fonction symbolique ou rituelle, pas narrative', is_correct: true },
+          { text: 'Parce qu\'ils ne savaient pas dessiner les humains', is_correct: false },
+          { text: 'Parce que les peintures de chasse ont toutes disparu', is_correct: false },
+        ],
       },
       {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Lascaux, biface, nomadisme, feu.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Les débuts de l'humanité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Les débuts de l'humanité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 36,
-              "y": 24,
-              "correct_answer": "Lascaux"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 62,
-              "y": 25,
-              "correct_answer": "biface"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 33,
-              "y": 72,
-              "correct_answer": "nomadisme"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 71,
-              "y": 71,
-              "correct_answer": "feu"
-            }
-          ]
-        }
+        question_text: 'Situez sur la carte les principales routes de migration d\'Homo sapiens hors d\'Afrique.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'avance',
+        explanation: 'Homo sapiens a quitte l\'Afrique par le Proche-Orient, puis a migre vers l\'Asie, l\'Europe et enfin l\'Oceanie et les Ameriques.',
+        points: 3,
+        map_data: {
+          image_url: '/maps/migrations-homo-sapiens.png',
+          instruction: 'Identifiez les etapes des migrations humaines.',
+          zones: [
+            { zone_id: 'z1', label: 'Point de depart', x: 55, y: 45, correct_answer: 'Afrique' },
+            { zone_id: 'z2', label: 'Premiere etape hors d\'Afrique', x: 62, y: 35, correct_answer: 'Proche-Orient' },
+            { zone_id: 'z3', label: 'Derniere region peuplee', x: 20, y: 60, correct_answer: 'Amerique du Sud' },
+          ],
+        },
+        options: [],
       },
       {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Les débuts de l'humanité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "Homo sapiens",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "art pariétal",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "Lascaux",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "outils en pierre",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Paléolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
+        question_text: 'Classez ces avancees culturelles et techniques dans l\'ordre chronologique.',
+        question_type: 'chronologie',
+        difficulty_level: 'avance',
+        explanation: 'Les progres techniques et culturels se sont acceleres au cours de la Prehistoire.',
+        points: 3,
+        chronology_data: {
+          instruction: 'Classez ces avancees de la plus ancienne a la plus recente.',
+          events: [
+            { event_id: 'e1', label: 'Premiers outils en pierre (galets amenages)', date: '-2,5 millions d\'annees', correct_position: 1 },
+            { event_id: 'e2', label: 'Maitrise du feu', date: '-400 000 ans', correct_position: 2 },
+            { event_id: 'e3', label: 'Premieres sepultures', date: '-100 000 ans', correct_position: 3 },
+            { event_id: 'e4', label: 'Art parietal (grotte Chauvet)', date: '-36 000 ans', correct_position: 4 },
+            { event_id: 'e5', label: 'Peintures de Lascaux', date: '-17 000 ans', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
   },
-  {
-    "chapterSlug": "6e-hist-revolution-neolithique",
-    "title": "La révolution néolithique - Facile",
-    "slug": "quiz-6e-hist-revolution-neolithique-facile",
-    "description": "Quiz facile sur \"La révolution néolithique\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel terme désigne Néolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Néolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": true
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à sédentarisation ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "sédentarisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": true
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne agriculture ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "agriculture est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "élevage",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": true
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à élevage ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "élevage est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à villages ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "villages est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "villages",
-            "is_correct": true
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne mégalithes ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "mégalithes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "mégalithes",
-            "is_correct": true
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "céramique est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. céramique est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "polissage n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. polissage est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Croissant fertile, mégalithes, sédentarisation, élevage.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"La révolution néolithique\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"La révolution néolithique\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 22,
-              "y": 34,
-              "correct_answer": "Croissant fertile"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 72,
-              "y": 26,
-              "correct_answer": "mégalithes"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 38,
-              "y": 73,
-              "correct_answer": "sédentarisation"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 75,
-              "y": 79,
-              "correct_answer": "élevage"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"La révolution néolithique\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Néolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt3",
-              "label": "agriculture",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "sédentarisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "élevage",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "villages",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-revolution-neolithique",
-    "title": "La révolution néolithique - Intermédiaire",
-    "slug": "quiz-6e-hist-revolution-neolithique-intermediaire",
-    "description": "Quiz intermédiaire sur \"La révolution néolithique\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel est le lien entre Néolithique et sédentarisation ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Néolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": true
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre sédentarisation et Néolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "sédentarisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": true
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi agriculture a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "agriculture est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": true
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi élevage a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "élevage est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Pourquoi villages est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "villages est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "villages",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre mégalithes et Néolithique ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "mégalithes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "mégalithes",
-            "is_correct": true
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "céramique n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. céramique est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de polissage joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. polissage est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : céramique, mégalithes, Néolithique, élevage.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"La révolution néolithique\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"La révolution néolithique\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 29,
-              "y": 29,
-              "correct_answer": "céramique"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 62,
-              "y": 21,
-              "correct_answer": "mégalithes"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 25,
-              "y": 73,
-              "correct_answer": "Néolithique"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 60,
-              "y": 72,
-              "correct_answer": "élevage"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"La révolution néolithique\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "élevage",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "sédentarisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt5",
-              "label": "villages",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "agriculture",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Néolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-revolution-neolithique",
-    "title": "La révolution néolithique - Difficile",
-    "slug": "quiz-6e-hist-revolution-neolithique-avance",
-    "description": "Quiz difficile sur \"La révolution néolithique\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Comparez Néolithique et sédentarisation dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Néolithique est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": true
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez sédentarisation et Néolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "sédentarisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "élevage",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": true
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez agriculture et Néolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "agriculture est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "agriculture",
-            "is_correct": true
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quelle est la portée de élevage sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "élevage est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "élevage",
-            "is_correct": true
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de villages dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "villages est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "villages",
-            "is_correct": true
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          },
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez mégalithes et Néolithique dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "mégalithes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "sédentarisation",
-            "is_correct": false
-          },
-          {
-            "text": "Néolithique",
-            "is_correct": false
-          },
-          {
-            "text": "mégalithes",
-            "is_correct": true
-          },
-          {
-            "text": "agriculture",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "céramique est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. céramique est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "polissage est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. polissage est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : villages, polissage, Néolithique, Croissant fertile.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"La révolution néolithique\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"La révolution néolithique\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 27,
-              "y": 26,
-              "correct_answer": "villages"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 61,
-              "y": 25,
-              "correct_answer": "polissage"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 29,
-              "y": 74,
-              "correct_answer": "Néolithique"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 71,
-              "y": 70,
-              "correct_answer": "Croissant fertile"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"La révolution néolithique\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Néolithique",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt2",
-              "label": "sédentarisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "élevage",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt3",
-              "label": "agriculture",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt5",
-              "label": "villages",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-premiers-etats",
-    "title": "Premiers États, premières écritures - Facile",
-    "slug": "quiz-6e-hist-premiers-etats-facile",
-    "description": "Quiz facile sur \"Premiers États, premières écritures\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Lequel de ces éléments est associé à Mésopotamie ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Mésopotamie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne Égypte ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Égypte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Égypte",
-            "is_correct": true
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne cunéiforme ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "cunéiforme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à hiéroglyphes ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "hiéroglyphes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "hiéroglyphes",
-            "is_correct": true
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à pharaon ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "pharaon est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "pharaon",
-            "is_correct": true
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne pyramides ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "pyramides est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "pyramides",
-            "is_correct": true
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de Nil joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. Nil est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "cité-État est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. cité-État est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : scribes, pharaon, hiéroglyphes, cité-État.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Premiers États, premières écritures\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Premiers États, premières écritures\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 28,
-              "y": 29,
-              "correct_answer": "scribes"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 75,
-              "y": 27,
-              "correct_answer": "pharaon"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 28,
-              "y": 66,
-              "correct_answer": "hiéroglyphes"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 73,
-              "y": 74,
-              "correct_answer": "cité-État"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Premiers États, premières écritures\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Mésopotamie",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt2",
-              "label": "Égypte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "cunéiforme",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt4",
-              "label": "hiéroglyphes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "pharaon",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-premiers-etats",
-    "title": "Premiers États, premières écritures - Intermédiaire",
-    "slug": "quiz-6e-hist-premiers-etats-intermediaire",
-    "description": "Quiz intermédiaire sur \"Premiers États, premières écritures\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "En quoi Mésopotamie a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Mésopotamie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": true
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Pourquoi Égypte est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Égypte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": true
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi cunéiforme a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "cunéiforme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": true
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Pourquoi hiéroglyphes est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "hiéroglyphes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre pharaon et Mésopotamie ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "pharaon est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "pharaon",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi pyramides a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "pyramides est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "pyramides",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Nil n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. Nil est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "cité-État n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. cité-État est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : scribes, cité-État, Nil, Mésopotamie.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Premiers États, premières écritures\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Premiers États, premières écritures\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 30,
-              "y": 26,
-              "correct_answer": "scribes"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 77,
-              "y": 27,
-              "correct_answer": "cité-État"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 36,
-              "y": 70,
-              "correct_answer": "Nil"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 64,
-              "y": 74,
-              "correct_answer": "Mésopotamie"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Premiers États, premières écritures\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "pharaon",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "cunéiforme",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Mésopotamie",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "hiéroglyphes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "Égypte",
-              "date": "Étape 2",
-              "correct_position": 2
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-premiers-etats",
-    "title": "Premiers États, premières écritures - Difficile",
-    "slug": "quiz-6e-hist-premiers-etats-avance",
-    "description": "Quiz difficile sur \"Premiers États, premières écritures\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Analysez le rôle de Mésopotamie dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Mésopotamie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Mésopotamie",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quelle est la portée de Égypte sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Égypte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de cunéiforme dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "cunéiforme est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": false
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": true
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de hiéroglyphes dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "hiéroglyphes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          },
-          {
-            "text": "hiéroglyphes",
-            "is_correct": true
-          },
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez pharaon et Mésopotamie dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "pharaon est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "pharaon",
-            "is_correct": true
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de pyramides dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "pyramides est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "cunéiforme",
-            "is_correct": false
-          },
-          {
-            "text": "pyramides",
-            "is_correct": true
-          },
-          {
-            "text": "Égypte",
-            "is_correct": false
-          },
-          {
-            "text": "Mésopotamie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de Nil joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. Nil est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "cité-État est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. cité-État est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Hammurabi, Mésopotamie, cité-État, cunéiforme.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Premiers États, premières écritures\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Premiers États, premières écritures\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 28,
-              "y": 27,
-              "correct_answer": "Hammurabi"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 74,
-              "y": 31,
-              "correct_answer": "Mésopotamie"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 28,
-              "y": 65,
-              "correct_answer": "cité-État"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 76,
-              "y": 65,
-              "correct_answer": "cunéiforme"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Premiers États, premières écritures\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Mésopotamie",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "hiéroglyphes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "pharaon",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "Égypte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "cunéiforme",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-cites-grecques",
-    "title": "Le monde des cités grecques - Facile",
-    "slug": "quiz-6e-hist-cites-grecques-facile",
-    "description": "Quiz facile sur \"Le monde des cités grecques\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Comment appelle-t-on Athènes ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Athènes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": true
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment appelle-t-on Sparte ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Sparte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Comment appelle-t-on démocratie ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "démocratie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": true
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à agora ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "agora est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": true
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à Périclès ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Périclès est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "Périclès",
-            "is_correct": true
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne Jeux olympiques ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Jeux olympiques est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Jeux olympiques",
-            "is_correct": true
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de mythologie joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. mythologie est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Parthénon est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. Parthénon est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Homère, agora, Athènes, Jeux olympiques.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde des cités grecques\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde des cités grecques\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 35,
-              "y": 29,
-              "correct_answer": "Homère"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 66,
-              "y": 21,
-              "correct_answer": "agora"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 31,
-              "y": 63,
-              "correct_answer": "Athènes"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 75,
-              "y": 65,
-              "correct_answer": "Jeux olympiques"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde des cités grecques\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "Périclès",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "Sparte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "démocratie",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Athènes",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "agora",
-              "date": "Étape 4",
-              "correct_position": 4
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-cites-grecques",
-    "title": "Le monde des cités grecques - Intermédiaire",
-    "slug": "quiz-6e-hist-cites-grecques-intermediaire",
-    "description": "Quiz intermédiaire sur \"Le monde des cités grecques\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Pourquoi Athènes est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Athènes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi Sparte a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Sparte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": true
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi démocratie a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "démocratie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre agora et Athènes ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "agora est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": true
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi Périclès a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Périclès est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Périclès",
-            "is_correct": true
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre Jeux olympiques et Athènes ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Jeux olympiques est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Jeux olympiques",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "mythologie est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. mythologie est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Parthénon n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. Parthénon est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : agora, mythologie, démocratie, Sparte.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde des cités grecques\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde des cités grecques\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 38,
-              "y": 28,
-              "correct_answer": "agora"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 62,
-              "y": 30,
-              "correct_answer": "mythologie"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 21,
-              "y": 60,
-              "correct_answer": "démocratie"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 68,
-              "y": 61,
-              "correct_answer": "Sparte"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde des cités grecques\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt3",
-              "label": "démocratie",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt5",
-              "label": "Périclès",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "Sparte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "agora",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "Athènes",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-cites-grecques",
-    "title": "Le monde des cités grecques - Difficile",
-    "slug": "quiz-6e-hist-cites-grecques-avance",
-    "description": "Quiz difficile sur \"Le monde des cités grecques\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quelle est la portée de Athènes sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Athènes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de Sparte dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Sparte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "Sparte",
-            "is_correct": true
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quelle est la portée de démocratie sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "démocratie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de agora dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "agora est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "agora",
-            "is_correct": true
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez Périclès et Athènes dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Périclès est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Périclès",
-            "is_correct": true
-          },
-          {
-            "text": "Sparte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de Jeux olympiques dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Jeux olympiques est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Sparte",
-            "is_correct": false
-          },
-          {
-            "text": "Athènes",
-            "is_correct": false
-          },
-          {
-            "text": "démocratie",
-            "is_correct": false
-          },
-          {
-            "text": "Jeux olympiques",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "mythologie est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. mythologie est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Parthénon n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. Parthénon est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Homère, Parthénon, agora, citoyens.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde des cités grecques\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde des cités grecques\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 34,
-              "y": 35,
-              "correct_answer": "Homère"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 72,
-              "y": 21,
-              "correct_answer": "Parthénon"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 27,
-              "y": 76,
-              "correct_answer": "agora"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 65,
-              "y": 65,
-              "correct_answer": "citoyens"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde des cités grecques\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Athènes",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt3",
-              "label": "démocratie",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "Sparte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt5",
-              "label": "Périclès",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt4",
-              "label": "agora",
-              "date": "Étape 4",
-              "correct_position": 4
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-rome-mythe",
-    "title": "Rome, du mythe à l'histoire - Facile",
-    "slug": "quiz-6e-hist-rome-mythe-facile",
-    "description": "Quiz facile sur \"Rome, du mythe à l'histoire\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel terme désigne Romulus et Rémus ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Romulus et Rémus est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne République romaine ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "République romaine est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": true
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à Sénat ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Sénat est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": true
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne patriciens ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "patriciens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": true
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel terme désigne plébéiens ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "plébéiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "plébéiens",
-            "is_correct": true
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à légions ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "légions est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "légions",
-            "is_correct": true
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "consuls est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. consuls est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Forum est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. Forum est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Forum, République romaine, Tibre, patriciens.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Rome, du mythe à l'histoire\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Rome, du mythe à l'histoire\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 31,
-              "y": 36,
-              "correct_answer": "Forum"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 74,
-              "y": 27,
-              "correct_answer": "République romaine"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 26,
-              "y": 78,
-              "correct_answer": "Tibre"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 77,
-              "y": 70,
-              "correct_answer": "patriciens"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Rome, du mythe à l'histoire\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "patriciens",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt3",
-              "label": "Sénat",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Romulus et Rémus",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "plébéiens",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "République romaine",
-              "date": "Étape 2",
-              "correct_position": 2
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-rome-mythe",
-    "title": "Rome, du mythe à l'histoire - Intermédiaire",
-    "slug": "quiz-6e-hist-rome-mythe-intermediaire",
-    "description": "Quiz intermédiaire sur \"Rome, du mythe à l'histoire\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel est le lien entre Romulus et Rémus et République romaine ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Romulus et Rémus est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": true
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre République romaine et Romulus et Rémus ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "République romaine est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": true
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi Sénat a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Sénat est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Sénat",
-            "is_correct": true
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre patriciens et Romulus et Rémus ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "patriciens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Pourquoi plébéiens est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "plébéiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "plébéiens",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi légions a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "légions est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "légions",
-            "is_correct": true
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de consuls joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. consuls est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Forum n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. Forum est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Tibre, patriciens, Sénat, légions.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Rome, du mythe à l'histoire\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Rome, du mythe à l'histoire\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 22,
-              "y": 32,
-              "correct_answer": "Tibre"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 76,
-              "y": 35,
-              "correct_answer": "patriciens"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 20,
-              "y": 62,
-              "correct_answer": "Sénat"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 73,
-              "y": 71,
-              "correct_answer": "légions"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Rome, du mythe à l'histoire\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "République romaine",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "patriciens",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "Romulus et Rémus",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "plébéiens",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "Sénat",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-rome-mythe",
-    "title": "Rome, du mythe à l'histoire - Difficile",
-    "slug": "quiz-6e-hist-rome-mythe-avance",
-    "description": "Quiz difficile sur \"Rome, du mythe à l'histoire\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Analysez le rôle de Romulus et Rémus dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Romulus et Rémus est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": true
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez République romaine et Romulus et Rémus dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "République romaine est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "République romaine",
-            "is_correct": true
-          },
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez Sénat et Romulus et Rémus dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Sénat est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "patriciens",
-            "is_correct": false
-          },
-          {
-            "text": "Sénat",
-            "is_correct": true
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de patriciens dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "patriciens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          },
-          {
-            "text": "patriciens",
-            "is_correct": true
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quelle est la portée de plébéiens sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "plébéiens est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "plébéiens",
-            "is_correct": true
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de légions dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "légions est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Romulus et Rémus",
-            "is_correct": false
-          },
-          {
-            "text": "légions",
-            "is_correct": true
-          },
-          {
-            "text": "Sénat",
-            "is_correct": false
-          },
-          {
-            "text": "République romaine",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de consuls joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. consuls est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Forum est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. Forum est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Tibre, Sénat, patriciens, plébéiens.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Rome, du mythe à l'histoire\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Rome, du mythe à l'histoire\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 35,
-              "y": 30,
-              "correct_answer": "Tibre"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 70,
-              "y": 26,
-              "correct_answer": "Sénat"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 20,
-              "y": 74,
-              "correct_answer": "patriciens"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 70,
-              "y": 66,
-              "correct_answer": "plébéiens"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Rome, du mythe à l'histoire\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "patriciens",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "plébéiens",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "République romaine",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "Sénat",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Romulus et Rémus",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-empire-romain",
-    "title": "L'Empire romain - Facile",
-    "slug": "quiz-6e-hist-empire-romain-facile",
-    "description": "Quiz facile sur \"L'Empire romain\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel terme désigne Auguste ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Auguste est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à Pax Romana ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Pax Romana est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": true
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment appelle-t-on romanisation ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "romanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à thermes ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "thermes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces éléments est associé à aqueducs ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "aqueducs est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "aqueducs",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Comment appelle-t-on voies romaines ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "voies romaines est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "voies romaines",
-            "is_correct": true
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de Colisée joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. Colisée est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "gladiateurs est un concept inventé au XXIe siècle sans lien avec cette époque.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. gladiateurs est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : christianisme, aqueducs, Auguste, gladiateurs.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"L'Empire romain\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"L'Empire romain\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 36,
-              "y": 35,
-              "correct_answer": "christianisme"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 73,
-              "y": 36,
-              "correct_answer": "aqueducs"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 30,
-              "y": 69,
-              "correct_answer": "Auguste"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 73,
-              "y": 64,
-              "correct_answer": "gladiateurs"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"L'Empire romain\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "Auguste",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "aqueducs",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt4",
-              "label": "thermes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "Pax Romana",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "romanisation",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-empire-romain",
-    "title": "L'Empire romain - Intermédiaire",
-    "slug": "quiz-6e-hist-empire-romain-intermediaire",
-    "description": "Quiz intermédiaire sur \"L'Empire romain\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Pourquoi Auguste est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Auguste est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": true
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre Pax Romana et Auguste ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Pax Romana est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi romanisation a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "romanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "romanisation",
-            "is_correct": true
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi thermes a-t-il transformé la société ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "thermes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le lien entre aqueducs et Auguste ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "aqueducs est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "aqueducs",
-            "is_correct": true
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Pourquoi voies romaines est-il important dans ce chapitre ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "voies romaines est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "voies romaines",
-            "is_correct": true
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Le concept de Colisée joue un rôle clé dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. Colisée est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "gladiateurs est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. gladiateurs est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : Auguste, provinces, thermes, Colisée.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"L'Empire romain\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"L'Empire romain\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 37,
-              "y": 27,
-              "correct_answer": "Auguste"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 72,
-              "y": 28,
-              "correct_answer": "provinces"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 26,
-              "y": 67,
-              "correct_answer": "thermes"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 79,
-              "y": 72,
-              "correct_answer": "Colisée"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"L'Empire romain\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "Pax Romana",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "thermes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "aqueducs",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "romanisation",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "Auguste",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-hist-empire-romain",
-    "title": "L'Empire romain - Difficile",
-    "slug": "quiz-6e-hist-empire-romain-avance",
-    "description": "Quiz difficile sur \"L'Empire romain\" - Histoire",
-    "category": "histoire",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Comparez Auguste et Pax Romana dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Auguste est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Auguste",
-            "is_correct": true
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez Pax Romana et Auguste dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Pax Romana est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Pax Romana",
-            "is_correct": true
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de romanisation dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "romanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "romanisation",
-            "is_correct": true
-          },
-          {
-            "text": "thermes",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez thermes et Auguste dans leur impact historique.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "thermes est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "thermes",
-            "is_correct": true
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quelle est la portée de aqueducs sur le long terme ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "aqueducs est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "aqueducs",
-            "is_correct": true
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez le rôle de voies romaines dans les transformations de cette période.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "voies romaines est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "voies romaines",
-            "is_correct": true
-          },
-          {
-            "text": "romanisation",
-            "is_correct": false
-          },
-          {
-            "text": "Pax Romana",
-            "is_correct": false
-          },
-          {
-            "text": "Auguste",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Colisée est un élément important de cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. Colisée est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "gladiateurs n'a eu aucune influence sur cette période historique.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. gladiateurs est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : thermes, aqueducs, romanisation, Colisée.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"L'Empire romain\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/histoire-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"L'Empire romain\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 20,
-              "y": 23,
-              "correct_answer": "thermes"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 61,
-              "y": 20,
-              "correct_answer": "aqueducs"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 37,
-              "y": 72,
-              "correct_answer": "romanisation"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 79,
-              "y": 62,
-              "correct_answer": "Colisée"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"L'Empire romain\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "Pax Romana",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "romanisation",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt4",
-              "label": "thermes",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "aqueducs",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt1",
-              "label": "Auguste",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-metropole",
-    "title": "Habiter une métropole - Facile",
-    "slug": "quiz-6e-geo-habiter-metropole-facile",
-    "description": "Quiz facile sur \"Habiter une métropole\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Lequel de ces termes est lié à métropole ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "métropole est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit urbanisation ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "urbanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "urbanisation",
-            "is_correct": true
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces termes est lié à banlieue ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "banlieue est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces termes est lié à transports ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "transports est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": true
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit densité ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "densité",
-            "is_correct": true
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces termes est lié à gratte-ciel ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "gratte-ciel est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "gratte-ciel",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "CBD ne concerne aucun territoire dans le monde.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. CBD est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "pollution est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. pollution est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : banlieue, migrations, gratte-ciel, métropole.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter une métropole\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter une métropole\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 25,
-              "y": 39,
-              "correct_answer": "banlieue"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 66,
-              "y": 23,
-              "correct_answer": "migrations"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 27,
-              "y": 77,
-              "correct_answer": "gratte-ciel"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 68,
-              "y": 64,
-              "correct_answer": "métropole"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter une métropole\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt2",
-              "label": "urbanisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "transports",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "métropole",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "densité",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "banlieue",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-metropole",
-    "title": "Habiter une métropole - Intermédiaire",
-    "slug": "quiz-6e-geo-habiter-metropole-intermediaire",
-    "description": "Quiz intermédiaire sur \"Habiter une métropole\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel est le rapport entre métropole et urbanisation ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "métropole est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "métropole",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi urbanisation est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "urbanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": true
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre banlieue et métropole ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "banlieue est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": true
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre transports et métropole ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "transports est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi densité est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": true
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre gratte-ciel et métropole ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "gratte-ciel est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "gratte-ciel",
-            "is_correct": true
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "CBD a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. CBD est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "pollution a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. pollution est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : banlieue, gratte-ciel, urbanisation, pollution.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter une métropole\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter une métropole\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 35,
-              "y": 25,
-              "correct_answer": "banlieue"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 72,
-              "y": 21,
-              "correct_answer": "gratte-ciel"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 27,
-              "y": 73,
-              "correct_answer": "urbanisation"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 62,
-              "y": 70,
-              "correct_answer": "pollution"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter une métropole\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "densité",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "banlieue",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "urbanisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "transports",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "métropole",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-metropole",
-    "title": "Habiter une métropole - Difficile",
-    "slug": "quiz-6e-geo-habiter-metropole-avance",
-    "description": "Quiz difficile sur \"Habiter une métropole\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Analysez les conséquences de métropole à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "métropole est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de urbanisation dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "urbanisation est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de banlieue à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "banlieue est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": true
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi transports illustre-t-il les défis actuels ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "transports est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "transports",
-            "is_correct": true
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de densité dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi gratte-ciel illustre-t-il les défis actuels ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "gratte-ciel est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "urbanisation",
-            "is_correct": false
-          },
-          {
-            "text": "métropole",
-            "is_correct": false
-          },
-          {
-            "text": "banlieue",
-            "is_correct": false
-          },
-          {
-            "text": "gratte-ciel",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "CBD a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. CBD est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "pollution est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. pollution est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : pollution, urbanisation, CBD, mégapole.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter une métropole\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter une métropole\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 29,
-              "y": 30,
-              "correct_answer": "pollution"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 75,
-              "y": 20,
-              "correct_answer": "urbanisation"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 36,
-              "y": 68,
-              "correct_answer": "CBD"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 69,
-              "y": 71,
-              "correct_answer": "mégapole"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter une métropole\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "transports",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt3",
-              "label": "banlieue",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt1",
-              "label": "métropole",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt2",
-              "label": "urbanisation",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt5",
-              "label": "densité",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-faible-densite",
-    "title": "Habiter un espace de faible densité - Facile",
-    "slug": "quiz-6e-geo-faible-densite-facile",
-    "description": "Quiz facile sur \"Habiter un espace de faible densité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel phénomène décrit rural ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "rural est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": true
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que désert ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "désert est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": true
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que montagne ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "montagne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": true
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit faible densité ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "faible densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": true
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit isolement ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "isolement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "isolement",
-            "is_correct": true
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit agriculture extensive ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "agriculture extensive est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture extensive",
-            "is_correct": true
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "nomades a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. nomades est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "toundra est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. toundra est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : montagne, désert, élevage, toundra.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter un espace de faible densité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter un espace de faible densité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 24,
-              "y": 20,
-              "correct_answer": "montagne"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 62,
-              "y": 21,
-              "correct_answer": "désert"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 31,
-              "y": 73,
-              "correct_answer": "élevage"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 69,
-              "y": 71,
-              "correct_answer": "toundra"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter un espace de faible densité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "faible densité",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt3",
-              "label": "montagne",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "désert",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "rural",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "isolement",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-faible-densite",
-    "title": "Habiter un espace de faible densité - Intermédiaire",
-    "slug": "quiz-6e-geo-faible-densite-intermediaire",
-    "description": "Quiz intermédiaire sur \"Habiter un espace de faible densité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel est le rapport entre rural et désert ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "rural est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": true
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre désert et rural ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "désert est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "faible densité",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": true
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre montagne et rural ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "montagne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "faible densité",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": true
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre faible densité et rural ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "faible densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": true
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment isolement influence-t-il les territoires ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "isolement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "isolement",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi agriculture extensive est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "agriculture extensive est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "agriculture extensive",
-            "is_correct": true
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "nomades a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. nomades est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "toundra est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. toundra est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : montagne, rural, désert, toundra.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter un espace de faible densité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter un espace de faible densité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 32,
-              "y": 33,
-              "correct_answer": "montagne"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 68,
-              "y": 23,
-              "correct_answer": "rural"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 28,
-              "y": 78,
-              "correct_answer": "désert"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 64,
-              "y": 79,
-              "correct_answer": "toundra"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter un espace de faible densité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt3",
-              "label": "montagne",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt2",
-              "label": "désert",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt4",
-              "label": "faible densité",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "rural",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt5",
-              "label": "isolement",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-faible-densite",
-    "title": "Habiter un espace de faible densité - Difficile",
-    "slug": "quiz-6e-geo-faible-densite-avance",
-    "description": "Quiz difficile sur \"Habiter un espace de faible densité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Comparez les effets de rural dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "rural est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de désert dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "désert est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": true
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi montagne illustre-t-il les défis actuels ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "montagne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "montagne",
-            "is_correct": true
-          },
-          {
-            "text": "faible densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de faible densité à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "faible densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "faible densité",
-            "is_correct": true
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de isolement dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "isolement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "montagne",
-            "is_correct": false
-          },
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "isolement",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de agriculture extensive à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "agriculture extensive est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "rural",
-            "is_correct": false
-          },
-          {
-            "text": "désert",
-            "is_correct": false
-          },
-          {
-            "text": "agriculture extensive",
-            "is_correct": true
-          },
-          {
-            "text": "montagne",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "nomades a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. nomades est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "toundra est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. toundra est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : élevage, agriculture extensive, désert, isolement.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter un espace de faible densité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter un espace de faible densité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 32,
-              "y": 39,
-              "correct_answer": "élevage"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 78,
-              "y": 25,
-              "correct_answer": "agriculture extensive"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 36,
-              "y": 60,
-              "correct_answer": "désert"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 60,
-              "y": 61,
-              "correct_answer": "isolement"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter un espace de faible densité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "rural",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "faible densité",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "désert",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "montagne",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt5",
-              "label": "isolement",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-littoraux",
-    "title": "Habiter les littoraux - Facile",
-    "slug": "quiz-6e-geo-habiter-littoraux-facile",
-    "description": "Quiz facile sur \"Habiter les littoraux\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Lequel de ces termes est lié à littoral ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "littoral est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": true
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que côte ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "côte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": true
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que tourisme balnéaire ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "tourisme balnéaire est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": true
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que port ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "port est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "port",
-            "is_correct": true
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que pêche ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "pêche est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "pêche",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que érosion ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "érosion est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "érosion",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "mangrove est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. mangrove est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "île est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. île est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : marée, île, tourisme balnéaire, littoral.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter les littoraux\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter les littoraux\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 34,
-              "y": 36,
-              "correct_answer": "marée"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 71,
-              "y": 30,
-              "correct_answer": "île"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 32,
-              "y": 75,
-              "correct_answer": "tourisme balnéaire"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 76,
-              "y": 75,
-              "correct_answer": "littoral"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter les littoraux\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "port",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "pêche",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt2",
-              "label": "côte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "littoral",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt3",
-              "label": "tourisme balnéaire",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-littoraux",
-    "title": "Habiter les littoraux - Intermédiaire",
-    "slug": "quiz-6e-geo-habiter-littoraux-intermediaire",
-    "description": "Quiz intermédiaire sur \"Habiter les littoraux\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel est le rapport entre littoral et côte ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "littoral est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": true
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi côte est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "côte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre tourisme balnéaire et littoral ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "tourisme balnéaire est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": true
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment port influence-t-il les territoires ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "port est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "port",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre pêche et littoral ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "pêche est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "pêche",
-            "is_correct": true
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel est le rapport entre érosion et littoral ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "érosion est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "érosion",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "mangrove ne concerne aucun territoire dans le monde.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. mangrove est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "île ne concerne aucun territoire dans le monde.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est faux. île est au contraire un concept fondamental de cette période.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : île, mangrove, station balnéaire, côte.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter les littoraux\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter les littoraux\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 39,
-              "y": 33,
-              "correct_answer": "île"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 67,
-              "y": 29,
-              "correct_answer": "mangrove"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 29,
-              "y": 74,
-              "correct_answer": "station balnéaire"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 77,
-              "y": 64,
-              "correct_answer": "côte"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter les littoraux\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "pêche",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt3",
-              "label": "tourisme balnéaire",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt4",
-              "label": "port",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "côte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "littoral",
-              "date": "Étape 1",
-              "correct_position": 1
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-habiter-littoraux",
-    "title": "Habiter les littoraux - Difficile",
-    "slug": "quiz-6e-geo-habiter-littoraux-avance",
-    "description": "Quiz difficile sur \"Habiter les littoraux\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Analysez les conséquences de littoral à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "littoral est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de côte dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "côte est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "côte",
-            "is_correct": true
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi tourisme balnéaire illustre-t-il les défis actuels ?",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "tourisme balnéaire est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": true
-          },
-          {
-            "text": "port",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de port dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "port est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "port",
-            "is_correct": true
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de pêche dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "pêche est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "littoral",
-            "is_correct": false
-          },
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "pêche",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de érosion à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "érosion est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "tourisme balnéaire",
-            "is_correct": false
-          },
-          {
-            "text": "érosion",
-            "is_correct": true
-          },
-          {
-            "text": "côte",
-            "is_correct": false
-          },
-          {
-            "text": "littoral",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "mangrove est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. mangrove est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "île est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. île est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : mangrove, tourisme balnéaire, érosion, station balnéaire.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Habiter les littoraux\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Habiter les littoraux\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 23,
-              "y": 23,
-              "correct_answer": "mangrove"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 64,
-              "y": 36,
-              "correct_answer": "tourisme balnéaire"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 36,
-              "y": 76,
-              "correct_answer": "érosion"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 63,
-              "y": 79,
-              "correct_answer": "station balnéaire"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Habiter les littoraux\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "pêche",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt4",
-              "label": "port",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "côte",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt1",
-              "label": "littoral",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt3",
-              "label": "tourisme balnéaire",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-monde-habite",
-    "title": "Le monde habité - Facile",
-    "slug": "quiz-6e-geo-monde-habite-facile",
-    "description": "Quiz facile sur \"Le monde habité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "debutant",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Quel phénomène décrit population mondiale ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "population mondiale est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit foyers de peuplement ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "foyers de peuplement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit densité ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": true
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Lequel de ces termes est lié à Asie ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "Asie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Qu'est-ce que contraintes naturelles ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "contraintes naturelles est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "contraintes naturelles",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Quel phénomène décrit oekouméne ?",
-        "question_type": "qcm",
-        "difficulty_level": "debutant",
-        "explanation": "oekouméne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 1,
-        "options": [
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "oekouméne",
-            "is_correct": true
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "migrations est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est faux. migrations est au contraire un concept fondamental de cette période.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "climat a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "debutant",
-        "explanation": "C'est vrai. climat est effectivement un élément central de ce chapitre.",
-        "points": 1,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : densité, climat, population mondiale, ressources.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "debutant",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde habité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 1,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde habité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 27,
-              "y": 34,
-              "correct_answer": "densité"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 79,
-              "y": 27,
-              "correct_answer": "climat"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 21,
-              "y": 66,
-              "correct_answer": "population mondiale"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 66,
-              "y": 78,
-              "correct_answer": "ressources"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde habité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "debutant",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 1,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt4",
-              "label": "Asie",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt1",
-              "label": "population mondiale",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt2",
-              "label": "foyers de peuplement",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "densité",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt5",
-              "label": "contraintes naturelles",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-monde-habite",
-    "title": "Le monde habité - Intermédiaire",
-    "slug": "quiz-6e-geo-monde-habite-intermediaire",
-    "description": "Quiz intermédiaire sur \"Le monde habité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "intermediaire",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Comment population mondiale influence-t-il les territoires ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "population mondiale est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": true
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi foyers de peuplement est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "foyers de peuplement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi densité est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "densité",
-            "is_correct": true
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment Asie influence-t-il les territoires ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "Asie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "En quoi contraintes naturelles est-il un enjeu majeur ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "contraintes naturelles est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "contraintes naturelles",
-            "is_correct": true
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comment oekouméne influence-t-il les territoires ?",
-        "question_type": "qcm",
-        "difficulty_level": "intermediaire",
-        "explanation": "oekouméne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 2,
-        "options": [
-          {
-            "text": "oekouméne",
-            "is_correct": true
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "migrations est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. migrations est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "climat a un impact significatif sur les territoires.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "intermediaire",
-        "explanation": "C'est vrai. climat est effectivement un élément central de ce chapitre.",
-        "points": 2,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : oekouméne, migrations, densité, population mondiale.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "intermediaire",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde habité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 2,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde habité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 21,
-              "y": 31,
-              "correct_answer": "oekouméne"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 66,
-              "y": 26,
-              "correct_answer": "migrations"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 22,
-              "y": 71,
-              "correct_answer": "densité"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 79,
-              "y": 72,
-              "correct_answer": "population mondiale"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde habité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "intermediaire",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 2,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt1",
-              "label": "population mondiale",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt2",
-              "label": "foyers de peuplement",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "densité",
-              "date": "Étape 3",
-              "correct_position": 3
-            },
-            {
-              "event_id": "evt4",
-              "label": "Asie",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt5",
-              "label": "contraintes naturelles",
-              "date": "Étape 5",
-              "correct_position": 5
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "chapterSlug": "6e-geo-monde-habite",
-    "title": "Le monde habité - Difficile",
-    "slug": "quiz-6e-geo-monde-habite-avance",
-    "description": "Quiz difficile sur \"Le monde habité\" - Géographie",
-    "category": "geographie",
-    "difficulty_level": "avance",
-    "levelSlug": "6eme",
-    "questions": [
-      {
-        "question_text": "Analysez les conséquences de population mondiale à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "population mondiale est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de foyers de peuplement à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "foyers de peuplement est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de densité dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "densité est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "densité",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de Asie à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "Asie est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "Asie",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Comparez les effets de contraintes naturelles dans différentes régions du monde.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "contraintes naturelles est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "contraintes naturelles",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          },
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "Analysez les conséquences de oekouméne à différentes échelles.",
-        "question_type": "qcm",
-        "difficulty_level": "avance",
-        "explanation": "oekouméne est un concept clé de ce chapitre. Il est essentiel de comprendre son rôle et ses implications dans le contexte étudié.",
-        "points": 3,
-        "options": [
-          {
-            "text": "population mondiale",
-            "is_correct": false
-          },
-          {
-            "text": "foyers de peuplement",
-            "is_correct": false
-          },
-          {
-            "text": "oekouméne",
-            "is_correct": true
-          },
-          {
-            "text": "densité",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "migrations est un phénomène géographique étudié dans ce chapitre.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est vrai. migrations est effectivement un élément central de ce chapitre.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": true
-          },
-          {
-            "text": "Faux",
-            "is_correct": false
-          }
-        ]
-      },
-      {
-        "question_text": "climat est un phénomène qui n'existe plus de nos jours.",
-        "question_type": "vrai_faux",
-        "difficulty_level": "avance",
-        "explanation": "C'est faux. climat est au contraire un concept fondamental de cette période.",
-        "points": 3,
-        "options": [
-          {
-            "text": "Vrai",
-            "is_correct": false
-          },
-          {
-            "text": "Faux",
-            "is_correct": true
-          }
-        ]
-      },
-      {
-        "question_text": "Complétez la carte en plaçant les éléments suivants : densité, population mondiale, relief, contraintes naturelles.",
-        "question_type": "carte_a_completer",
-        "difficulty_level": "avance",
-        "explanation": "Cette carte illustre les éléments clés du chapitre \"Le monde habité\". Chaque zone correspond à un concept ou lieu important.",
-        "points": 3,
-        "map_data": {
-          "image_url": "/maps/geographie-carte.svg",
-          "instruction": "Placez correctement les éléments sur la carte liée à \"Le monde habité\".",
-          "zones": [
-            {
-              "zone_id": "z1",
-              "label": "Zone 1",
-              "x": 39,
-              "y": 20,
-              "correct_answer": "densité"
-            },
-            {
-              "zone_id": "z2",
-              "label": "Zone 2",
-              "x": 64,
-              "y": 37,
-              "correct_answer": "population mondiale"
-            },
-            {
-              "zone_id": "z3",
-              "label": "Zone 3",
-              "x": 33,
-              "y": 72,
-              "correct_answer": "relief"
-            },
-            {
-              "zone_id": "z4",
-              "label": "Zone 4",
-              "x": 77,
-              "y": 75,
-              "correct_answer": "contraintes naturelles"
-            }
-          ]
-        }
-      },
-      {
-        "question_text": "Remettez dans l'ordre chronologique les événements suivants liés à \"Le monde habité\".",
-        "question_type": "chronologie",
-        "difficulty_level": "avance",
-        "explanation": "L'ordre chronologique correct permet de comprendre l'enchaînement logique des événements de ce chapitre.",
-        "points": 3,
-        "chronology_data": {
-          "instruction": "Classez ces éléments dans l'ordre chronologique.",
-          "events": [
-            {
-              "event_id": "evt5",
-              "label": "contraintes naturelles",
-              "date": "Étape 5",
-              "correct_position": 5
-            },
-            {
-              "event_id": "evt1",
-              "label": "population mondiale",
-              "date": "Étape 1",
-              "correct_position": 1
-            },
-            {
-              "event_id": "evt4",
-              "label": "Asie",
-              "date": "Étape 4",
-              "correct_position": 4
-            },
-            {
-              "event_id": "evt2",
-              "label": "foyers de peuplement",
-              "date": "Étape 2",
-              "correct_position": 2
-            },
-            {
-              "event_id": "evt3",
-              "label": "densité",
-              "date": "Étape 3",
-              "correct_position": 3
-            }
-          ]
-        }
-      }
-    ]
-  }
-];
   // ============================================================
   // CHAPTER 2: La revolution neolithique
   // ============================================================
@@ -10538,3 +2634,1760 @@ export const quizzes6eme = [
       },
     ],
   },
+  // ============================================================
+  // CHAPTER 7: Habiter une metropole
+  // ============================================================
+  {
+    chapterSlug: '6e-geo-habiter-metropole',
+    title: 'Habiter une metropole - Facile',
+    slug: 'quiz-6e-geo-habiter-metropole-facile',
+    description: 'Quiz de niveau debutant sur les metropoles dans le monde.',
+    category: 'geographie',
+    difficulty_level: 'debutant',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Qu\'est-ce qu\'une metropole ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Une metropole est une grande ville qui concentre population, activites economiques et pouvoirs de decision.',
+        points: 1,
+        options: [
+          { text: 'Un petit village', is_correct: false },
+          { text: 'Une grande ville qui concentre population et activites', is_correct: true },
+          { text: 'Une region agricole', is_correct: false },
+          { text: 'Un port de peche', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quelle est la plus grande metropole du monde en population ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Tokyo, avec son agglomeration, est la plus grande metropole du monde avec plus de 37 millions d\'habitants.',
+        points: 1,
+        options: [
+          { text: 'Paris', is_correct: false },
+          { text: 'New York', is_correct: false },
+          { text: 'Tokyo', is_correct: true },
+          { text: 'Londres', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on le phenomene de croissance des villes ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'L\'urbanisation est le processus par lequel de plus en plus de personnes vivent en ville.',
+        points: 1,
+        options: [
+          { text: 'La ruralisation', is_correct: false },
+          { text: 'L\'urbanisation', is_correct: true },
+          { text: 'La desertification', is_correct: false },
+          { text: 'L\'industrialisation', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce qu\'un quartier d\'affaires (CBD) ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Le CBD (Central Business District) est le quartier central ou se concentrent les bureaux, les sieges d\'entreprises et les gratte-ciel.',
+        points: 1,
+        options: [
+          { text: 'Un quartier residentiel', is_correct: false },
+          { text: 'Un quartier ou se concentrent les bureaux et les entreprises', is_correct: true },
+          { text: 'Un quartier industriel', is_correct: false },
+          { text: 'Un parc naturel', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on les quartiers pauvres en peripherie des grandes villes des pays en developpement ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les bidonvilles (ou slums, favelas) sont des quartiers d\'habitat precaire en peripherie des grandes villes.',
+        points: 1,
+        options: [
+          { text: 'Des banlieues residentielles', is_correct: false },
+          { text: 'Des bidonvilles', is_correct: true },
+          { text: 'Des quartiers d\'affaires', is_correct: false },
+          { text: 'Des zones industrielles', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Plus de la moitie de la population mondiale vit en ville.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Depuis 2008, plus de 50 % de la population mondiale est urbaine. Ce chiffre continue d\'augmenter.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Toutes les metropoles du monde se ressemblent.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Les metropoles partagent certains traits (quartier d\'affaires, transports) mais different par leur histoire, leur culture et leur niveau de developpement.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Quel moyen de transport est typique des grandes metropoles ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Le metro est un transport en commun souterrain ou aerien present dans la plupart des grandes metropoles.',
+        points: 1,
+        options: [
+          { text: 'Le cheval', is_correct: false },
+          { text: 'Le metro', is_correct: true },
+          { text: 'Le bateau', is_correct: false },
+          { text: 'L\'helicoptere', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Identifiez les grandes metropoles mondiales sur la carte.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'debutant',
+        explanation: 'Les grandes metropoles sont reparties sur tous les continents.',
+        points: 1,
+        map_data: {
+          image_url: '/maps/metropoles-mondiales.png',
+          instruction: 'Identifiez ces grandes metropoles.',
+          zones: [
+            { zone_id: 'z1', label: 'Plus grande metropole d\'Europe', x: 48, y: 28, correct_answer: 'Paris' },
+            { zone_id: 'z2', label: 'Plus grande metropole du monde', x: 85, y: 32, correct_answer: 'Tokyo' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces etapes de la croissance d\'une metropole.',
+        question_type: 'chronologie',
+        difficulty_level: 'debutant',
+        explanation: 'Les metropoles grandissent en passant du centre historique a l\'etalement urbain.',
+        points: 1,
+        chronology_data: {
+          instruction: 'Classez ces etapes dans l\'ordre logique.',
+          events: [
+            { event_id: 'e1', label: 'Centre historique (vieille ville)', date: 'Etape 1', correct_position: 1 },
+            { event_id: 'e2', label: 'Developpement de quartiers d\'affaires', date: 'Etape 2', correct_position: 2 },
+            { event_id: 'e3', label: 'Construction de banlieues residentielles', date: 'Etape 3', correct_position: 3 },
+            { event_id: 'e4', label: 'Etalement urbain et periurbanisation', date: 'Etape 4', correct_position: 4 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-habiter-metropole',
+    title: 'Habiter une metropole - Intermediaire',
+    slug: 'quiz-6e-geo-habiter-metropole-intermediaire',
+    description: 'Quiz de niveau intermediaire sur les metropoles dans le monde.',
+    category: 'geographie',
+    difficulty_level: 'intermediaire',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Qu\'est-ce que l\'etalement urbain ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'etalement urbain est l\'extension de la ville sur les espaces ruraux environnants, liee a la periurbanisation.',
+        points: 2,
+        options: [
+          { text: 'La construction de tours en centre-ville', is_correct: false },
+          { text: 'L\'extension de la ville sur les espaces ruraux environnants', is_correct: true },
+          { text: 'La diminution de la population urbaine', is_correct: false },
+          { text: 'La renovation du centre historique', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'En quoi les metropoles des pays developpes different-elles de celles des pays en developpement ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les metropoles des pays developpes ont de meilleures infrastructures et moins de bidonvilles, tandis que celles des pays en developpement connaissent une croissance rapide avec des inegalites plus marquees.',
+        points: 2,
+        options: [
+          { text: 'Il n\'y a aucune difference', is_correct: false },
+          { text: 'Les metropoles des pays en developpement ont une croissance plus rapide et plus d\'inegalites', is_correct: true },
+          { text: 'Les metropoles des pays developpes sont plus grandes', is_correct: false },
+          { text: 'Les metropoles des pays en developpement sont mieux planifiees', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce que la gentrification ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'La gentrification est le processus par lequel des populations aisees s\'installent dans d\'anciens quartiers populaires, entrainant la hausse des prix et le depart des habitants modestes.',
+        points: 2,
+        options: [
+          { text: 'La creation de nouveaux quartiers en banlieue', is_correct: false },
+          { text: 'L\'embourgeoisement d\'anciens quartiers populaires', is_correct: true },
+          { text: 'La construction de logements sociaux', is_correct: false },
+          { text: 'L\'abandon d\'un quartier par ses habitants', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les metropoles ne se trouvent que dans les pays riches.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'De grandes metropoles existent aussi dans les pays en developpement : Lagos, Mumbai, Sao Paulo, Le Caire.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'L\'urbanisation est un phenomene qui ralentit dans le monde.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'urbanisation continue de progresser dans le monde, surtout en Afrique et en Asie.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Quels problemes posent la croissance rapide des metropoles ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'La croissance urbaine rapide entraine des problemes de logement, de transport, de pollution, de gestion des dechets et d\'inegalites sociales.',
+        points: 2,
+        options: [
+          { text: 'Aucun probleme', is_correct: false },
+          { text: 'Logement, transport, pollution, dechets et inegalites sociales', is_correct: true },
+          { text: 'Uniquement des problemes de transport', is_correct: false },
+          { text: 'Uniquement des problemes d\'emploi', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce qu\'une "ville mondiale" ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Une ville mondiale est une metropole qui joue un role majeur a l\'echelle planetaire dans l\'economie, la politique et la culture (ex : New York, Londres, Tokyo).',
+        points: 2,
+        options: [
+          { text: 'Toute ville de plus d\'un million d\'habitants', is_correct: false },
+          { text: 'Une metropole qui joue un role majeur a l\'echelle planetaire', is_correct: true },
+          { text: 'Une ville qui accueille les Jeux olympiques', is_correct: false },
+          { text: 'Une ville situee sur plusieurs continents', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel role jouent les transports dans le fonctionnement d\'une metropole ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les transports sont essentiels pour relier les differents quartiers, permettre les deplacements domicile-travail et connecter la metropole au reste du monde.',
+        points: 2,
+        options: [
+          { text: 'Ils n\'ont pas de role important', is_correct: false },
+          { text: 'Ils relient les quartiers, permettent les deplacements et connectent la metropole au monde', is_correct: true },
+          { text: 'Ils servent uniquement au tourisme', is_correct: false },
+          { text: 'Ils ne concernent que les marchandises', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les plus grandes metropoles des pays en developpement.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les grandes metropoles des pays en developpement se trouvent en Asie, en Afrique et en Amerique latine.',
+        points: 2,
+        map_data: {
+          image_url: '/maps/metropoles-pays-en-developpement.png',
+          instruction: 'Identifiez ces grandes metropoles.',
+          zones: [
+            { zone_id: 'z1', label: 'Plus grande ville d\'Amerique du Sud', x: 28, y: 68, correct_answer: 'Sao Paulo' },
+            { zone_id: 'z2', label: 'Grande metropole d\'Inde', x: 72, y: 42, correct_answer: 'Mumbai' },
+            { zone_id: 'z3', label: 'Plus grande ville d\'Afrique', x: 48, y: 50, correct_answer: 'Lagos' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces phenomenes urbains dans l\'ordre logique de la croissance d\'une metropole des pays en developpement.',
+        question_type: 'chronologie',
+        difficulty_level: 'intermediaire',
+        explanation: 'La croissance des metropoles dans les pays en developpement suit un schema typique.',
+        points: 2,
+        chronology_data: {
+          instruction: 'Classez ces phenomenes dans l\'ordre logique.',
+          events: [
+            { event_id: 'e1', label: 'Exode rural vers la ville', date: 'Etape 1', correct_position: 1 },
+            { event_id: 'e2', label: 'Croissance rapide de la population urbaine', date: 'Etape 2', correct_position: 2 },
+            { event_id: 'e3', label: 'Developpement de bidonvilles en peripherie', date: 'Etape 3', correct_position: 3 },
+            { event_id: 'e4', label: 'Construction d\'infrastructures de transport', date: 'Etape 4', correct_position: 4 },
+            { event_id: 'e5', label: 'Developpement d\'un quartier d\'affaires moderne', date: 'Etape 5', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-habiter-metropole',
+    title: 'Habiter une metropole - Avance',
+    slug: 'quiz-6e-geo-habiter-metropole-avance',
+    description: 'Quiz de niveau avance sur les metropoles dans le monde.',
+    category: 'geographie',
+    difficulty_level: 'avance',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'En quoi la metropolisation accentue-t-elle les inegalites socio-spatiales ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La metropolisation concentre richesses et emplois qualifies dans certains quartiers tout en rejetant les populations modestes en peripherie, creant une ville a plusieurs vitesses.',
+        points: 3,
+        options: [
+          { text: 'La metropolisation reduit les inegalites', is_correct: false },
+          { text: 'Elle concentre les richesses dans certains quartiers et rejette les populations modestes en peripherie', is_correct: true },
+          { text: 'Elle n\'a aucun impact sur les inegalites', is_correct: false },
+          { text: 'Elle ne concerne que les pays pauvres', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment les metropoles tentent-elles de relever le defi du developpement durable ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les metropoles developpent les transports en commun, les ecoquartiers, le recyclage, les espaces verts et les energies renouvelables pour reduire leur empreinte ecologique.',
+        points: 3,
+        options: [
+          { text: 'Elles ne font rien pour le developpement durable', is_correct: false },
+          { text: 'Transports en commun, ecoquartiers, recyclage, espaces verts et energies renouvelables', is_correct: true },
+          { text: 'Elles deplacent la pollution vers les campagnes', is_correct: false },
+          { text: 'Elles interdisent les voitures', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi les bidonvilles persistent-ils malgre les politiques de relogement ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les bidonvilles persistent car la croissance demographique depasse les capacites de construction, les habitants n\'ont pas les moyens d\'acceder aux logements formels, et les bidonvilles offrent des reseaux de solidarite.',
+        points: 3,
+        options: [
+          { text: 'Les habitants preferent y vivre', is_correct: false },
+          { text: 'La croissance depasse les capacites, les couts sont trop eleves et les reseaux de solidarite comptent', is_correct: true },
+          { text: 'Les gouvernements ne font aucun effort', is_correct: false },
+          { text: 'Les bidonvilles n\'existent plus', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La segregation socio-spatiale n\'existe que dans les metropoles des pays en developpement.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La segregation socio-spatiale existe dans toutes les metropoles, y compris dans les pays developpes (ghettos americains, banlieues francaises, gated communities).',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'La mondialisation renforce le role des metropoles dans l\'economie mondiale.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La mondialisation concentre les fonctions de commandement, la finance et l\'innovation dans les metropoles, renforcant leur poids economique.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel est l\'impact de la metropolisation sur les campagnes environnantes ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La metropolisation grignote les espaces ruraux (etalement urbain), modifie les paysages, attire les populations rurales (exode rural) et transforme l\'agriculture periurbaine.',
+        points: 3,
+        options: [
+          { text: 'Aucun impact', is_correct: false },
+          { text: 'Etalement urbain, modification des paysages, exode rural et transformation de l\'agriculture', is_correct: true },
+          { text: 'Les campagnes s\'enrichissent grace aux metropoles', is_correct: false },
+          { text: 'Les campagnes deviennent plus agricoles', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'En quoi la "smart city" (ville intelligente) repond-elle aux defis des metropoles ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La smart city utilise les technologies numeriques pour optimiser la gestion urbaine (transports, energie, securite), mais pose des questions de protection des donnees et d\'inegalites numeriques.',
+        points: 3,
+        options: [
+          { text: 'Elle resout tous les problemes urbains', is_correct: false },
+          { text: 'Elle utilise le numerique pour optimiser la gestion urbaine, mais pose des questions ethiques', is_correct: true },
+          { text: 'Elle n\'a aucun interet', is_correct: false },
+          { text: 'Elle concerne uniquement les pays riches', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment expliquer que Lagos et Tokyo soient toutes deux des megapoles mais avec des realites tres differentes ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Bien que toutes deux depassent 10 millions d\'habitants, Tokyo est une metropole d\'un pays riche (infrastructures, niveau de vie eleve) tandis que Lagos connait pauvrete massive, bidonvilles et infrastructures insuffisantes.',
+        points: 3,
+        options: [
+          { text: 'Elles ne sont pas si differentes', is_correct: false },
+          { text: 'Le niveau de developpement du pays determine les infrastructures, le niveau de vie et les inegalites', is_correct: true },
+          { text: 'La difference est uniquement climatique', is_correct: false },
+          { text: 'Lagos est plus riche que Tokyo', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comparez les structures spatiales de metropoles de pays developpes et en developpement sur la carte.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'avance',
+        explanation: 'Les metropoles presentent des structures spatiales differentes selon le niveau de developpement du pays.',
+        points: 3,
+        map_data: {
+          image_url: '/maps/comparaison-metropoles.png',
+          instruction: 'Identifiez les metropoles et leurs caracteristiques.',
+          zones: [
+            { zone_id: 'z1', label: 'Metropole mondiale en Amerique du Nord', x: 22, y: 30, correct_answer: 'New York' },
+            { zone_id: 'z2', label: 'Megapole d\'Afrique de l\'Ouest', x: 47, y: 50, correct_answer: 'Lagos' },
+            { zone_id: 'z3', label: 'Metropole d\'Asie de l\'Est', x: 85, y: 32, correct_answer: 'Tokyo' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez les defis d\'une metropole du plus local au plus global.',
+        question_type: 'chronologie',
+        difficulty_level: 'avance',
+        explanation: 'Les defis des metropoles vont du quartier au planetaire.',
+        points: 3,
+        chronology_data: {
+          instruction: 'Classez ces defis du plus local au plus global.',
+          events: [
+            { event_id: 'e1', label: 'Gestion des dechets de quartier', date: 'Local', correct_position: 1 },
+            { event_id: 'e2', label: 'Transports urbains de la ville', date: 'Ville', correct_position: 2 },
+            { event_id: 'e3', label: 'Amenagement de l\'aire urbaine', date: 'Region', correct_position: 3 },
+            { event_id: 'e4', label: 'Connexion aux reseaux economiques nationaux', date: 'National', correct_position: 4 },
+            { event_id: 'e5', label: 'Impact sur le changement climatique mondial', date: 'Mondial', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  // ============================================================
+  // CHAPTER 8: Habiter un espace de faible densite
+  // ============================================================
+  {
+    chapterSlug: '6e-geo-faible-densite',
+    title: 'Habiter un espace de faible densite - Facile',
+    slug: 'quiz-6e-geo-faible-densite-facile',
+    description: 'Quiz de niveau debutant sur les espaces de faible densite.',
+    category: 'geographie',
+    difficulty_level: 'debutant',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Qu\'est-ce qu\'un espace de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Un espace de faible densite est une region ou il y a peu d\'habitants par kilometre carre.',
+        points: 1,
+        options: [
+          { text: 'Un espace tres peuple', is_correct: false },
+          { text: 'Un espace ou il y a peu d\'habitants au kilometre carre', is_correct: true },
+          { text: 'Un espace uniquement urbain', is_correct: false },
+          { text: 'Un espace interdit aux humains', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel type de milieu est souvent un espace de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les deserts, les hautes montagnes et les forets denses sont des exemples d\'espaces de faible densite.',
+        points: 1,
+        options: [
+          { text: 'Les villes cotieres', is_correct: false },
+          { text: 'Les deserts, les montagnes et les grandes forets', is_correct: true },
+          { text: 'Les plaines agricoles', is_correct: false },
+          { text: 'Les zones industrielles', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quelle est la principale activite economique des espaces ruraux de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'L\'agriculture et l\'elevage restent les activites principales des espaces ruraux de faible densite.',
+        points: 1,
+        options: [
+          { text: 'L\'industrie automobile', is_correct: false },
+          { text: 'L\'agriculture et l\'elevage', is_correct: true },
+          { text: 'La finance', is_correct: false },
+          { text: 'L\'informatique', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi certains espaces sont-ils peu peuples ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Les contraintes naturelles (climat extreme, relief, isolement) et le manque d\'activites economiques expliquent la faible densite.',
+        points: 1,
+        options: [
+          { text: 'Parce que les habitants n\'aiment pas la nature', is_correct: false },
+          { text: 'A cause de contraintes naturelles et du manque d\'activites', is_correct: true },
+          { text: 'Parce qu\'il y fait toujours chaud', is_correct: false },
+          { text: 'Parce que les gouvernements l\'interdisent', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on le depart des habitants des campagnes vers les villes ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'L\'exode rural est le deplacement des populations rurales vers les villes, a la recherche d\'emplois et de services.',
+        points: 1,
+        options: [
+          { text: 'L\'immigration', is_correct: false },
+          { text: 'L\'exode rural', is_correct: true },
+          { text: 'Le tourisme', is_correct: false },
+          { text: 'La periurbanisation', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Le Sahara est un espace de faible densite.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Le Sahara, plus grand desert chaud du monde, est tres peu peuple en raison de ses conditions climatiques extremes.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les espaces de faible densite n\'existent pas en France.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'La France possede des espaces de faible densite, notamment dans les zones de montagne (Massif central, Alpes) et certaines zones rurales.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Quel est un exemple d\'espace de faible densite lie au froid ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La Siberie, en Russie, est un vaste espace de faible densite en raison du froid extreme.',
+        points: 1,
+        options: [
+          { text: 'Le Bresil', is_correct: false },
+          { text: 'La Siberie', is_correct: true },
+          { text: 'L\'Inde', is_correct: false },
+          { text: 'Le Japon', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Identifiez les grands espaces de faible densite dans le monde.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'debutant',
+        explanation: 'Les grands deserts, les forets tropicales et les zones polaires sont les principaux espaces de faible densite.',
+        points: 1,
+        map_data: {
+          image_url: '/maps/espaces-faible-densite.png',
+          instruction: 'Identifiez ces espaces de faible densite.',
+          zones: [
+            { zone_id: 'z1', label: 'Plus grand desert chaud', x: 50, y: 38, correct_answer: 'Sahara' },
+            { zone_id: 'z2', label: 'Grande foret equatoriale', x: 28, y: 55, correct_answer: 'Amazonie' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces milieux naturels du plus peuple au moins peuple.',
+        question_type: 'chronologie',
+        difficulty_level: 'debutant',
+        explanation: 'La densite de population depend fortement des conditions naturelles.',
+        points: 1,
+        chronology_data: {
+          instruction: 'Classez ces milieux du plus peuple au moins peuple.',
+          events: [
+            { event_id: 'e1', label: 'Plaine cotiere temperee', date: 'Tres peuple', correct_position: 1 },
+            { event_id: 'e2', label: 'Zone de montagne moyenne', date: 'Moyennement peuple', correct_position: 2 },
+            { event_id: 'e3', label: 'Steppe semi-aride', date: 'Peu peuple', correct_position: 3 },
+            { event_id: 'e4', label: 'Desert de sable', date: 'Presque vide', correct_position: 4 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-faible-densite',
+    title: 'Habiter un espace de faible densite - Intermediaire',
+    slug: 'quiz-6e-geo-faible-densite-intermediaire',
+    description: 'Quiz de niveau intermediaire sur les espaces de faible densite.',
+    category: 'geographie',
+    difficulty_level: 'intermediaire',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Comment les habitants des espaces de faible densite s\'adaptent-ils aux contraintes naturelles ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les populations s\'adaptent par des modes de vie specifiques : nomadisme, habitat adapte, activites liees au milieu (elevage, cueillette, tourisme).',
+        points: 2,
+        options: [
+          { text: 'Ils ne s\'adaptent pas et partent', is_correct: false },
+          { text: 'Par des modes de vie specifiques : nomadisme, habitat adapte, activites liees au milieu', is_correct: true },
+          { text: 'Ils vivent exactement comme en ville', is_correct: false },
+          { text: 'Ils ne subissent aucune contrainte', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel role le tourisme joue-t-il dans les espaces de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le tourisme peut dynamiser ces espaces (stations de ski, tourisme vert) mais aussi fragiliser les equilibres naturels et culturels.',
+        points: 2,
+        options: [
+          { text: 'Le tourisme n\'existe pas dans ces espaces', is_correct: false },
+          { text: 'Il dynamise ces espaces mais peut fragiliser les equilibres naturels', is_correct: true },
+          { text: 'Il detruit systematiquement ces espaces', is_correct: false },
+          { text: 'Il n\'a aucun impact', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce que la "diagonale du vide" en France ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'La "diagonale du vide" designe une bande de territoire allant des Ardennes aux Pyrenees, caracterisee par une faible densite de population.',
+        points: 2,
+        options: [
+          { text: 'Une autoroute deserte', is_correct: false },
+          { text: 'Une zone de faible densite allant des Ardennes aux Pyrenees', is_correct: true },
+          { text: 'Une region sans electricite', is_correct: false },
+          { text: 'Un desert de sable en France', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les oasis sont des zones de peuplement dans le desert.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les oasis sont des points d\'eau dans le desert qui permettent l\'installation humaine, l\'agriculture et le commerce.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les nouvelles technologies ne changent rien a la vie dans les espaces de faible densite.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'Internet et les nouvelles technologies permettent le teletravail, l\'acces aux services en ligne et le desenclavement de ces espaces.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Comment les Touaregs s\'adaptent-ils a la vie dans le Sahara ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les Touaregs pratiquent le nomadisme pastoral, se deplacent avec leurs troupeaux entre les paturages, et connaissent parfaitement les points d\'eau.',
+        points: 2,
+        options: [
+          { text: 'Ils vivent dans des immeubles climatises', is_correct: false },
+          { text: 'Ils pratiquent le nomadisme pastoral et connaissent les points d\'eau', is_correct: true },
+          { text: 'Ils ne vivent pas dans le Sahara', is_correct: false },
+          { text: 'Ils cultivent du ble dans le sable', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quels services publics manquent souvent dans les espaces de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les espaces de faible densite manquent souvent d\'ecoles, d\'hopitaux, de commerces et de transports en commun.',
+        points: 2,
+        options: [
+          { text: 'Il ne manque aucun service', is_correct: false },
+          { text: 'Ecoles, hopitaux, commerces et transports en commun', is_correct: true },
+          { text: 'Uniquement les transports', is_correct: false },
+          { text: 'Uniquement Internet', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi certains espaces de faible densite attirent-ils de nouveaux habitants ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le cadre de vie (nature, calme, espace), le teletravail et la recherche d\'une meilleure qualite de vie attirent de nouvelles populations.',
+        points: 2,
+        options: [
+          { text: 'Ils n\'attirent personne', is_correct: false },
+          { text: 'Le cadre de vie, le teletravail et la recherche de qualite de vie', is_correct: true },
+          { text: 'Les salaires y sont plus eleves', is_correct: false },
+          { text: 'Les impots y sont nuls', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les principaux espaces de faible densite en France.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'intermediaire',
+        explanation: 'En France, les espaces de faible densite se trouvent dans le Massif central, les Pyrenees et certaines zones rurales.',
+        points: 2,
+        map_data: {
+          image_url: '/maps/france-densite.png',
+          instruction: 'Identifiez les zones de faible densite en France.',
+          zones: [
+            { zone_id: 'z1', label: 'Massif montagneux du centre', x: 48, y: 55, correct_answer: 'Massif central' },
+            { zone_id: 'z2', label: 'Chaine de montagnes au sud', x: 45, y: 78, correct_answer: 'Pyrenees' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces contraintes naturelles de la plus forte a la plus faible pour le peuplement.',
+        question_type: 'chronologie',
+        difficulty_level: 'intermediaire',
+        explanation: 'Certaines contraintes naturelles empechent plus que d\'autres l\'installation humaine.',
+        points: 2,
+        chronology_data: {
+          instruction: 'Classez ces contraintes de la plus forte a la plus faible.',
+          events: [
+            { event_id: 'e1', label: 'Desert de glace (Antarctique)', date: 'Extreme', correct_position: 1 },
+            { event_id: 'e2', label: 'Desert chaud (Sahara)', date: 'Tres forte', correct_position: 2 },
+            { event_id: 'e3', label: 'Haute montagne', date: 'Forte', correct_position: 3 },
+            { event_id: 'e4', label: 'Foret dense equatoriale', date: 'Moderee', correct_position: 4 },
+            { event_id: 'e5', label: 'Zone de moyenne montagne', date: 'Faible', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-faible-densite',
+    title: 'Habiter un espace de faible densite - Avance',
+    slug: 'quiz-6e-geo-faible-densite-avance',
+    description: 'Quiz de niveau avance sur les espaces de faible densite.',
+    category: 'geographie',
+    difficulty_level: 'avance',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'En quoi le changement climatique menace-t-il les modes de vie dans les espaces de faible densite ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Le changement climatique provoque la desertification, la fonte des glaciers, la modification des ecosystemes et menace les populations qui dependent des ressources naturelles.',
+        points: 3,
+        options: [
+          { text: 'Le changement climatique n\'affecte pas ces espaces', is_correct: false },
+          { text: 'Desertification, fonte des glaciers, modification des ecosystemes et menace sur les ressources', is_correct: true },
+          { text: 'Il rend ces espaces plus habitables', is_correct: false },
+          { text: 'Il ne concerne que les villes', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi certains Etats exploitent-ils les ressources des espaces de faible densite malgre les risques environnementaux ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Ces espaces contiennent des ressources strategiques (petrole, minerais, bois) dont l\'exploitation genere des revenus importants, meme au prix de dommages environnementaux.',
+        points: 3,
+        options: [
+          { text: 'Il n\'y a aucune ressource dans ces espaces', is_correct: false },
+          { text: 'Ces espaces contiennent des ressources strategiques generant d\'importants revenus', is_correct: true },
+          { text: 'Pour y installer des villes', is_correct: false },
+          { text: 'Uniquement pour le tourisme', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment le conflit entre preservation de l\'environnement et developpement economique se manifeste-t-il dans ces espaces ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'L\'exploitation des ressources (mines, forets, energie) entre en conflit avec la protection de la biodiversite et les droits des populations autochtones.',
+        points: 3,
+        options: [
+          { text: 'Il n\'y a aucun conflit', is_correct: false },
+          { text: 'L\'exploitation des ressources entre en conflit avec la protection de la biodiversite et les droits des autochtones', is_correct: true },
+          { text: 'Le developpement economique est toujours prioritaire', is_correct: false },
+          { text: 'La preservation est toujours respectee', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La deforestation de l\'Amazonie n\'a d\'impact que local.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La deforestation de l\'Amazonie a des consequences mondiales : perte de biodiversite, emission de CO2, modification du cycle de l\'eau a l\'echelle planetaire.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Le nomadisme est un mode de vie desuet et inadapte au monde moderne.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'Le nomadisme est une adaptation efficace aux milieux arides ou la sedentarisation est difficile. Cependant, il est menace par les frontieres nationales et la sedentarisation forcee.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'En quoi les parcs naturels representent-ils un compromis entre habitation et protection ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les parcs naturels regionaux permettent de concilier activites humaines (agriculture, tourisme) et protection de l\'environnement, contrairement aux reserves integrales.',
+        points: 3,
+        options: [
+          { text: 'Les parcs naturels interdisent toute activite humaine', is_correct: false },
+          { text: 'Ils conclient activites humaines durables et protection de l\'environnement', is_correct: true },
+          { text: 'Ils n\'existent pas dans les espaces de faible densite', is_correct: false },
+          { text: 'Ils favorisent l\'urbanisation', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment les Inuits ont-ils adapte leur mode de vie au milieu polaire ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les Inuits ont developpe un habitat adapte (igloo, puis maisons sur pilotis), une alimentation basee sur la chasse (phoque, caribou) et des techniques de deplacement (traineau, kayak).',
+        points: 3,
+        options: [
+          { text: 'Ils vivent comme dans les pays temperes', is_correct: false },
+          { text: 'Habitat adapte, alimentation basee sur la chasse et techniques de deplacement specifiques', is_correct: true },
+          { text: 'Ils ne se sont jamais adaptes', is_correct: false },
+          { text: 'Ils ne vivent plus dans le milieu polaire', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi l\'Arctique est-il devenu un enjeu geopolitique majeur ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La fonte des glaces ouvre de nouvelles routes maritimes et rend accessible des ressources en hydrocarbures, entrainant des rivalites entre grandes puissances.',
+        points: 3,
+        options: [
+          { text: 'L\'Arctique n\'interesse personne', is_correct: false },
+          { text: 'La fonte des glaces ouvre des routes maritimes et des acces aux hydrocarbures', is_correct: true },
+          { text: 'Pour y installer des villes', is_correct: false },
+          { text: 'Uniquement pour le tourisme', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les grands espaces de faible densite menaces par le changement climatique.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'avance',
+        explanation: 'L\'Arctique, le Sahel et l\'Amazonie sont parmi les espaces les plus menaces par le changement climatique.',
+        points: 3,
+        map_data: {
+          image_url: '/maps/changement-climatique-espaces.png',
+          instruction: 'Identifiez les espaces menaces par le changement climatique.',
+          zones: [
+            { zone_id: 'z1', label: 'Region de fonte des glaces', x: 50, y: 8, correct_answer: 'Arctique' },
+            { zone_id: 'z2', label: 'Region menacee de desertification en Afrique', x: 50, y: 42, correct_answer: 'Sahel' },
+            { zone_id: 'z3', label: 'Grande foret menacee de deforestation', x: 28, y: 55, correct_answer: 'Amazonie' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces enjeux d\'amenagement des espaces de faible densite par ordre de priorite.',
+        question_type: 'chronologie',
+        difficulty_level: 'avance',
+        explanation: 'L\'amenagement des espaces de faible densite repond a des enjeux hierarchises.',
+        points: 3,
+        chronology_data: {
+          instruction: 'Classez ces enjeux du plus immediat au plus long terme.',
+          events: [
+            { event_id: 'e1', label: 'Acces aux services de base (sante, education)', date: 'Immediat', correct_position: 1 },
+            { event_id: 'e2', label: 'Desenclavement (routes, Internet)', date: 'Court terme', correct_position: 2 },
+            { event_id: 'e3', label: 'Developpement economique local (tourisme, agriculture)', date: 'Moyen terme', correct_position: 3 },
+            { event_id: 'e4', label: 'Protection de l\'environnement et de la biodiversite', date: 'Long terme', correct_position: 4 },
+            { event_id: 'e5', label: 'Adaptation au changement climatique', date: 'Tres long terme', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  // ============================================================
+  // CHAPTER 9: Habiter les littoraux
+  // ============================================================
+  {
+    chapterSlug: '6e-geo-habiter-littoraux',
+    title: 'Habiter les littoraux - Facile',
+    slug: 'quiz-6e-geo-habiter-littoraux-facile',
+    description: 'Quiz de niveau debutant sur les littoraux.',
+    category: 'geographie',
+    difficulty_level: 'debutant',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Qu\'est-ce qu\'un littoral ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Le littoral est la zone de contact entre la terre et la mer.',
+        points: 1,
+        options: [
+          { text: 'Une montagne', is_correct: false },
+          { text: 'La zone de contact entre la terre et la mer', is_correct: true },
+          { text: 'Un fleuve', is_correct: false },
+          { text: 'Un desert', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quelle activite economique est typique des littoraux ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La peche, le tourisme balneaire et le commerce maritime sont des activites typiques des littoraux.',
+        points: 1,
+        options: [
+          { text: 'L\'extraction de charbon', is_correct: false },
+          { text: 'La peche et le tourisme balneaire', is_correct: true },
+          { text: 'L\'elevage de moutons', is_correct: false },
+          { text: 'L\'agriculture cerealiere', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce qu\'un port ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Un port est un amenagement cotier qui permet l\'accueil des navires pour le commerce, la peche ou le transport de passagers.',
+        points: 1,
+        options: [
+          { text: 'Un aeroport', is_correct: false },
+          { text: 'Un amenagement cotier pour accueillir les navires', is_correct: true },
+          { text: 'Un parking', is_correct: false },
+          { text: 'Une gare ferroviaire', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on le tourisme lie a la plage et a la mer ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Le tourisme balneaire est lie aux activites de plage, de baignade et de loisirs maritimes.',
+        points: 1,
+        options: [
+          { text: 'Le tourisme culturel', is_correct: false },
+          { text: 'Le tourisme balneaire', is_correct: true },
+          { text: 'Le tourisme de montagne', is_correct: false },
+          { text: 'L\'ecotourisme', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce qu\'une station balneaire ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Une station balneaire est une ville cotiere specialisee dans l\'accueil des touristes pour les activites de plage.',
+        points: 1,
+        options: [
+          { text: 'Une station de ski', is_correct: false },
+          { text: 'Une ville cotiere specialisee dans le tourisme de plage', is_correct: true },
+          { text: 'Une station-service', is_correct: false },
+          { text: 'Un port de peche', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les littoraux sont des espaces tres peuples.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Environ 60 % de la population mondiale vit a moins de 100 km des cotes. Les littoraux sont parmi les espaces les plus densement peuples.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Les littoraux ne sont menaces par aucun risque naturel.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Les littoraux sont menaces par l\'erosion, les tempetes, les tsunamis et la montee du niveau de la mer.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Quel phenomene naturel menace les littoraux a cause du rechauffement climatique ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La montee du niveau de la mer, causee par le rechauffement climatique et la fonte des glaces, menace les zones cotieres basses.',
+        points: 1,
+        options: [
+          { text: 'Les tremblements de terre', is_correct: false },
+          { text: 'La montee du niveau de la mer', is_correct: true },
+          { text: 'Les eruptions volcaniques', is_correct: false },
+          { text: 'La secheresse', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Identifiez les principaux types de littoraux sur la carte.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'debutant',
+        explanation: 'Les littoraux peuvent etre touristiques, industrialo-portuaires ou naturels.',
+        points: 1,
+        map_data: {
+          image_url: '/maps/littoraux-france.png',
+          instruction: 'Identifiez les grands littoraux francais.',
+          zones: [
+            { zone_id: 'z1', label: 'Littoral touristique du sud', x: 65, y: 80, correct_answer: 'Cote d\'Azur' },
+            { zone_id: 'z2', label: 'Grand port de commerce', x: 30, y: 25, correct_answer: 'Le Havre' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces activites littorales de la plus ancienne a la plus recente.',
+        question_type: 'chronologie',
+        difficulty_level: 'debutant',
+        explanation: 'Les activites sur les littoraux ont evolue au fil du temps.',
+        points: 1,
+        chronology_data: {
+          instruction: 'Classez ces activites de la plus ancienne a la plus recente.',
+          events: [
+            { event_id: 'e1', label: 'Peche artisanale', date: 'Tres ancienne', correct_position: 1 },
+            { event_id: 'e2', label: 'Commerce maritime', date: 'Ancienne', correct_position: 2 },
+            { event_id: 'e3', label: 'Tourisme balneaire', date: 'XIXe siecle', correct_position: 3 },
+            { event_id: 'e4', label: 'Industries portuaires modernes', date: 'XXe siecle', correct_position: 4 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-habiter-littoraux',
+    title: 'Habiter les littoraux - Intermediaire',
+    slug: 'quiz-6e-geo-habiter-littoraux-intermediaire',
+    description: 'Quiz de niveau intermediaire sur les littoraux.',
+    category: 'geographie',
+    difficulty_level: 'intermediaire',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Qu\'est-ce que la littoralisation ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'La littoralisation est la concentration croissante des populations et des activites economiques sur les littoraux.',
+        points: 2,
+        options: [
+          { text: 'La destruction des cotes', is_correct: false },
+          { text: 'La concentration croissante des populations et activites sur les cotes', is_correct: true },
+          { text: 'Le recul de la mer', is_correct: false },
+          { text: 'La construction de digues', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce qu\'une zone industrialo-portuaire (ZIP) ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Une ZIP est un espace amenage associant un port et des industries, permettant l\'importation de matieres premieres et l\'exportation de produits finis.',
+        points: 2,
+        options: [
+          { text: 'Un parc d\'attractions sur la cote', is_correct: false },
+          { text: 'Un espace associant port et industries pour le commerce international', is_correct: true },
+          { text: 'Un quartier residentiel au bord de mer', is_correct: false },
+          { text: 'Une reserve naturelle cotiere', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment le tourisme transforme-t-il les littoraux ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le tourisme entraine la construction d\'hotels, de residences, d\'infrastructures de loisirs, la betonisation des cotes et la hausse des prix immobiliers.',
+        points: 2,
+        options: [
+          { text: 'Il ne les transforme pas', is_correct: false },
+          { text: 'Construction massive, betonisation des cotes et hausse des prix immobiliers', is_correct: true },
+          { text: 'Il les protege de l\'erosion', is_correct: false },
+          { text: 'Il diminue la population cotiere', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'L\'erosion cotiere est un phenomene naturel aggrave par les activites humaines.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'erosion cotiere est naturelle (vagues, courants) mais les constructions humaines, l\'extraction de sable et le changement climatique l\'aggravent.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Shanghai est un exemple de port mondial.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'Shanghai est le premier port mondial en volume de conteneurs traites, refletant la puissance economique de la Chine.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quels sont les differents types de littoraux selon leur utilisation ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'On distingue les littoraux touristiques (stations balneaires), industriels (ZIP), de peche et naturels proteges.',
+        points: 2,
+        options: [
+          { text: 'Il n\'y a qu\'un seul type de littoral', is_correct: false },
+          { text: 'Touristiques, industriels, de peche et naturels proteges', is_correct: true },
+          { text: 'Uniquement touristiques et industriels', is_correct: false },
+          { text: 'Uniquement naturels', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel est le role d\'un conteneur dans le commerce maritime mondial ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le conteneur standardise permet de transporter des marchandises a moindre cout par voie maritime, facilitant la mondialisation des echanges.',
+        points: 2,
+        options: [
+          { text: 'C\'est une habitation mobile', is_correct: false },
+          { text: 'Il standardise le transport maritime et facilite la mondialisation', is_correct: true },
+          { text: 'C\'est un type de bateau', is_correct: false },
+          { text: 'Il sert uniquement au transport de nourriture', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi les mangroves sont-elles importantes pour les littoraux tropicaux ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les mangroves protegent les cotes de l\'erosion et des tempetes, abritent une biodiversite riche et servent de nurserie pour les poissons.',
+        points: 2,
+        options: [
+          { text: 'Elles n\'ont aucune importance', is_correct: false },
+          { text: 'Elles protegent les cotes, abritent la biodiversite et servent de nurserie pour les poissons', is_correct: true },
+          { text: 'Elles genent la navigation', is_correct: false },
+          { text: 'Elles n\'existent que dans les pays froids', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les grands ports mondiaux sur la carte.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les plus grands ports du monde se trouvent surtout en Asie de l\'Est (Chine, Coree, Singapour).',
+        points: 2,
+        map_data: {
+          image_url: '/maps/ports-mondiaux.png',
+          instruction: 'Identifiez les grands ports mondiaux.',
+          zones: [
+            { zone_id: 'z1', label: 'Premier port mondial', x: 82, y: 38, correct_answer: 'Shanghai' },
+            { zone_id: 'z2', label: 'Grand port europeen', x: 42, y: 25, correct_answer: 'Rotterdam' },
+            { zone_id: 'z3', label: 'Port carrefour d\'Asie du Sud-Est', x: 80, y: 52, correct_answer: 'Singapour' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces amenagements littoraux du plus ancien au plus recent.',
+        question_type: 'chronologie',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les amenagements des littoraux se sont diversifies au fil du temps.',
+        points: 2,
+        chronology_data: {
+          instruction: 'Classez ces amenagements du plus ancien au plus recent.',
+          events: [
+            { event_id: 'e1', label: 'Ports de peche artisanaux', date: 'Ancien', correct_position: 1 },
+            { event_id: 'e2', label: 'Ports de commerce a voile', date: 'Epoque moderne', correct_position: 2 },
+            { event_id: 'e3', label: 'Stations balneaires', date: 'XIXe siecle', correct_position: 3 },
+            { event_id: 'e4', label: 'Zones industrialo-portuaires', date: 'XXe siecle', correct_position: 4 },
+            { event_id: 'e5', label: 'Iles artificielles (Dubai)', date: 'XXIe siecle', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-habiter-littoraux',
+    title: 'Habiter les littoraux - Avance',
+    slug: 'quiz-6e-geo-habiter-littoraux-avance',
+    description: 'Quiz de niveau avance sur les littoraux.',
+    category: 'geographie',
+    difficulty_level: 'avance',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'En quoi la montee des eaux due au changement climatique represente-t-elle un defi majeur pour les littoraux ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La montee des eaux menace de submerger des zones cotieres basses peuplees (Bangladesh, iles du Pacifique), entrainant des deplacements de population et des pertes economiques considerables.',
+        points: 3,
+        options: [
+          { text: 'Elle n\'a aucune consequence', is_correct: false },
+          { text: 'Submersion de zones peuplees, deplacements de population et pertes economiques', is_correct: true },
+          { text: 'Elle ne concerne que les iles', is_correct: false },
+          { text: 'Elle est facilement evitable', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment concilier developpement economique et preservation des littoraux ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Le developpement durable des littoraux passe par la planification urbaine, la creation de reserves naturelles, la limitation de la betonisation et le tourisme responsable.',
+        points: 3,
+        options: [
+          { text: 'C\'est impossible a concilier', is_correct: false },
+          { text: 'Planification urbaine, reserves naturelles, limitation de la betonisation et tourisme responsable', is_correct: true },
+          { text: 'Il faut arreter toute activite economique sur les cotes', is_correct: false },
+          { text: 'Le developpement doit toujours primer', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi la peche industrielle menace-t-elle les ecosystemes marins ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La surpeche epuise les stocks de poissons, les chalutiers detruisent les fonds marins, et les prises accessoires deciment d\'autres especes, mena9ant l\'equilibre des ecosystemes.',
+        points: 3,
+        options: [
+          { text: 'La peche industrielle est sans danger pour les oceans', is_correct: false },
+          { text: 'Surpeche, destruction des fonds marins et prises accessoires menacent les ecosystemes', is_correct: true },
+          { text: 'Elle ne concerne que les petits poissons', is_correct: false },
+          { text: 'Les poissons se reproduisent assez vite pour compenser', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La loi Littoral en France interdit toute construction sur les cotes.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La loi Littoral (1986) n\'interdit pas toute construction mais la reglemente strictement, interdisant les constructions dans une bande de 100 m du rivage et limitant l\'urbanisation.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Les "refugies climatiques" cotiers sont deja une realite dans certaines regions du monde.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'Des populations de Tuvalu, des Maldives ou du Bangladesh sont deja contraintes de se deplacer a cause de la montee des eaux et des evenements meteorologiques extremes.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'En quoi les grands amenagements littoraux comme les iles artificielles de Dubai posent-ils des problemes environnementaux ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Ces amenagements detruisent les ecosystemes marins (coraux, mangroves), modifient les courants et consomment d\'enormes quantites d\'energie et de ressources.',
+        points: 3,
+        options: [
+          { text: 'Ils n\'ont aucun impact environnemental', is_correct: false },
+          { text: 'Destruction d\'ecosystemes, modification des courants et consommation massive de ressources', is_correct: true },
+          { text: 'Ils ameliorent la biodiversite', is_correct: false },
+          { text: 'Ils protegent les cotes naturellement', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment les Pays-Bas ont-ils historiquement gere leur relation avec la mer ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les Pays-Bas ont conquis des terres sur la mer (polders), construit des digues et des barrages (plan Delta), devenant experts en gestion des risques d\'inondation.',
+        points: 3,
+        options: [
+          { text: 'Ils n\'ont jamais eu de problemes avec la mer', is_correct: false },
+          { text: 'Par les polders, digues et barrages, devenant experts en gestion des inondations', is_correct: true },
+          { text: 'Ils ont abandonne les zones cotieres', is_correct: false },
+          { text: 'Ils ont construit des iles artificielles', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi les detroits et les canaux sont-ils strategiques dans le commerce maritime mondial ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Les detroits (Malacca, Ormuz) et les canaux (Suez, Panama) sont des passages obliges du commerce maritime mondial, ce qui en fait des points strategiques et geopolitiques.',
+        points: 3,
+        options: [
+          { text: 'Ils n\'ont aucune importance', is_correct: false },
+          { text: 'Ce sont des passages obliges du commerce maritime mondial, strategiques et geopolitiques', is_correct: true },
+          { text: 'Ils ne servent qu\'au tourisme', is_correct: false },
+          { text: 'Ils sont utilises uniquement par les petits bateaux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les littoraux les plus menaces par la montee des eaux.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'avance',
+        explanation: 'Les littoraux les plus menaces sont les deltas (Bangladesh), les atolls (Pacifique) et les zones basses (Pays-Bas, Floride).',
+        points: 3,
+        map_data: {
+          image_url: '/maps/littoraux-menaces.png',
+          instruction: 'Identifiez les littoraux les plus menaces par la montee des eaux.',
+          zones: [
+            { zone_id: 'z1', label: 'Grand delta menace en Asie du Sud', x: 75, y: 40, correct_answer: 'Bangladesh (delta du Gange)' },
+            { zone_id: 'z2', label: 'Iles menacees du Pacifique', x: 90, y: 58, correct_answer: 'Tuvalu / iles du Pacifique' },
+            { zone_id: 'z3', label: 'Pays europeen sous le niveau de la mer', x: 42, y: 24, correct_answer: 'Pays-Bas' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces enjeux des littoraux du plus local au plus mondial.',
+        question_type: 'chronologie',
+        difficulty_level: 'avance',
+        explanation: 'Les enjeux des littoraux vont de l\'amenagement local aux defis planetaires.',
+        points: 3,
+        chronology_data: {
+          instruction: 'Classez ces enjeux du plus local au plus mondial.',
+          events: [
+            { event_id: 'e1', label: 'Protection d\'une plage contre l\'erosion', date: 'Local', correct_position: 1 },
+            { event_id: 'e2', label: 'Amenagement d\'un port regional', date: 'Regional', correct_position: 2 },
+            { event_id: 'e3', label: 'Gestion de la peche dans une zone maritime nationale', date: 'National', correct_position: 3 },
+            { event_id: 'e4', label: 'Regulation du commerce maritime international', date: 'International', correct_position: 4 },
+            { event_id: 'e5', label: 'Lutte contre la montee des eaux liee au changement climatique', date: 'Mondial', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  // ============================================================
+  // CHAPTER 10: Le monde habite
+  // ============================================================
+  {
+    chapterSlug: '6e-geo-monde-habite',
+    title: 'Le monde habite - Facile',
+    slug: 'quiz-6e-geo-monde-habite-facile',
+    description: 'Quiz de niveau debutant sur la repartition de la population mondiale.',
+    category: 'geographie',
+    difficulty_level: 'debutant',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Combien d\'habitants compte approximativement la planete ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La population mondiale depasse les 8 milliards d\'habitants.',
+        points: 1,
+        options: [
+          { text: '1 milliard', is_correct: false },
+          { text: '8 milliards', is_correct: true },
+          { text: '100 millions', is_correct: false },
+          { text: '50 milliards', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce que la densite de population ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'La densite de population est le nombre d\'habitants par kilometre carre (hab/km2).',
+        points: 1,
+        options: [
+          { text: 'Le nombre total d\'habitants d\'un pays', is_correct: false },
+          { text: 'Le nombre d\'habitants par kilometre carre', is_correct: true },
+          { text: 'La surface d\'un pays', is_correct: false },
+          { text: 'Le nombre de villes dans un pays', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel continent est le plus peuple ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'L\'Asie est le continent le plus peuple avec plus de 4,5 milliards d\'habitants, soit environ 60 % de la population mondiale.',
+        points: 1,
+        options: [
+          { text: 'L\'Europe', is_correct: false },
+          { text: 'L\'Afrique', is_correct: false },
+          { text: 'L\'Asie', is_correct: true },
+          { text: 'L\'Amerique', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on une region tres peuplee ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Un foyer de peuplement est une region du monde qui concentre une population tres importante.',
+        points: 1,
+        options: [
+          { text: 'Un desert', is_correct: false },
+          { text: 'Un foyer de peuplement', is_correct: true },
+          { text: 'Un continent', is_correct: false },
+          { text: 'Une ile', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quel est le pays le plus peuple du monde ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'L\'Inde est devenue le pays le plus peuple du monde, depassant la Chine avec plus de 1,4 milliard d\'habitants.',
+        points: 1,
+        options: [
+          { text: 'Les Etats-Unis', is_correct: false },
+          { text: 'La Russie', is_correct: false },
+          { text: 'L\'Inde', is_correct: true },
+          { text: 'Le Bresil', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La population mondiale est repartie de maniere egale sur la Terre.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'La population mondiale est tres inegalement repartie : des foyers de peuplement tres denses coexistent avec de vastes espaces quasiment vides.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'La majorite de la population mondiale vit dans l\'hemisphere nord.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'debutant',
+        explanation: 'Environ 90 % de la population mondiale vit dans l\'hemisphere nord, ou se trouvent la plupart des terres emergees et les grands foyers de peuplement.',
+        points: 1,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment appelle-t-on un espace vide d\'habitants ?',
+        question_type: 'qcm',
+        difficulty_level: 'debutant',
+        explanation: 'Un desert humain (ou espace de tres faible densite) est un espace pratiquement depourvu d\'habitants.',
+        points: 1,
+        options: [
+          { text: 'Un foyer de peuplement', is_correct: false },
+          { text: 'Un desert humain', is_correct: true },
+          { text: 'Une metropole', is_correct: false },
+          { text: 'Un pays', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Identifiez les grands foyers de peuplement sur la carte du monde.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'debutant',
+        explanation: 'Les trois grands foyers de peuplement sont l\'Asie de l\'Est, l\'Asie du Sud et l\'Europe.',
+        points: 1,
+        map_data: {
+          image_url: '/maps/foyers-peuplement.png',
+          instruction: 'Identifiez les grands foyers de peuplement.',
+          zones: [
+            { zone_id: 'z1', label: 'Foyer de peuplement de Chine et Japon', x: 82, y: 35, correct_answer: 'Asie de l\'Est' },
+            { zone_id: 'z2', label: 'Foyer de peuplement de l\'Inde', x: 72, y: 42, correct_answer: 'Asie du Sud' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces continents du plus peuple au moins peuple.',
+        question_type: 'chronologie',
+        difficulty_level: 'debutant',
+        explanation: 'La repartition de la population par continent est tres inegale.',
+        points: 1,
+        chronology_data: {
+          instruction: 'Classez ces continents du plus peuple au moins peuple.',
+          events: [
+            { event_id: 'e1', label: 'Asie', date: 'Plus de 4 milliards', correct_position: 1 },
+            { event_id: 'e2', label: 'Afrique', date: 'Plus de 1,4 milliard', correct_position: 2 },
+            { event_id: 'e3', label: 'Europe', date: 'Environ 750 millions', correct_position: 3 },
+            { event_id: 'e4', label: 'Oceanie', date: 'Environ 45 millions', correct_position: 4 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-monde-habite',
+    title: 'Le monde habite - Intermediaire',
+    slug: 'quiz-6e-geo-monde-habite-intermediaire',
+    description: 'Quiz de niveau intermediaire sur la repartition de la population mondiale.',
+    category: 'geographie',
+    difficulty_level: 'intermediaire',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Quels sont les trois grands foyers de peuplement dans le monde ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les trois grands foyers de peuplement sont l\'Asie de l\'Est (Chine, Japon, Corees), l\'Asie du Sud (Inde, Pakistan, Bangladesh) et l\'Europe.',
+        points: 2,
+        options: [
+          { text: 'Amerique, Afrique et Oceanie', is_correct: false },
+          { text: 'Asie de l\'Est, Asie du Sud et Europe', is_correct: true },
+          { text: 'Europe, Amerique du Nord et Australie', is_correct: false },
+          { text: 'Afrique, Asie et Antarctique', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quels facteurs naturels expliquent la repartition de la population ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Le climat tempere, les plaines fertiles, la proximite de l\'eau (fleuves, mers) et l\'altitude moderee favorisent le peuplement.',
+        points: 2,
+        options: [
+          { text: 'Uniquement la temperature', is_correct: false },
+          { text: 'Climat tempere, plaines fertiles, proximite de l\'eau et altitude moderee', is_correct: true },
+          { text: 'Uniquement l\'altitude', is_correct: false },
+          { text: 'Les facteurs naturels n\'ont aucune influence', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Quels facteurs humains expliquent la repartition de la population ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'histoire (anciennete du peuplement), l\'economie (emplois, industries), les migrations et les politiques de peuplement expliquent la repartition humaine.',
+        points: 2,
+        options: [
+          { text: 'Uniquement les guerres', is_correct: false },
+          { text: 'Histoire, economie, migrations et politiques de peuplement', is_correct: true },
+          { text: 'Uniquement la religion', is_correct: false },
+          { text: 'Les facteurs humains n\'ont aucune influence', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'L\'Afrique est le continent dont la population croit le plus rapidement.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'L\'Afrique connait la croissance demographique la plus rapide au monde, avec un taux de natalite encore eleve.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: true },
+          { text: 'Faux', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La population mondiale a toujours augmente au meme rythme.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'intermediaire',
+        explanation: 'La croissance demographique s\'est acceleree depuis le XVIIIe siecle (revolution industrielle, progres medicaux), avant de ralentir dans les pays developpes.',
+        points: 2,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Qu\'est-ce que la transition demographique ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'La transition demographique est le passage d\'un regime de forte natalite et mortalite a un regime de faible natalite et mortalite, avec une phase de forte croissance entre les deux.',
+        points: 2,
+        options: [
+          { text: 'Le deplacement des populations vers les villes', is_correct: false },
+          { text: 'Le passage d\'une forte natalite/mortalite a une faible natalite/mortalite', is_correct: true },
+          { text: 'L\'immigration massive', is_correct: false },
+          { text: 'La diminution de la population mondiale', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi les populations se concentrent-elles pres des cotes ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les cotes offrent des ressources maritimes, des possibilites de commerce, un climat tempere par la mer et des terres souvent fertiles.',
+        points: 2,
+        options: [
+          { text: 'Uniquement pour le tourisme', is_correct: false },
+          { text: 'Ressources maritimes, commerce, climat tempere et terres fertiles', is_correct: true },
+          { text: 'Par obligation', is_correct: false },
+          { text: 'Les cotes ne sont pas plus peuplees que l\'interieur', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment les migrations modifient-elles la repartition de la population mondiale ?',
+        question_type: 'qcm',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les migrations (economiques, climatiques, politiques) transferent des populations du Sud vers le Nord, des campagnes vers les villes, modifiant la repartition.',
+        points: 2,
+        options: [
+          { text: 'Les migrations n\'ont aucun impact', is_correct: false },
+          { text: 'Elles transferent des populations du Sud vers le Nord et des campagnes vers les villes', is_correct: true },
+          { text: 'Elles equilibrent parfaitement la population', is_correct: false },
+          { text: 'Elles ne concernent que l\'Europe', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Localisez les deserts humains sur la carte du monde.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'intermediaire',
+        explanation: 'Les deserts humains correspondent aux zones de contraintes naturelles fortes : deserts chauds, zones polaires, hautes montagnes, forets denses.',
+        points: 2,
+        map_data: {
+          image_url: '/maps/deserts-humains.png',
+          instruction: 'Identifiez les principaux deserts humains.',
+          zones: [
+            { zone_id: 'z1', label: 'Grand desert d\'Afrique du Nord', x: 50, y: 38, correct_answer: 'Sahara' },
+            { zone_id: 'z2', label: 'Vaste espace froid de Russie', x: 75, y: 18, correct_answer: 'Siberie' },
+            { zone_id: 'z3', label: 'Continent presque inhabite', x: 50, y: 92, correct_answer: 'Antarctique' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces etapes de l\'evolution de la population mondiale.',
+        question_type: 'chronologie',
+        difficulty_level: 'intermediaire',
+        explanation: 'La population mondiale a connu une croissance exponentielle depuis la revolution industrielle.',
+        points: 2,
+        chronology_data: {
+          instruction: 'Classez ces etapes de la croissance demographique.',
+          events: [
+            { event_id: 'e1', label: 'Population mondiale : 300 millions', date: 'An 1', correct_position: 1 },
+            { event_id: 'e2', label: 'Population mondiale : 1 milliard', date: '1800', correct_position: 2 },
+            { event_id: 'e3', label: 'Population mondiale : 3 milliards', date: '1960', correct_position: 3 },
+            { event_id: 'e4', label: 'Population mondiale : 6 milliards', date: '1999', correct_position: 4 },
+            { event_id: 'e5', label: 'Population mondiale : 8 milliards', date: '2022', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+  {
+    chapterSlug: '6e-geo-monde-habite',
+    title: 'Le monde habite - Avance',
+    slug: 'quiz-6e-geo-monde-habite-avance',
+    description: 'Quiz de niveau avance sur la repartition de la population mondiale.',
+    category: 'geographie',
+    difficulty_level: 'avance',
+    levelSlug: '6eme',
+    questions: [
+      {
+        question_text: 'Pourquoi la densite de population seule ne suffit-elle pas a comprendre la repartition de la population ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La densite est une moyenne qui masque les inegalites locales : un pays peut avoir une faible densite moyenne mais des zones tres concentrees (ex : Egypte, ou la population se concentre dans la vallee du Nil).',
+        points: 3,
+        options: [
+          { text: 'La densite suffit toujours', is_correct: false },
+          { text: 'C\'est une moyenne qui masque les inegalites locales de repartition', is_correct: true },
+          { text: 'La densite ne mesure rien d\'utile', is_correct: false },
+          { text: 'Elle ne prend en compte que les villes', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'En quoi le vieillissement de la population dans les pays developpes est-il un defi ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Le vieillissement entraine une augmentation des depenses de sante et de retraite, une diminution de la population active et des besoins en immigration pour compenser.',
+        points: 3,
+        options: [
+          { text: 'Ce n\'est pas un defi', is_correct: false },
+          { text: 'Augmentation des depenses, diminution de la population active et besoins en immigration', is_correct: true },
+          { text: 'Il n\'a d\'impact que sur la sante', is_correct: false },
+          { text: 'Il ne concerne que le Japon', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comment la mondialisation modifie-t-elle la repartition de la population mondiale ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La mondialisation concentre les populations dans les metropoles connectees, accelere l\'exode rural, favorise les migrations internationales et marginalise les espaces isoles.',
+        points: 3,
+        options: [
+          { text: 'Elle n\'a aucun impact', is_correct: false },
+          { text: 'Elle concentre les populations dans les metropoles et favorise les migrations', is_correct: true },
+          { text: 'Elle repartit la population uniformement', is_correct: false },
+          { text: 'Elle ne concerne que les pays riches', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'La croissance demographique est le principal facteur de pauvrete dans les pays en developpement.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'La relation entre demographie et pauvrete est complexe. Les inegalites economiques, la gouvernance, l\'acces aux ressources et l\'histoire coloniale sont aussi des facteurs majeurs.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Les facteurs naturels sont les seuls a expliquer les grands foyers de peuplement.',
+        question_type: 'vrai_faux',
+        difficulty_level: 'avance',
+        explanation: 'Les facteurs historiques (anciennete des civilisations), economiques (industrialisation) et culturels comptent autant que les facteurs naturels pour expliquer les foyers de peuplement.',
+        points: 3,
+        options: [
+          { text: 'Vrai', is_correct: false },
+          { text: 'Faux', is_correct: true },
+        ],
+      },
+      {
+        question_text: 'Comment le changement climatique pourrait-il modifier la carte du peuplement mondial ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'Le changement climatique pourrait rendre certaines zones inhabitables (submersion, canicules) et en ouvrir d\'autres (Arctique), provoquant des migrations climatiques massives.',
+        points: 3,
+        options: [
+          { text: 'Il n\'aura aucun impact sur le peuplement', is_correct: false },
+          { text: 'Certaines zones deviendront inhabitables tandis que d\'autres s\'ouvriront, provoquant des migrations', is_correct: true },
+          { text: 'Tout le monde ira vivre en Antarctique', is_correct: false },
+          { text: 'La population mondiale diminuera de moitie', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Pourquoi l\'Asie de l\'Est est-elle un foyer de peuplement si important ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'L\'anciennete de la civilisation rizicole, les plaines fertiles, le climat favorable a la riziculture et l\'histoire d\'Etats organises expliquent la forte densite asiatique.',
+        points: 3,
+        options: [
+          { text: 'Uniquement grace a l\'industrialisation recente', is_correct: false },
+          { text: 'L\'anciennete de la riziculture, les plaines fertiles et l\'histoire d\'Etats organises', is_correct: true },
+          { text: 'Grace a l\'immigration massive', is_correct: false },
+          { text: 'A cause du manque d\'espace sur les autres continents', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'En quoi la surpopulation est-elle une notion relative et debattue ?',
+        question_type: 'qcm',
+        difficulty_level: 'avance',
+        explanation: 'La surpopulation depend du rapport entre population et ressources disponibles. Certains espaces tres denses fonctionnent bien (Japon, Pays-Bas) tandis que d\'autres moins denses connaissent des penuries.',
+        points: 3,
+        options: [
+          { text: 'La surpopulation est un concept objectif et incontestable', is_correct: false },
+          { text: 'Elle depend du rapport population/ressources et varie selon les contextes', is_correct: true },
+          { text: 'La surpopulation n\'existe pas', is_correct: false },
+          { text: 'Seul le nombre d\'habitants compte', is_correct: false },
+        ],
+      },
+      {
+        question_text: 'Comparez les foyers de peuplement et les deserts humains sur la carte.',
+        question_type: 'carte_a_completer',
+        difficulty_level: 'avance',
+        explanation: 'La repartition mondiale oppose des foyers tres denses a des espaces quasiment vides.',
+        points: 3,
+        map_data: {
+          image_url: '/maps/monde-peuplement-complet.png',
+          instruction: 'Identifiez foyers de peuplement et deserts humains.',
+          zones: [
+            { zone_id: 'z1', label: 'Premier foyer de peuplement', x: 82, y: 35, correct_answer: 'Asie de l\'Est' },
+            { zone_id: 'z2', label: 'Foyer de peuplement europeen', x: 45, y: 28, correct_answer: 'Europe' },
+            { zone_id: 'z3', label: 'Grand desert humain chaud', x: 50, y: 38, correct_answer: 'Sahara' },
+            { zone_id: 'z4', label: 'Grand desert humain froid', x: 75, y: 15, correct_answer: 'Siberie' },
+          ],
+        },
+        options: [],
+      },
+      {
+        question_text: 'Classez ces facteurs par ordre d\'importance dans l\'explication du peuplement de l\'Asie du Sud.',
+        question_type: 'chronologie',
+        difficulty_level: 'avance',
+        explanation: 'Le peuplement de l\'Asie du Sud resulte de multiples facteurs historiques et geographiques.',
+        points: 3,
+        chronology_data: {
+          instruction: 'Classez ces facteurs du plus important au moins important pour expliquer le peuplement de l\'Asie du Sud.',
+          events: [
+            { event_id: 'e1', label: 'Anciennete de l\'agriculture irriguee (riz, ble)', date: 'Facteur principal', correct_position: 1 },
+            { event_id: 'e2', label: 'Climat de mousson favorable aux cultures', date: 'Facteur majeur', correct_position: 2 },
+            { event_id: 'e3', label: 'Grandes plaines fluviales fertiles (Gange, Indus)', date: 'Facteur important', correct_position: 3 },
+            { event_id: 'e4', label: 'Organisation politique ancienne (empires)', date: 'Facteur complementaire', correct_position: 4 },
+            { event_id: 'e5', label: 'Forte croissance demographique recente', date: 'Facteur recent', correct_position: 5 },
+          ],
+        },
+        options: [],
+      },
+    ],
+  },
+];
