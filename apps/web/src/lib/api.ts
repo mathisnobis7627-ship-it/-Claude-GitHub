@@ -8,6 +8,8 @@ import type {
   PersonDetail,
   Quiz,
   SearchResult,
+  SearchSuggestion,
+  SearchFilters,
   TimelinePeriod,
   Video,
   CurriculumChapter,
@@ -118,11 +120,38 @@ export async function getVideos(page = 1, categorie?: string) {
 }
 
 // ── Search ───────────────────────────────────
-export async function search(query: string) {
-  const { data } = await api.get<SearchResult[]>("/recherche", {
-    params: { q: query },
-  });
+export interface SearchParams {
+  q: string;
+  type?: string;
+  category?: string;
+  country?: string;
+  period?: string;
+  era?: string;
+  personality?: string;
+  page?: number;
+  limit?: number;
+}
+
+export async function search(params: SearchParams | string) {
+  const queryParams = typeof params === "string" ? { q: params } : params;
+  const { data } = await api.get<{ data: SearchResult[]; pagination: Paginated<never> }>(
+    "/recherche",
+    { params: queryParams },
+  );
   return data;
+}
+
+export async function searchSuggest(q: string, limit = 6) {
+  const { data } = await api.get<{ data: SearchSuggestion[] }>(
+    "/recherche/suggest",
+    { params: { q, limit } },
+  );
+  return data.data;
+}
+
+export async function getSearchFilters() {
+  const { data } = await api.get<{ data: SearchFilters }>("/recherche/filters");
+  return data.data;
 }
 
 export default api;

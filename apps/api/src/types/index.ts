@@ -444,24 +444,49 @@ export interface UserProgressSummary {
 
 // ── Search ──────────────────────────────────────────────────────────────────
 
+export type SearchType =
+  | 'countries'
+  | 'persons'
+  | 'articles'
+  | 'events'
+  | 'lessons'
+  | 'quizzes'
+  | 'videos'
+  | 'all';
+
 export type SearchEntityType = 'country' | 'person' | 'article' | 'event' | 'lesson' | 'quiz' | 'video';
 
 export interface SearchQuery {
   q: string;
-  type?: SearchEntityType | 'all';
+  type?: SearchType;
   category?: string;
+  country?: string;
+  period?: string;
+  era?: string;
+  personality?: string;
   page?: number;
   limit?: number;
 }
 
 export interface SearchResult {
-  type: string;
+  type: SearchEntityType;
   id: string;
   title: string;
   excerpt: string;
   slug?: string;
   url: string;
   relevance: number;
+  image?: string;
+  meta?: Record<string, string | number | null>;
+}
+
+export interface SearchSuggestion {
+  type: SearchEntityType;
+  id: string;
+  title: string;
+  slug?: string;
+  url: string;
+  image?: string;
 }
 
 // ── Video ───────────────────────────────────────────────────────────────────

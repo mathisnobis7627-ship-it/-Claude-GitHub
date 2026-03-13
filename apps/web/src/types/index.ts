@@ -179,12 +179,29 @@ export interface Video {
 
 /** Search result */
 export interface SearchResult {
-  type: "pays" | "personnalite" | "article" | "quiz" | "video";
+  type: "pays" | "personnalite" | "article" | "quiz" | "video" | "evenement" | "lecon";
   id: string;
   titre: string;
   extrait: string;
   url: string;
   image?: string;
+  meta?: Record<string, string | number | null>;
+}
+
+/** Autocomplete suggestion */
+export interface SearchSuggestion {
+  type: SearchResult["type"];
+  id: string;
+  titre: string;
+  url: string;
+  image?: string;
+}
+
+/** Search filters available from backend */
+export interface SearchFilters {
+  eras: { value: string; label: string }[];
+  categories: string[];
+  continents: string[];
 }
 
 /** Pagination wrapper */
