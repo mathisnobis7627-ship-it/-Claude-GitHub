@@ -1,29 +1,62 @@
+"use client";
+
+import { use } from "react";
 import Link from "next/link";
-import { ArrowLeft, MapPin, Users, Ruler, Languages, Coins } from "lucide-react";
+import { ArrowLeft, MapPin, Users, Ruler, Languages, Coins, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { CountryMap } from "@/components/pays/CountryMap";
 import { Button } from "@/components/ui/Button";
+import { getCountryByCode } from "@/lib/api";
+import { formatPopulation, formatArea } from "@/lib/utils";
 
 interface CountryPageProps {
   params: Promise<{ code: string }>;
 }
 
-export default async function CountryDetailPage({ params }: CountryPageProps) {
-  const { code } = await params;
-  const upperCode = code.toUpperCase();
+export default function CountryDetailPage({ params }: CountryPageProps) {
+  const { code } = use(params);
+
+  const { data: country, isLoading, error } = useQuery({
+    queryKey: ["country", code],
+    queryFn: () => getCountryByCode(code),
+  });
+
+  if (isLoading) {
+    return (
+      <div className="section flex justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary-500" />
+      </div>
+    );
+  }
+
+  if (error || !country) {
+    return (
+      <div className="section text-center py-20">
+        <p className="text-neutral-500">Pays introuvable.</p>
+        <Link href="/pays" className="mt-4 inline-block text-primary-600 hover:underline">
+          Retour aux pays
+        </Link>
+      </div>
+    );
+  }
+
+  const languageList = country.languages ? Object.values(country.languages).join(", ") : "—";
+  const currencyList = country.currencies
+    ? Object.values(country.currencies).map((c) => `${c.name} (${c.symbol})`).join(", ")
+    : "—";
 
   const infoItems = [
-    { icon: MapPin, label: "Capitale", value: "\u2014" },
-    { icon: Users, label: "Population", value: "\u2014" },
-    { icon: Ruler, label: "Superficie", value: "\u2014" },
-    { icon: Languages, label: "Langues", value: "\u2014" },
-    { icon: Coins, label: "Monnaie", value: "\u2014" },
+    { icon: MapPin, label: "Capitale", value: country.capital ?? "—" },
+    { icon: Users, label: "Population", value: formatPopulation(country.population) },
+    { icon: Ruler, label: "Superficie", value: country.area_km2 ? formatArea(country.area_km2) : "—" },
+    { icon: Languages, label: "Langues", value: languageList },
+    { icon: Coins, label: "Monnaie", value: currencyList },
   ];
 
   return (
     <div className="section">
-      {/* Back link */}
       <Link
         href="/pays"
         className="mb-6 inline-flex items-center gap-1 text-sm text-primary-600 hover:text-primary-700 dark:text-primary-400"
@@ -33,23 +66,21 @@ export default async function CountryDetailPage({ params }: CountryPageProps) {
       </Link>
 
       <div className="mb-8 flex items-center gap-3">
-        <Badge variant="geographie">{upperCode}</Badge>
-        <h1 className="page-title">Fiche pays &mdash; {upperCode}</h1>
+        <Badge variant="geographie">{country.code_iso3}</Badge>
+        <h1 className="page-title">{country.name}</h1>
       </div>
-      <p className="page-subtitle">
-        Informations compl\u00e8tes sur la g\u00e9ographie, l&apos;histoire et la culture.
-      </p>
+      {country.official_name && (
+        <p className="page-subtitle">{country.official_name}</p>
+      )}
 
       <div className="mt-8 grid gap-8 lg:grid-cols-3">
-        {/* Map */}
         <div className="lg:col-span-2">
-          <CountryMap countryName={upperCode} className="h-80" />
+          <CountryMap countryName={country.name} className="h-80" />
         </div>
 
-        {/* Quick info */}
         <Card>
           <h2 className="mb-4 text-lg font-semibold text-neutral-900 dark:text-white">
-            Informations g\u00e9n\u00e9rales
+            Informations générales
           </h2>
           <dl className="space-y-3">
             {infoItems.map((item) => (
@@ -61,7 +92,7 @@ export default async function CountryDetailPage({ params }: CountryPageProps) {
                   <item.icon className="h-4 w-4" />
                   {item.label}
                 </dt>
-                <dd className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                <dd className="text-sm font-medium text-neutral-900 dark:text-neutral-100 text-right max-w-[60%]">
                   {item.value}
                 </dd>
               </div>
@@ -72,64 +103,72 @@ export default async function CountryDetailPage({ params }: CountryPageProps) {
 
       {/* Detail sections */}
       <div className="mt-8 grid gap-8 lg:grid-cols-2">
-        {[
-          {
-            title: "G\u00e9ographie",
-            desc: "Climat, relief, ressources naturelles et caract\u00e9ristiques g\u00e9ographiques du pays.",
-          },
-          {
-            title: "Histoire",
-            desc: "Les grandes p\u00e9riodes historiques et \u00e9v\u00e9nements marquants du pays.",
-          },
-          {
-            title: "\u00c9conomie",
-            desc: "Les secteurs \u00e9conomiques cl\u00e9s, le PIB et les principaux partenaires commerciaux.",
-          },
-          {
-            title: "Culture",
-            desc: "Traditions, gastronomie, arts et patrimoine culturel du pays.",
-          },
-        ].map((section) => (
-          <Card key={section.title}>
+        {country.political_summary && (
+          <Card>
             <CardContent>
               <h2 className="mb-3 text-lg font-semibold text-neutral-900 dark:text-white">
-                {section.title}
+                Politique
               </h2>
+              {country.government_type && (
+                <p className="mb-2 text-sm font-medium text-neutral-600 dark:text-neutral-300">
+                  {country.government_type}
+                </p>
+              )}
               <p className="text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-                {section.desc}
-              </p>
-              <p className="mt-4 text-sm italic text-neutral-400 dark:text-neutral-500">
-                Contenu d\u00e9taill\u00e9 \u00e0 venir\u2026
+                {country.political_summary}
               </p>
             </CardContent>
           </Card>
-        ))}
+        )}
+
+        {(country.gdp_usd || country.hdi) && (
+          <Card>
+            <CardContent>
+              <h2 className="mb-3 text-lg font-semibold text-neutral-900 dark:text-white">
+                Économie
+              </h2>
+              <dl className="space-y-2 text-sm">
+                {country.gdp_usd && (
+                  <div className="flex justify-between">
+                    <dt className="text-neutral-500">PIB</dt>
+                    <dd className="font-medium">
+                      {new Intl.NumberFormat("fr-FR", { style: "currency", currency: "USD", notation: "compact" }).format(country.gdp_usd)}
+                    </dd>
+                  </div>
+                )}
+                {country.hdi && (
+                  <div className="flex justify-between">
+                    <dt className="text-neutral-500">IDH</dt>
+                    <dd className="font-medium">{country.hdi}</dd>
+                  </div>
+                )}
+              </dl>
+            </CardContent>
+          </Card>
+        )}
       </div>
 
-      {/* Points cl\u00e9s */}
-      <Card className="mt-8">
-        <CardContent>
-          <h2 className="mb-4 text-lg font-semibold text-neutral-900 dark:text-white">
-            Points cl\u00e9s
-          </h2>
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {[
-              "Position g\u00e9ographique strat\u00e9gique",
-              "Patrimoine historique riche",
-              "Diversit\u00e9 culturelle remarquable",
-              "Ressources naturelles vari\u00e9es",
-            ].map((point) => (
-              <li
-                key={point}
-                className="flex items-start gap-2 text-sm text-neutral-600 dark:text-neutral-400"
-              >
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-500" />
-                {point}
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
+      {/* Borders */}
+      {country.borders.length > 0 && (
+        <Card className="mt-8">
+          <CardContent>
+            <h2 className="mb-4 text-lg font-semibold text-neutral-900 dark:text-white">
+              Pays frontaliers
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {country.borders.map((border) => (
+                <Link
+                  key={border}
+                  href={`/pays/${border.toLowerCase()}`}
+                  className="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-600 hover:bg-primary-100 hover:text-primary-700 dark:bg-neutral-700 dark:text-neutral-300"
+                >
+                  {border}
+                </Link>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <div className="mt-8 text-center">
         <Link href="/pays">

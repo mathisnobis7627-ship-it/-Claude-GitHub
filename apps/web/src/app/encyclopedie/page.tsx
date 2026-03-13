@@ -2,83 +2,38 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BookOpen, Filter } from "lucide-react";
+import { BookOpen, Filter, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { SearchBar } from "@/components/ui/SearchBar";
 import { Card, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { categorieLabel } from "@/lib/utils";
-import type { ArticleCategorie } from "@/types";
+import { getArticles } from "@/lib/api";
+import type { ArticleCategory } from "@/types";
 
-const categories: { value: ArticleCategorie | "all"; label: string }[] = [
+const categories: { value: ArticleCategory | "all"; label: string }[] = [
   { value: "all", label: "Tout" },
-  { value: "geographie", label: "G\u00e9ographie" },
-  { value: "histoire", label: "Histoire" },
-  { value: "geologie", label: "G\u00e9ologie" },
-  { value: "sciences", label: "Sciences" },
+  { value: "geography", label: "Géographie" },
+  { value: "history", label: "Histoire" },
+  { value: "geology", label: "Géologie" },
+  { value: "science", label: "Sciences" },
   { value: "culture", label: "Culture" },
-  { value: "guerre", label: "Guerres & Conflits" },
-  { value: "politique", label: "Politique" },
-];
-
-const placeholderArticles = [
-  {
-    slug: "tectonique-des-plaques",
-    titre: "La tectonique des plaques",
-    categorie: "geologie" as ArticleCategorie,
-    resume:
-      "D\u00e9couvrez comment les plaques tectoniques fa\u00e7onnent la surface de la Terre, cr\u00e9ant montagnes, oc\u00e9ans et volcans.",
-    tags: ["g\u00e9ologie", "terre", "plaques"],
-  },
-  {
-    slug: "revolution-francaise",
-    titre: "La R\u00e9volution fran\u00e7aise",
-    categorie: "histoire" as ArticleCategorie,
-    resume:
-      "De la prise de la Bastille \u00e0 la chute de Robespierre : les \u00e9v\u00e9nements qui ont transform\u00e9 la France et le monde.",
-    tags: ["r\u00e9volution", "France", "1789"],
-  },
-  {
-    slug: "climats-du-monde",
-    titre: "Les climats du monde",
-    categorie: "geographie" as ArticleCategorie,
-    resume:
-      "Tropicaux, temp\u00e9r\u00e9s, polaires : comprendre les diff\u00e9rents types de climats et leur r\u00e9partition sur le globe.",
-    tags: ["climat", "m\u00e9t\u00e9o", "zones"],
-  },
-  {
-    slug: "empire-romain",
-    titre: "L\u2019Empire romain",
-    categorie: "histoire" as ArticleCategorie,
-    resume:
-      "L\u2019un des plus grands empires de l\u2019histoire : son expansion, sa civilisation, et les raisons de sa chute.",
-    tags: ["Rome", "antiquit\u00e9", "empire"],
-  },
-  {
-    slug: "volcans",
-    titre: "Les volcans",
-    categorie: "geologie" as ArticleCategorie,
-    resume:
-      "Comment naissent les volcans ? Quels sont les diff\u00e9rents types d\u2019\u00e9ruptions ? Plongez au c\u0153ur de la Terre.",
-    tags: ["volcan", "\u00e9ruption", "magma"],
-  },
-  {
-    slug: "guerre-froide",
-    titre: "La guerre froide",
-    categorie: "guerre" as ArticleCategorie,
-    resume:
-      "Le conflit id\u00e9ologique entre les \u00c9tats-Unis et l\u2019URSS qui a d\u00e9fini le XXe si\u00e8cle.",
-    tags: ["USA", "URSS", "g\u00e9opolitique"],
-  },
+  { value: "war", label: "Guerres & Conflits" },
+  { value: "politics", label: "Politique" },
 ];
 
 export default function EncyclopediePage() {
-  const [activeCategory, setActiveCategory] = useState<ArticleCategorie | "all">("all");
+  const [activeCategory, setActiveCategory] = useState<ArticleCategory | "all">("all");
+  const [page, setPage] = useState(1);
 
-  const filtered =
-    activeCategory === "all"
-      ? placeholderArticles
-      : placeholderArticles.filter((a) => a.categorie === activeCategory);
+  const category = activeCategory === "all" ? undefined : activeCategory;
+  const { data, isLoading } = useQuery({
+    queryKey: ["articles", page, category],
+    queryFn: () => getArticles(page, 20, category),
+  });
+
+  const articles = data?.data ?? [];
 
   return (
     <div className="section">
@@ -87,15 +42,15 @@ export default function EncyclopediePage() {
           <BookOpen className="h-6 w-6 text-primary-600" />
         </div>
         <div>
-          <h1 className="page-title">Encyclop\u00e9die</h1>
+          <h1 className="page-title">Encyclopédie</h1>
           <p className="page-subtitle">
-            Explorez des articles d\u00e9taill\u00e9s sur la g\u00e9ographie, l&apos;histoire, la g\u00e9ologie et bien plus.
+            Explorez des articles détaillés sur la géographie, l&apos;histoire, la géologie et bien plus.
           </p>
         </div>
       </div>
 
       <div className="mt-8">
-        <SearchBar placeholder="Rechercher un article\u2026" expanded />
+        <SearchBar placeholder="Rechercher un article…" expanded navigateOnSubmit />
       </div>
 
       {/* Category filters */}
@@ -104,7 +59,7 @@ export default function EncyclopediePage() {
         {categories.map((cat) => (
           <button
             key={cat.value}
-            onClick={() => setActiveCategory(cat.value)}
+            onClick={() => { setActiveCategory(cat.value); setPage(1); }}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition ${
               activeCategory === cat.value
                 ? "bg-primary-600 text-white"
@@ -116,43 +71,71 @@ export default function EncyclopediePage() {
         ))}
       </div>
 
-      {/* Articles grid */}
-      <div className="grid-cards mt-8">
-        {filtered.map((article) => (
-          <Link key={article.slug} href={`/encyclopedie/${article.slug}`}>
-            <Card hover className="h-full">
-              <CardContent>
-                <div className="mb-3 flex gap-2">
-                  <Badge variant={article.categorie}>
-                    {categorieLabel(article.categorie)}
-                  </Badge>
-                </div>
-                <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">
-                  {article.titre}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-                  {article.resume}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-1">
-                  {article.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded bg-neutral-100 px-2 py-0.5 text-xs text-neutral-500 dark:bg-neutral-700 dark:text-neutral-400"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
+      {isLoading ? (
+        <div className="mt-16 flex justify-center">
+          <Loader2 className="h-8 w-8 animate-spin text-primary-500" />
+        </div>
+      ) : (
+        <>
+          <div className="grid-cards mt-8">
+            {articles.map((article) => (
+              <Link key={article.id} href={`/encyclopedie/${article.slug}`}>
+                <Card hover className="h-full">
+                  <CardContent>
+                    <div className="mb-3 flex gap-2">
+                      <Badge variant={(article.category as "histoire" | "geographie") || "default"}>
+                        {categorieLabel(article.category)}
+                      </Badge>
+                    </div>
+                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">
+                      {article.title}
+                    </h3>
+                    {article.summary && (
+                      <p className="mt-2 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400 line-clamp-3">
+                        {article.summary}
+                      </p>
+                    )}
+                    {article.tags.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-1">
+                        {article.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded bg-neutral-100 px-2 py-0.5 text-xs text-neutral-500 dark:bg-neutral-700 dark:text-neutral-400"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
 
-      {/* Load more */}
-      <div className="mt-10 text-center">
-        <Button variant="outline">Charger plus d&apos;articles</Button>
-      </div>
+          {data?.pagination && data.pagination.totalPages > 1 && (
+            <div className="mt-10 flex justify-center gap-2">
+              <Button
+                variant="outline"
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page <= 1}
+              >
+                Précédent
+              </Button>
+              <span className="px-4 py-2 text-sm text-neutral-500">
+                Page {page} / {data.pagination.totalPages}
+              </span>
+              <Button
+                variant="outline"
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page >= data.pagination.totalPages}
+              >
+                Suivant
+              </Button>
+            </div>
+          )}
+        </>
+      )}
     </div>
   );
 }

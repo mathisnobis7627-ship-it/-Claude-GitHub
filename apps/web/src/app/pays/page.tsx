@@ -2,48 +2,40 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Globe, Filter } from "lucide-react";
+import { Globe, Filter, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { SearchBar } from "@/components/ui/SearchBar";
 import { Card } from "@/components/ui/Card";
+import { getCountries } from "@/lib/api";
 
 const continents = [
   { value: "all", label: "Tous" },
-  { value: "afrique", label: "Afrique" },
-  { value: "amerique-nord", label: "Am\u00e9rique du Nord" },
-  { value: "amerique-sud", label: "Am\u00e9rique du Sud" },
-  { value: "asie", label: "Asie" },
-  { value: "europe", label: "Europe" },
-  { value: "oceanie", label: "Oc\u00e9anie" },
+  { value: "Africa", label: "Afrique" },
+  { value: "North America", label: "Amérique du Nord" },
+  { value: "South America", label: "Amérique du Sud" },
+  { value: "Asia", label: "Asie" },
+  { value: "Europe", label: "Europe" },
+  { value: "Oceania", label: "Océanie" },
 ];
 
-const placeholderCountries = [
-  { name: "France", code: "FRA", capital: "Paris", population: "67 390 000", continent: "europe", flag: "FR" },
-  { name: "Japon", code: "JPN", capital: "Tokyo", population: "125 700 000", continent: "asie", flag: "JP" },
-  { name: "Br\u00e9sil", code: "BRA", capital: "Bras\u00edlia", population: "214 300 000", continent: "amerique-sud", flag: "BR" },
-  { name: "\u00c9gypte", code: "EGY", capital: "Le Caire", population: "104 300 000", continent: "afrique", flag: "EG" },
-  { name: "Australie", code: "AUS", capital: "Canberra", population: "26 000 000", continent: "oceanie", flag: "AU" },
-  { name: "Allemagne", code: "DEU", capital: "Berlin", population: "83 200 000", continent: "europe", flag: "DE" },
-  { name: "Inde", code: "IND", capital: "New Delhi", population: "1 420 000 000", continent: "asie", flag: "IN" },
-  { name: "Canada", code: "CAN", capital: "Ottawa", population: "38 900 000", continent: "amerique-nord", flag: "CA" },
-  { name: "Maroc", code: "MAR", capital: "Rabat", population: "37 500 000", continent: "afrique", flag: "MA" },
-  { name: "Argentine", code: "ARG", capital: "Buenos Aires", population: "46 000 000", continent: "amerique-sud", flag: "AR" },
-  { name: "Italie", code: "ITA", capital: "Rome", population: "59 000 000", continent: "europe", flag: "IT" },
-  { name: "Chine", code: "CHN", capital: "P\u00e9kin", population: "1 410 000 000", continent: "asie", flag: "CN" },
-];
-
-function flagEmoji(code: string): string {
+function flagEmoji(iso2: string): string {
+  if (!iso2 || iso2.length !== 2) return "";
   return String.fromCodePoint(
-    ...code.split("").map((c) => 0x1f1e6 + c.charCodeAt(0) - 65),
+    ...iso2.toUpperCase().split("").map((c) => 0x1f1e6 + c.charCodeAt(0) - 65),
   );
 }
 
 export default function PaysPage() {
   const [activeContinent, setActiveContinent] = useState("all");
+  const [page, setPage] = useState(1);
 
-  const filtered =
-    activeContinent === "all"
-      ? placeholderCountries
-      : placeholderCountries.filter((c) => c.continent === activeContinent);
+  const continent = activeContinent === "all" ? undefined : activeContinent;
+  const { data, isLoading } = useQuery({
+    queryKey: ["countries", page, continent],
+    queryFn: () => getCountries(page, 24, continent),
+  });
+
+  const countries = data?.data ?? [];
 
   return (
     <div className="section">
@@ -54,13 +46,13 @@ export default function PaysPage() {
         <div>
           <h1 className="page-title">Pays du monde</h1>
           <p className="page-subtitle">
-            D\u00e9couvrez les 195 pays du monde : g\u00e9ographie, histoire, culture et donn\u00e9es cl\u00e9s.
+            Découvrez les 195 pays du monde : géographie, histoire, culture et données clés.
           </p>
         </div>
       </div>
 
       <div className="mt-8">
-        <SearchBar placeholder="Rechercher un pays\u2026" expanded />
+        <SearchBar placeholder="Rechercher un pays…" expanded navigateOnSubmit />
       </div>
 
       <div className="mt-6 flex items-center gap-2 overflow-x-auto pb-2">
@@ -68,7 +60,7 @@ export default function PaysPage() {
         {continents.map((c) => (
           <button
             key={c.value}
-            onClick={() => setActiveContinent(c.value)}
+            onClick={() => { setActiveContinent(c.value); setPage(1); }}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition ${
               activeContinent === c.value
                 ? "bg-secondary-600 text-white"
@@ -80,24 +72,54 @@ export default function PaysPage() {
         ))}
       </div>
 
-      <div className="grid-cards-4 mt-8">
-        {filtered.map((country) => (
-          <Link key={country.code} href={`/pays/${country.code.toLowerCase()}`}>
-            <Card hover className="text-center">
-              <div className="mb-3 text-4xl">{flagEmoji(country.flag)}</div>
-              <h3 className="font-semibold text-neutral-900 dark:text-white">
-                {country.name}
-              </h3>
-              <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                {country.capital}
-              </p>
-              <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
-                {country.population} habitants
-              </p>
-            </Card>
-          </Link>
-        ))}
-      </div>
+      {isLoading ? (
+        <div className="mt-16 flex justify-center">
+          <Loader2 className="h-8 w-8 animate-spin text-primary-500" />
+        </div>
+      ) : (
+        <>
+          <div className="grid-cards-4 mt-8">
+            {countries.map((country) => (
+              <Link key={country.id} href={`/pays/${country.code_iso3.toLowerCase()}`}>
+                <Card hover className="text-center">
+                  <div className="mb-3 text-4xl">{flagEmoji(country.code_iso2)}</div>
+                  <h3 className="font-semibold text-neutral-900 dark:text-white">
+                    {country.name}
+                  </h3>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                    {country.capital}
+                  </p>
+                  <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
+                    {new Intl.NumberFormat("fr-FR").format(country.population)} habitants
+                  </p>
+                </Card>
+              </Link>
+            ))}
+          </div>
+
+          {data?.pagination && data.pagination.totalPages > 1 && (
+            <div className="mt-8 flex justify-center gap-2">
+              <button
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page <= 1}
+                className="rounded-lg border px-4 py-2 text-sm disabled:opacity-50"
+              >
+                Précédent
+              </button>
+              <span className="px-4 py-2 text-sm text-neutral-500">
+                Page {page} / {data.pagination.totalPages}
+              </span>
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page >= data.pagination.totalPages}
+                className="rounded-lg border px-4 py-2 text-sm disabled:opacity-50"
+              >
+                Suivant
+              </button>
+            </div>
+          )}
+        </>
+      )}
     </div>
   );
 }

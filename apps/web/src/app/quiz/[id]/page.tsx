@@ -1,77 +1,54 @@
 "use client";
 
+import { use } from "react";
+import Link from "next/link";
+import { ArrowLeft, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { QuizPlayer } from "@/components/quiz/QuizPlayer";
-import type { Quiz } from "@/types";
+import { Button } from "@/components/ui/Button";
+import { getQuizById } from "@/lib/api";
 
-/**
- * In production this page would fetch the quiz by ID from the API.
- * For now we render a static placeholder quiz.
- */
-const placeholderQuiz: Quiz = {
-  id: "q1",
-  titre: "Les capitales du monde",
-  description:
-    "Testez vos connaissances sur les capitales des pays du monde. 5 questions pour commencer !",
-  categorie: "geographie",
-  niveau: "6eme",
-  duree: 5,
-  questions: [
-    {
-      id: "q1-1",
-      enonce: "Quelle est la capitale de la France ?",
-      type: "qcm",
-      options: ["Lyon", "Paris", "Marseille", "Toulouse"],
-      reponseCorrecte: "Paris",
-      explication:
-        "Paris est la capitale de la France depuis le Xe si\u00e8cle.",
-    },
-    {
-      id: "q1-2",
-      enonce: "Quelle est la capitale du Japon ?",
-      type: "qcm",
-      options: ["Osaka", "Kyoto", "Tokyo", "Yokohama"],
-      reponseCorrecte: "Tokyo",
-      explication:
-        "Tokyo est la capitale du Japon depuis 1868 (restauration Meiji).",
-    },
-    {
-      id: "q1-3",
-      enonce: "Le Caire est la capitale de l\u2019\u00c9gypte.",
-      type: "vrai-faux",
-      reponseCorrecte: "Vrai",
-      explication:
-        "Le Caire, avec plus de 20 millions d\u2019habitants, est bien la capitale de l\u2019\u00c9gypte.",
-    },
-    {
-      id: "q1-4",
-      enonce: "Quelle est la capitale de l\u2019Australie ?",
-      type: "qcm",
-      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
-      reponseCorrecte: "Canberra",
-      explication:
-        "Canberra a \u00e9t\u00e9 choisie comme capitale de compromis entre Sydney et Melbourne en 1913.",
-    },
-    {
-      id: "q1-5",
-      enonce: "Quelle est la capitale du Br\u00e9sil ?",
-      type: "qcm",
-      options: [
-        "Rio de Janeiro",
-        "S\u00e3o Paulo",
-        "Bras\u00edlia",
-        "Salvador",
-      ],
-      reponseCorrecte: "Bras\u00edlia",
-      explication:
-        "Bras\u00edlia est devenue la capitale du Br\u00e9sil en 1960, rempla\u00e7ant Rio de Janeiro.",
-    },
-  ],
-};
+interface QuizPageProps {
+  params: Promise<{ id: string }>;
+}
 
-export default function QuizPage() {
+export default function QuizPage({ params }: QuizPageProps) {
+  const { id } = use(params);
+
+  const { data: quiz, isLoading, error } = useQuery({
+    queryKey: ["quiz", id],
+    queryFn: () => getQuizById(id),
+  });
+
+  if (isLoading) {
+    return (
+      <div className="section flex justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary-500" />
+      </div>
+    );
+  }
+
+  if (error || !quiz) {
+    return (
+      <div className="section text-center py-20">
+        <p className="text-neutral-500">Quiz introuvable.</p>
+        <Link href="/quiz" className="mt-4 inline-block text-primary-600 hover:underline">
+          Retour aux quiz
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="section">
-      <QuizPlayer quiz={placeholderQuiz} />
+      <Link
+        href="/quiz"
+        className="mb-6 inline-flex items-center gap-1 text-sm text-primary-600 hover:text-primary-700 dark:text-primary-400"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Retour aux quiz
+      </Link>
+      <QuizPlayer quiz={quiz} />
     </div>
   );
 }

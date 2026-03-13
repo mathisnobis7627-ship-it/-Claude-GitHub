@@ -4,10 +4,10 @@ import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { cn } from "@/lib/utils";
-import type { TimelinePeriod, TimelineEvent, ArticleCategorie } from "@/types";
+import type { HistoricalPeriod, HistoricalEvent } from "@/types";
 
 interface TimelineViewProps {
-  periods: TimelinePeriod[];
+  periods: HistoricalPeriod[];
 }
 
 export function TimelineView({ periods }: TimelineViewProps) {
@@ -31,6 +31,7 @@ export function TimelineView({ periods }: TimelineViewProps) {
     <div className="space-y-4">
       {periods.map((period) => {
         const isExpanded = expandedPeriods.has(period.id);
+        const events = period.events ?? [];
         return (
           <div
             key={period.id}
@@ -43,7 +44,7 @@ export function TimelineView({ periods }: TimelineViewProps) {
             >
               <div
                 className="h-4 w-4 rounded-full"
-                style={{ backgroundColor: period.couleur }}
+                style={{ backgroundColor: period.color_hex ?? "#6b7280" }}
               />
               {isExpanded ? (
                 <ChevronDown className="h-4 w-4 text-neutral-400" />
@@ -52,27 +53,26 @@ export function TimelineView({ periods }: TimelineViewProps) {
               )}
               <div className="flex-1">
                 <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">
-                  {period.nom}
+                  {period.name}
                 </h3>
                 <p className="text-sm text-neutral-500">
-                  {period.debut} &ndash; {period.fin}
+                  {period.year_start} &ndash; {period.year_end}
                 </p>
               </div>
               <span className="rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
-                {period.evenements.length} \u00e9v\u00e9nement
-                {period.evenements.length > 1 ? "s" : ""}
+                {events.length} événement{events.length > 1 ? "s" : ""}
               </span>
             </button>
 
             {/* Events list */}
-            {isExpanded && (
+            {isExpanded && events.length > 0 && (
               <div className="border-t border-neutral-100 bg-neutral-50/50 dark:border-neutral-700 dark:bg-neutral-900/50">
-                {period.evenements.map((event, idx) => (
+                {events.map((event, idx) => (
                   <TimelineEventRow
                     key={event.id}
                     event={event}
-                    color={period.couleur}
-                    isLast={idx === period.evenements.length - 1}
+                    color={period.color_hex ?? "#6b7280"}
+                    isLast={idx === events.length - 1}
                   />
                 ))}
               </div>
@@ -89,7 +89,7 @@ function TimelineEventRow({
   color,
   isLast,
 }: {
-  event: TimelineEvent;
+  event: HistoricalEvent;
   color: string;
   isLast: boolean;
 }) {
@@ -115,18 +115,24 @@ function TimelineEventRow({
       <div className="flex-1 pb-2">
         <div className="flex items-start justify-between gap-2">
           <div>
-            <p className="text-xs font-medium text-neutral-400">{event.date}</p>
+            <p className="text-xs font-medium text-neutral-400">
+              {event.date_display ?? event.year}
+            </p>
             <h4 className="mt-0.5 font-medium text-neutral-900 dark:text-neutral-100">
-              {event.titre}
+              {event.title}
             </h4>
           </div>
-          <Badge variant={event.categorie as ArticleCategorie}>
-            {event.categorie}
-          </Badge>
+          {event.category && (
+            <Badge variant={(event.category as "histoire" | "geographie" | "culture" | "politique" | "guerre" | "sciences") || "default"}>
+              {event.category}
+            </Badge>
+          )}
         </div>
-        <p className="mt-1 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-          {event.description}
-        </p>
+        {event.description && (
+          <p className="mt-1 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
+            {event.description}
+          </p>
+        )}
       </div>
     </div>
   );

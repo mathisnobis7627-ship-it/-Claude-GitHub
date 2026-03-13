@@ -166,7 +166,7 @@ export class SearchService {
 
     // ── Timeline events ──────────────────────────────────────────────────
     if (type === 'all' || type === 'events') {
-      let qb = db('timeline_events as te')
+      let qb = db('historical_events as te')
         .join('historical_periods as hp', 'te.period_id', 'hp.id')
         .where(function () {
           this.whereRaw('LOWER(te.title) LIKE ?', [searchTerm])
@@ -348,7 +348,7 @@ export class SearchService {
         .select('id', 'slug', 'title', 'cover_image_url')
         .limit(3),
 
-      db('timeline_events')
+      db('historical_events')
         .whereRaw('LOWER(title) LIKE ?', [prefix])
         .select('id', 'title', 'image_url')
         .limit(2),

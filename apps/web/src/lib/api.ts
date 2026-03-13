@@ -1,32 +1,31 @@
 import axios from "axios";
 import type {
-  Article,
+  ApiResponse,
+  PaginatedResponse,
   Country,
-  CountryDetail,
-  Paginated,
+  CountryGeography,
+  CountryHistory,
   Person,
-  PersonDetail,
+  Article,
+  HistoricalPeriod,
+  SchoolLevel,
+  CurriculumChapter,
   Quiz,
+  QuizResult,
+  Video,
   SearchResult,
   SearchSuggestion,
   SearchFilters,
-  TimelinePeriod,
-  Video,
-  CurriculumChapter,
-  NiveauScolaire,
 } from "@/types";
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api",
+  baseURL: process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001/api/v1",
   timeout: 15_000,
-  headers: {
-    "Content-Type": "application/json",
-  },
+  headers: { "Content-Type": "application/json" },
 });
 
 // ── Request interceptor ──────────────────────
 api.interceptors.request.use((config) => {
-  // Attach auth token if available (future use)
   if (typeof window !== "undefined") {
     const token = localStorage.getItem("atlas_token");
     if (token) {
@@ -41,82 +40,132 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Handle unauthorized – redirect to login in the future
+      // Handle unauthorized – future use
     }
     return Promise.reject(error);
   },
 );
 
+// ── Helpers ──────────────────────────────────
+function unwrapData<T>(res: { data: ApiResponse<T> }): T {
+  if (!res.data.success) throw new Error(res.data.error ?? "API error");
+  return res.data.data as T;
+}
+
+function unwrapPaginated<T>(res: { data: PaginatedResponse<T> }): PaginatedResponse<T> {
+  return res.data;
+}
+
 // ── Countries ────────────────────────────────
-export async function getCountries(page = 1, continent?: string) {
-  const { data } = await api.get<Paginated<Country>>("/pays", {
-    params: { page, continent },
+export async function getCountries(page = 1, limit = 20, continent?: string) {
+  const res = await api.get<PaginatedResponse<Country>>("/countries", {
+    params: { page, limit, continent },
   });
-  return data;
+  return unwrapPaginated(res);
 }
 
 export async function getCountryByCode(code: string) {
-  const { data } = await api.get<CountryDetail>(`/pays/${code}`);
-  return data;
+  const res = await api.get<ApiResponse<Country>>(`/countries/${code}`);
+  return unwrapData(res);
 }
 
-// ── Historical figures ───────────────────────
-export async function getPersons(page = 1, domaine?: string) {
-  const { data } = await api.get<Paginated<Person>>("/personnalites", {
-    params: { page, domaine },
+export async function getCountryGeography(countryId: string) {
+  const res = await api.get<ApiResponse<CountryGeography>>(`/countries/${countryId}/geography`);
+  return unwrapData(res);
+}
+
+export async function getCountryHistory(countryId: string) {
+  const res = await api.get<ApiResponse<CountryHistory[]>>(`/countries/${countryId}/history`);
+  return unwrapData(res);
+}
+
+// ── Persons ──────────────────────────────────
+export async function getPersons(page = 1, limit = 20, category?: string) {
+  const res = await api.get<PaginatedResponse<Person>>("/persons", {
+    params: { page, limit, category },
   });
-  return data;
+  return unwrapPaginated(res);
 }
 
 export async function getPersonBySlug(slug: string) {
-  const { data } = await api.get<PersonDetail>(`/personnalites/${slug}`);
-  return data;
+  const res = await api.get<ApiResponse<Person>>(`/persons/${slug}`);
+  return unwrapData(res);
 }
 
-// ── Encyclopedia ─────────────────────────────
-export async function getArticles(page = 1, categorie?: string) {
-  const { data } = await api.get<Paginated<Article>>("/articles", {
-    params: { page, categorie },
+// ── Articles ─────────────────────────────────
+export async function getArticles(page = 1, limit = 20, category?: string) {
+  const res = await api.get<PaginatedResponse<Article>>("/articles", {
+    params: { page, limit, category },
   });
-  return data;
+  return unwrapPaginated(res);
 }
 
 export async function getArticleBySlug(slug: string) {
-  const { data } = await api.get<Article>(`/articles/${slug}`);
-  return data;
+  const res = await api.get<ApiResponse<Article>>(`/articles/${slug}`);
+  return unwrapData(res);
 }
 
 // ── Timeline ─────────────────────────────────
 export async function getTimeline() {
-  const { data } = await api.get<TimelinePeriod[]>("/chronologie");
-  return data;
+  const res = await api.get<ApiResponse<HistoricalPeriod[]>>("/timeline");
+  return unwrapData(res);
+}
+
+export async function getTimelineEvent(id: string) {
+  const res = await api.get<ApiResponse<HistoricalPeriod>>(`/timeline/events/${id}`);
+  return unwrapData(res);
 }
 
 // ── Curriculum ───────────────────────────────
-export async function getCurriculum(niveau?: NiveauScolaire) {
-  const { data } = await api.get<CurriculumChapter[]>("/programme", {
-    params: { niveau },
-  });
-  return data;
+export async function getCurriculumLevels() {
+  const res = await api.get<ApiResponse<SchoolLevel[]>>("/curriculum/levels");
+  return unwrapData(res);
+}
+
+export async function getCurriculumSubjects(level: string) {
+  const res = await api.get<ApiResponse<{ id: string; name: string; slug: string; icon: string | null }[]>>(
+    `/curriculum/${level}/subjects`,
+  );
+  return unwrapData(res);
+}
+
+export async function getChaptersByLevel(level: string) {
+  const res = await api.get<ApiResponse<CurriculumChapter[]>>(`/curriculum/${level}/chapters`);
+  return unwrapData(res);
+}
+
+export async function getChapters(level: string, subject: string) {
+  const res = await api.get<ApiResponse<CurriculumChapter[]>>(`/curriculum/${level}/${subject}/chapters`);
+  return unwrapData(res);
 }
 
 // ── Quizzes ──────────────────────────────────
-export async function getQuizzes(page = 1) {
-  const { data } = await api.get<Paginated<Quiz>>("/quiz", { params: { page } });
-  return data;
+export async function getQuizzes(page = 1, limit = 20) {
+  const res = await api.get<PaginatedResponse<Quiz>>("/quizzes", { params: { page, limit } });
+  return unwrapPaginated(res);
 }
 
 export async function getQuizById(id: string) {
-  const { data } = await api.get<Quiz>(`/quiz/${id}`);
-  return data;
+  const res = await api.get<ApiResponse<Quiz>>(`/quizzes/${id}`);
+  return unwrapData(res);
+}
+
+export async function submitQuiz(id: string, answers: Record<string, string>) {
+  const res = await api.post<ApiResponse<QuizResult>>(`/quizzes/${id}/submit`, { answers });
+  return unwrapData(res);
 }
 
 // ── Videos ───────────────────────────────────
-export async function getVideos(page = 1, categorie?: string) {
-  const { data } = await api.get<Paginated<Video>>("/videos", {
-    params: { page, categorie },
+export async function getVideos(page = 1, limit = 20, category?: string) {
+  const res = await api.get<PaginatedResponse<Video>>("/videos", {
+    params: { page, limit, category },
   });
-  return data;
+  return unwrapPaginated(res);
+}
+
+export async function getVideoById(id: string) {
+  const res = await api.get<ApiResponse<Video>>(`/videos/${id}`);
+  return unwrapData(res);
 }
 
 // ── Search ───────────────────────────────────
@@ -124,34 +173,27 @@ export interface SearchParams {
   q: string;
   type?: string;
   category?: string;
-  country?: string;
-  period?: string;
   era?: string;
-  personality?: string;
   page?: number;
   limit?: number;
 }
 
 export async function search(params: SearchParams | string) {
   const queryParams = typeof params === "string" ? { q: params } : params;
-  const { data } = await api.get<{ data: SearchResult[]; pagination: Paginated<never> }>(
-    "/recherche",
-    { params: queryParams },
-  );
-  return data;
+  const res = await api.get<PaginatedResponse<SearchResult>>("/search", { params: queryParams });
+  return unwrapPaginated(res);
 }
 
 export async function searchSuggest(q: string, limit = 6) {
-  const { data } = await api.get<{ data: SearchSuggestion[] }>(
-    "/recherche/suggest",
-    { params: { q, limit } },
-  );
-  return data.data;
+  const res = await api.get<ApiResponse<SearchSuggestion[]>>("/search/suggest", {
+    params: { q, limit },
+  });
+  return unwrapData(res);
 }
 
 export async function getSearchFilters() {
-  const { data } = await api.get<{ data: SearchFilters }>("/recherche/filters");
-  return data.data;
+  const res = await api.get<ApiResponse<SearchFilters>>("/search/filters");
+  return unwrapData(res);
 }
 
 export default api;

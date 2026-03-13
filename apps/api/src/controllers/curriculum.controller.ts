@@ -1,6 +1,5 @@
 import type { Request, Response, NextFunction } from 'express';
 import { curriculumService } from '../services/curriculum.service';
-import type { CurriculumLevel, CurriculumSubject } from '../types';
 
 export class CurriculumController {
   async getLevels(_req: Request, res: Response, next: NextFunction): Promise<void> {
@@ -16,7 +15,7 @@ export class CurriculumController {
   async getSubjects(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const { level } = req.params;
-      const result = await curriculumService.getSubjects(level as CurriculumLevel);
+      const result = await curriculumService.getSubjects(level);
 
       res.json({ success: true, data: result });
     } catch (error) {
@@ -27,10 +26,18 @@ export class CurriculumController {
   async getChapters(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const { level, subject } = req.params;
-      const chapters = await curriculumService.getChapters(
-        level as CurriculumLevel,
-        subject as CurriculumSubject
-      );
+      const chapters = await curriculumService.getChapters(level, subject);
+
+      res.json({ success: true, data: chapters });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  async getChaptersByLevel(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { level } = req.params;
+      const chapters = await curriculumService.getChaptersByLevel(level);
 
       res.json({ success: true, data: chapters });
     } catch (error) {

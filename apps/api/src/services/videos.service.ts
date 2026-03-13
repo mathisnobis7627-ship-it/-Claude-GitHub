@@ -1,19 +1,27 @@
 import db from '../config/database';
-import type { Video, PaginatedResponse, PaginationQuery } from '../types';
+import type { Video, VideoChapter, PaginatedResponse, PaginationQuery } from '../types';
 import { AppError } from '../types';
 
 export class VideosService {
-  async getAll(query: PaginationQuery): Promise<PaginatedResponse<Video>> {
+  async getAll(query: PaginationQuery & { category?: string }): Promise<PaginatedResponse<Video>> {
     const page = query.page || 1;
     const limit = query.limit || 20;
     const offset = (page - 1) * limit;
     const sort = query.sort || 'created_at';
     const order = query.order || 'desc';
 
-    const [{ count }] = await db('videos').count('* as count');
+    let countQuery = db('videos');
+    let baseQuery = db('videos');
+
+    if (query.category) {
+      countQuery = countQuery.where({ category: query.category });
+      baseQuery = baseQuery.where({ category: query.category });
+    }
+
+    const [{ count }] = await countQuery.count('* as count');
     const total = Number(count);
 
-    const data = await db('videos')
+    const data = await baseQuery
       .select('*')
       .orderBy(sort, order)
       .limit(limit)
@@ -30,44 +38,18 @@ export class VideosService {
     };
   }
 
-  async getById(id: number): Promise<Video> {
+  async getById(id: string): Promise<Video & { chapters: VideoChapter[] }> {
     const video = await db('videos').where({ id }).first();
 
     if (!video) {
       throw new AppError(`Video not found: ${id}`, 404);
     }
 
-    return video;
-  }
+    const chapters = await db('video_chapters')
+      .where({ video_id: id })
+      .orderBy('sort_order', 'asc');
 
-  async getByTopic(
-    topic: string,
-    query: PaginationQuery
-  ): Promise<PaginatedResponse<Video>> {
-    const page = query.page || 1;
-    const limit = query.limit || 20;
-    const offset = (page - 1) * limit;
-
-    const [{ count }] = await db('videos')
-      .where({ topic })
-      .count('* as count');
-    const total = Number(count);
-
-    const data = await db('videos')
-      .where({ topic })
-      .orderBy('created_at', 'desc')
-      .limit(limit)
-      .offset(offset);
-
-    return {
-      data,
-      pagination: {
-        page,
-        limit,
-        total,
-        totalPages: Math.ceil(total / limit),
-      },
-    };
+    return { ...video, chapters };
   }
 }
 

@@ -30,14 +30,18 @@ export class PersonsService {
     };
   }
 
-  async getBySlug(slug: string): Promise<Person> {
+  async getBySlug(slug: string): Promise<Person & { contributions: any[] }> {
     const person = await db('persons').where({ slug }).first();
 
     if (!person) {
       throw new AppError(`Person not found: ${slug}`, 404);
     }
 
-    return person;
+    const contributions = await db('person_contributions')
+      .where({ person_id: person.id })
+      .orderBy('year', 'asc');
+
+    return { ...person, contributions };
   }
 
   async getByCategory(

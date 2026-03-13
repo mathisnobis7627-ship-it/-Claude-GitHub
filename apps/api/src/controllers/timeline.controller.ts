@@ -2,17 +2,17 @@ import type { Request, Response, NextFunction } from 'express';
 import { timelineService } from '../services/timeline.service';
 
 export class TimelineController {
-  async getEvents(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async getAll(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const { page, limit, era, category } = req.query;
-      const result = await timelineService.getEvents({
+      const { page, limit, era, period_id } = req.query;
+      const result = await timelineService.getAll({
         page: page ? Number(page) : undefined,
         limit: limit ? Number(limit) : undefined,
         era: era as string,
-        category: category as string,
+        period_id: period_id as string,
       });
 
-      res.json({ success: true, ...result });
+      res.json({ success: true, data: result });
     } catch (error) {
       next(error);
     }
@@ -21,7 +21,6 @@ export class TimelineController {
   async getPeriods(_req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const periods = await timelineService.getPeriods();
-
       res.json({ success: true, data: periods });
     } catch (error) {
       next(error);
@@ -31,8 +30,7 @@ export class TimelineController {
   async getEventById(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const { id } = req.params;
-      const event = await timelineService.getEventById(Number(id));
-
+      const event = await timelineService.getEventById(id);
       res.json({ success: true, data: event });
     } catch (error) {
       next(error);

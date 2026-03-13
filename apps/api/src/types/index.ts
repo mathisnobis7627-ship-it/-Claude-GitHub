@@ -238,6 +238,13 @@ export interface War {
 
 export type SchoolCycle = 'cycle3' | 'cycle4' | 'lycee';
 
+export type CurriculumLevel =
+  | 'cp' | 'ce1' | 'ce2' | 'cm1' | 'cm2'
+  | '6eme' | '5eme' | '4eme' | '3eme'
+  | '2nde' | '1ere' | 'terminale';
+
+export type CurriculumSubject = 'histoire' | 'geographie' | 'sciences' | 'emc';
+
 export interface SchoolLevel {
   id: string;
   name: string;
@@ -531,6 +538,11 @@ export class AppError extends Error {
     Object.setPrototypeOf(this, AppError.prototype);
   }
 }
+
+// ── Type Aliases ────────────────────────────────────────────────────────────
+
+export type TimelineEvent = HistoricalEvent;
+export type TimelinePeriod = HistoricalPeriod;
 
 // ── Typed Request ───────────────────────────────────────────────────────────
 
