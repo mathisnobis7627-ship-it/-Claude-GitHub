@@ -6,6 +6,7 @@ import { submitQuiz } from "@/lib/api";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { CheckCircle, XCircle, Trophy, RotateCcw, Loader2 } from "lucide-react";
+import { WorldMapQuiz } from "@/components/quiz/WorldMapQuiz";
 import type { Quiz, QuizResult } from "@/types";
 
 interface QuizPlayerProps {
@@ -211,6 +212,19 @@ export function QuizPlayer({ quiz }: QuizPlayerProps) {
               {opt.option_text}
             </button>
           ))}
+        </div>
+      )}
+
+      {/* Carte à compléter */}
+      {currentQuestion.question_type === "carte_a_completer" && (
+        <div className="mt-4">
+          <WorldMapQuiz
+            questionText={currentQuestion.question_text}
+            selectedRegion={selectedAnswer}
+            onRegionSelect={(regionId) =>
+              answer(currentQuestion.id, regionId)
+            }
+          />
         </div>
       )}
 
