@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire-Géo Lycée - Apprendre facilement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo" onclick="showHome()">
+                <span class="logo-icon">📚</span>
+                <h1>Histoire-Géo Lycée</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Rechercher un chapitre, un thème..." oninput="handleSearch(this.value)">
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-progress" onclick="showProgress()">📊 Ma progression</button>
+                <button class="btn-theme" onclick="toggleDarkMode()" id="theme-toggle">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation tabs -->
+    <nav id="level-nav">
+        <button class="nav-tab active" data-level="home" onclick="showHome()">🏠 Accueil</button>
+        <button class="nav-tab" data-level="seconde" onclick="showLevel('seconde')">Seconde</button>
+        <button class="nav-tab" data-level="premiere" onclick="showLevel('premiere')">Première</button>
+        <button class="nav-tab" data-level="terminale" onclick="showLevel('terminale')">Terminale</button>
+    </nav>
+
+    <!-- Main content -->
+    <main id="app-content">
+        <!-- Home page -->
+        <div id="home-page" class="page active">
+            <div class="hero">
+                <h2>Révise ton Histoire-Géo facilement ! 🎯</h2>
+                <p>Tout le programme du lycée expliqué comme une histoire, avec des schémas clairs et des termes simples.</p>
+            </div>
+            <div class="level-cards">
+                <div class="level-card seconde-card" onclick="showLevel('seconde')">
+                    <div class="level-card-icon">🏛️</div>
+                    <h3>Seconde</h3>
+                    <p>De la Méditerranée antique aux sociétés modernes</p>
+                    <div class="card-chapters">12 chapitres</div>
+                </div>
+                <div class="level-card premiere-card" onclick="showLevel('premiere')">
+                    <div class="level-card-icon">⚔️</div>
+                    <h3>Première</h3>
+                    <p>Nations, empires et guerres mondiales</p>
+                    <div class="card-chapters">12 chapitres</div>
+                </div>
+                <div class="level-card terminale-card" onclick="showLevel('terminale')">
+                    <div class="level-card-icon">🌍</div>
+                    <h3>Terminale</h3>
+                    <p>Le monde contemporain et ses défis</p>
+                    <div class="card-chapters">12 chapitres</div>
+                </div>
+            </div>
+            <div class="features-section">
+                <h3>Comment ça marche ?</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <span class="feature-icon">📖</span>
+                        <h4>Des histoires</h4>
+                        <p>Chaque leçon est racontée comme une histoire simple et captivante</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📊</span>
+                        <h4>Des schémas</h4>
+                        <p>Des schémas clairs pour visualiser et mémoriser les concepts</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💡</span>
+                        <h4>Termes expliqués</h4>
+                        <p>Les mots compliqués sont expliqués simplement dans des encadrés</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✅</span>
+                        <h4>Suivi de progression</h4>
+                        <p>Coche les chapitres révisés pour suivre ton avancement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Level pages (populated by JS) -->
+        <div id="level-page" class="page"></div>
+
+        <!-- Chapter page -->
+        <div id="chapter-page" class="page"></div>
+
+        <!-- Progress page -->
+        <div id="progress-page" class="page"></div>
+    </main>
+
+    <!-- Back to top -->
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- Scripts -->
+    <script src="data-seconde.js"></script>
+    <script src="data-premiere.js"></script>
+    <script src="data-terminale.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
