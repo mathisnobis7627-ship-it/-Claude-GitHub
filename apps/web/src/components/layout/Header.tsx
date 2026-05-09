@@ -10,6 +10,7 @@ import {
   GraduationCap,
   HelpCircle,
   Video,
+  Dumbbell,
   Menu,
   X,
   Sun,
@@ -27,6 +28,7 @@ const navigation = [
   { label: "Programme", href: "/programme", icon: GraduationCap },
   { label: "Quiz", href: "/quiz", icon: HelpCircle },
   { label: "Vid\u00e9os", href: "/videos", icon: Video },
+  { label: "Muscles", href: "/muscles", icon: Dumbbell },
 ];
 
 export function Header() {
